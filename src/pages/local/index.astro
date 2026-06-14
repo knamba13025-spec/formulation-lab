@@ -1,0 +1,133 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog', ({ data }) =>
+  !data.draft && data.category === 'local'
+);
+posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const gradeStyle: Record<string, string> = {
+  A: 'background:var(--color-sage-light); color:var(--color-sage-mid); border:1px solid var(--color-sage);',
+  B: 'background:var(--color-blue-light); color:var(--color-blue-mid); border:1px solid var(--color-blue);',
+  C: 'background:#fef9ec; color:#b08a2a; border:1px solid #e8d48a;',
+  D: 'background:#f5f2ef; color:var(--color-text-light); border:1px solid var(--color-border);',
+};
+
+const picks = [
+  {
+    region: '沖縄',
+    brand: 'mycucuru',
+    ingredient: '久米島・伊江島・西表島産原料',
+    note: '3つの離島が持つ固有植物エキスを配合。流通量が極めて少なく、ECでのみ入手可能。',
+  },
+  {
+    region: '島根・隠岐諸島',
+    brand: 'Seaphonia',
+    ingredient: '隠岐産海藻エキス',
+    note: '隠岐の海藻を独自製法で抽出。フコイダン高含有で保湿・バリア機能へのアプローチが特徴。',
+  },
+  {
+    region: '青森',
+    brand: 'HIBA LIFE',
+    ingredient: '青森ヒバ精油',
+    note: 'ヒノキチオール含有量が世界最高水準の青森ヒバ。抗菌・防虫・鎮静作用が研究されている。',
+  },
+  {
+    region: '北海道',
+    brand: 'NALUQ',
+    ingredient: 'トドマツ精油',
+    note: '北海道固有のトドマツから採れる精油。フィトンチッド成分が豊富で、森林浴に近い成分構成。',
+  },
+  {
+    region: '鹿児島',
+    brand: '温泉水99',
+    ingredient: '霧島温泉水',
+    note: '99%温泉水の化粧水。ミネラルバランスが独特で、pHが肌に近く刺激が少ない。',
+  },
+];
+---
+<Layout title="地方・希少コスメ発掘レポート | エイジングケアラボ">
+
+  <!-- ページヘッダー -->
+  <section style="padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--color-border);">
+    <p style="font-size:0.7rem; letter-spacing:0.2em; color:#9a7a5a; text-transform:uppercase; margin-bottom:0.75rem;">Local Cosmetics</p>
+    <h1 style="font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:300; color:var(--color-text); margin-bottom:0.75rem;">
+      地方・希少コスメ発掘レポート
+    </h1>
+    <p style="font-size:0.875rem; color:var(--color-text-muted); line-height:1.9; max-width:32rem;">
+      大手サイトが取り上げない、日本の地方でしか作れない化粧品を独自に掘り起こします。離島・山村・温泉地——その土地固有の原料が持つ可能性を、製造現場を知る視点で紹介します。
+    </p>
+  </section>
+
+  <!-- 視点 -->
+  <section style="margin: 2rem 0; padding: 1.25rem 1.5rem; background:#faf5ef; border-left:3px solid #c8a878; border-radius:0 8px 8px 0;">
+    <p style="font-size:0.75rem; color:#9a7a5a; font-weight:500; margin-bottom:0.4rem;">工場からの視点</p>
+    <p style="font-size:0.85rem; color:#5a4a3a; line-height:1.8;">
+      大量生産の化粧品は原料の安定供給が前提です。そのため「希少すぎる原料」は大手には使えない。地方の小ロットメーカーだからこそ採用できる原料があり、そこには大手にはない価値があります。
+    </p>
+  </section>
+
+  <!-- 注目ピックアップ -->
+  <section style="margin-bottom:2.5rem;">
+    <p style="font-size:0.7rem; letter-spacing:0.15em; color:var(--color-text-light); text-transform:uppercase; margin-bottom:1.25rem;">注目の地方コスメ・原料</p>
+    <div style="display:flex; flex-direction:column; gap:0;">
+      {picks.map(({ region, brand, ingredient, note }) => (
+        <div style="padding:1.25rem 0; border-bottom:1px solid var(--color-border); display:flex; gap:1rem; align-items:flex-start;">
+          <span style="font-size:0.68rem; font-weight:500; padding:0.2rem 0.5rem; border-radius:4px; flex-shrink:0; margin-top:0.1rem; background:#faf5ef; color:#9a7a5a; border:1px solid #e8d4b8; white-space:nowrap;">
+            {region}
+          </span>
+          <div style="flex:1;">
+            <div style="display:flex; align-items:baseline; gap:0.5rem; margin-bottom:0.3rem;">
+              <span style="font-size:0.95rem; font-weight:500; color:var(--color-text);">{brand}</span>
+              <span style="font-size:0.72rem; color:#9a7a5a; background:#faf5ef; padding:0.1rem 0.4rem; border-radius:3px;">{ingredient}</span>
+            </div>
+            <p style="font-size:0.8rem; color:var(--color-text-muted); line-height:1.7;">{note}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+    <p style="font-size:0.75rem; color:var(--color-text-light); margin-top:1rem; line-height:1.7;">
+      ※ 上記は調査・取材候補リストです。各ブランドとの提携・タイアップについてはお問い合わせください。
+    </p>
+  </section>
+
+  <!-- 記事一覧 -->
+  <section>
+    <p style="font-size:0.7rem; letter-spacing:0.15em; color:var(--color-text-light); text-transform:uppercase; margin-bottom:1.25rem;">関連記事</p>
+    {posts.length > 0 ? (
+      <div style="display:flex; flex-direction:column; gap:0.75rem;">
+        {posts.map(post => (
+          <a href={`/blog/${post.id}`} style="display:flex; align-items:flex-start; gap:1rem; padding:1rem 1.25rem; background:var(--color-surface); border:1px solid var(--color-border); border-radius:10px; text-decoration:none; transition:border-color 0.2s;"
+             onmouseover="this.style.borderColor='#c8a878'" onmouseout="this.style.borderColor='var(--color-border)'">
+            <div style="flex:1;">
+              <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.4rem;">
+                {post.data.grade && (
+                  <span style={`font-size:0.62rem; font-weight:500; padding:0.15rem 0.5rem; border-radius:4px; ${gradeStyle[post.data.grade]}`}>Grade {post.data.grade}</span>
+                )}
+                <span style="font-size:0.7rem; color:var(--color-text-light);">{post.data.pubDate.toLocaleDateString('ja-JP')}</span>
+              </div>
+              <p style="font-size:0.875rem; color:var(--color-text); margin-bottom:0.25rem;">{post.data.title}</p>
+              <p style="font-size:0.775rem; color:var(--color-text-muted);">{post.data.description}</p>
+            </div>
+            <span style="color:var(--color-text-light); font-size:0.8rem; flex-shrink:0; padding-top:0.1rem;">→</span>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <p style="font-size:0.85rem; color:var(--color-text-light);">記事を準備中です。もうしばらくお待ちください。</p>
+    )}
+  </section>
+
+  <!-- タイアップ案内 -->
+  <section style="margin-top:2.5rem; padding:1.5rem; background:#faf5ef; border:1px solid #e8d4b8; border-radius:10px;">
+    <p style="font-size:0.7rem; letter-spacing:0.15em; color:#9a7a5a; text-transform:uppercase; margin-bottom:0.75rem;">地方メーカーの方へ</p>
+    <p style="font-size:0.85rem; color:var(--color-text-muted); line-height:1.8; margin-bottom:0.75rem;">
+      小ロット生産品・地域限定コスメの紹介記事・タイアップに対応しています。大手サイトと異なり、少量生産・低予算でも対応可能です。
+    </p>
+    <a href="/contact" style="display:inline-block; font-size:0.8rem; color:#9a7a5a; text-decoration:none; border-bottom:1px solid #c8a878; padding-bottom:0.1rem;">
+      お問い合わせはこちら →
+    </a>
+  </section>
+
+</Layout>

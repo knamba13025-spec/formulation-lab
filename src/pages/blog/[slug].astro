@@ -22,6 +22,8 @@ const categoryLabel: Record<string, string> = {
   supplement: 'SUPPLEMENT',
   clinic: 'CLINIC',
   science: 'SCIENCE',
+  local: 'LOCAL',
+  mind: 'MIND',
 };
 
 const categoryPath: Record<string, string> = {
@@ -29,6 +31,8 @@ const categoryPath: Record<string, string> = {
   supplement: '/supplement',
   clinic: '/clinic',
   science: '/',
+  local: '/local',
+  mind: '/mind',
 };
 
 const conversionGuide: Record<string, { title: string; body: string; href: string; cta: string; accent: string }> = {
@@ -69,6 +73,8 @@ const categoryColor: Record<string, { bg: string; accent: string; text: string }
   supplement: { bg: '#f0f5f0', accent: '#9ab59a', text: '#7a9f7a' },
   clinic:     { bg: '#f0f4f8', accent: '#8fb3c8', text: '#6a9ab5' },
   science:    { bg: '#f5f2ef', accent: '#b8a898', text: '#9a8878' },
+  local:      { bg: '#faf5ef', accent: '#c8a878', text: '#9a7a5a' },
+  mind:       { bg: '#f5f0fa', accent: '#b8a8c8', text: '#7a6a9a' },
 };
 const cc = categoryColor[post.data.category] ?? categoryColor.science;
 

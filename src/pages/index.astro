@@ -18,6 +18,8 @@ const categoryColor: Record<string, { bg: string; accent: string; text: string; 
   supplement: { bg: '#f0f5f0', accent: '#9ab59a', text: '#7a9f7a', label: 'SUPPLEMENT' },
   clinic:     { bg: '#f0f4f8', accent: '#8fb3c8', text: '#6a9ab5', label: 'CLINIC' },
   science:    { bg: '#f5f2ef', accent: '#b8a898', text: '#9a8878', label: 'SCIENCE' },
+  local:      { bg: '#faf5ef', accent: '#c8a878', text: '#9a7a5a', label: 'LOCAL' },
+  mind:       { bg: '#f5f0fa', accent: '#b8a8c8', text: '#7a6a9a', label: 'MIND' },
 };
 ---
 <Layout>
@@ -28,10 +30,10 @@ const categoryColor: Record<string, { bg: string; accent: string; text: string; 
       Science × Beauty
     </p>
     <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 2.6rem; font-weight: 300; line-height: 1.3; letter-spacing: 0.04em; color: var(--color-text); margin-bottom: 1.2rem;">
-      若さを、<br>科学で選ぶ。
+      一生物の化粧品と、<br>知識を届ける。
     </h1>
     <p style="font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.9; max-width: 30rem; margin-bottom: 2.5rem;">
-      化粧品工場の立ち上げ経験と14年の接客キャリアをもとに、エビデンスを軸にアンチエイジングの選択肢を紹介します。製造現場と顧客の両側から見てきた視点で、最新科学を届けます。
+      日本が誇る希少原料・地方の小ロットコスメの発掘から、成分・サプリ・美容医療のエビデンス解説、見た目年齢を変えるマインドまで。製造現場と接客の両側を知る視点でお届けします。
     </p>
 
     <!-- 目的別 CTA -->
@@ -100,6 +102,22 @@ const categoryColor: Record<string, { bg: string; accent: string; text: string; 
         <p style="font-size:0.7rem; color:var(--color-blue-mid); margin-bottom:0.25rem; letter-spacing:0.08em;">CLINIC</p>
         <p style="font-size:0.875rem; font-weight:500; color:var(--color-text); margin-bottom:0.25rem;">美容医療</p>
         <p style="font-size:0.75rem; color:var(--color-text-muted);">HIFU・ヒアルロン酸・幹細胞</p>
+      </a>
+
+      <a href="/local" style="display:block; padding:1.25rem; background:#faf5ef; border:1px solid #e8d4b8; border-radius:10px; text-decoration:none; transition:opacity 0.2s;"
+         onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+        <div style="width:28px; height:3px; background:#c8a878; border-radius:2px; margin-bottom:0.75rem;"></div>
+        <p style="font-size:0.7rem; color:#9a7a5a; margin-bottom:0.25rem; letter-spacing:0.08em;">LOCAL</p>
+        <p style="font-size:0.875rem; font-weight:500; color:var(--color-text); margin-bottom:0.25rem;">地方・希少コスメ</p>
+        <p style="font-size:0.75rem; color:var(--color-text-muted);">日本の知られざる原料・小ロット品</p>
+      </a>
+
+      <a href="/mind" style="display:block; padding:1.25rem; background:#f5f0fa; border:1px solid #d4c8e4; border-radius:10px; text-decoration:none; transition:opacity 0.2s;"
+         onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+        <div style="width:28px; height:3px; background:#b8a8c8; border-radius:2px; margin-bottom:0.75rem;"></div>
+        <p style="font-size:0.7rem; color:#7a6a9a; margin-bottom:0.25rem; letter-spacing:0.08em;">MIND</p>
+        <p style="font-size:0.875rem; font-weight:500; color:var(--color-text); margin-bottom:0.25rem;">マインド</p>
+        <p style="font-size:0.75rem; color:var(--color-text-muted);">姿勢・表情・所作が変える見た目年齢</p>
       </a>
 
     </div>

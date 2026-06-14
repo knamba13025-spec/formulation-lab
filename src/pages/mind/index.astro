@@ -1,0 +1,128 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog', ({ data }) =>
+  !data.draft && data.category === 'mind'
+);
+posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const gradeStyle: Record<string, string> = {
+  A: 'background:var(--color-sage-light); color:var(--color-sage-mid); border:1px solid var(--color-sage);',
+  B: 'background:var(--color-blue-light); color:var(--color-blue-mid); border:1px solid var(--color-blue);',
+  C: 'background:#fef9ec; color:#b08a2a; border:1px solid #e8d48a;',
+  D: 'background:#f5f2ef; color:var(--color-text-light); border:1px solid var(--color-border);',
+};
+
+const topics = [
+  {
+    title: '姿勢',
+    impact: '★★★★★',
+    note: '猫背は10歳老けて見える。視線の高さ・肩の位置が印象の大半を決める。今すぐ変えられる最速の若返り手段。',
+  },
+  {
+    title: '表情筋の使い方',
+    impact: '★★★★★',
+    note: '目の周りの筋肉を使った笑顔は「生き生きして見える」印象を与える。口角だけ上げる笑顔は逆効果になる場合も。',
+  },
+  {
+    title: '話す速さとトーン',
+    impact: '★★★★',
+    note: 'ゆっくり、落ち着いたトーンで話す人は年齢不詳に見えやすい。早口は焦りと老いを同時に見せる。',
+  },
+  {
+    title: '歩き方・動作の流れ',
+    impact: '★★★★',
+    note: '動作が滑らかで「止まる」瞬間がある人は落ち着いた印象。ドタドタ・ガタガタした動作が年齢印象を上げる。',
+  },
+  {
+    title: '服装・色のまとまり',
+    impact: '★★★',
+    note: '全身の色数を絞るだけで洗練して見える。ベーシックカラー×一色のアクセントが最もリスクが低い。',
+  },
+  {
+    title: '清潔感（香り・爪・髪）',
+    impact: '★★★★★',
+    note: '清潔感は相手に「手入れしている人」という印象を与え、年齢推定を下げる強い要因。化粧品より先にここ。',
+  },
+];
+---
+<Layout title="マインドと見た目年齢 | エイジングケアラボ">
+
+  <!-- ページヘッダー -->
+  <section style="padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--color-border);">
+    <p style="font-size:0.7rem; letter-spacing:0.2em; color:#7a6a9a; text-transform:uppercase; margin-bottom:0.75rem;">Mind & Appearance</p>
+    <h1 style="font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:300; color:var(--color-text); margin-bottom:0.75rem;">
+      マインドと見た目年齢
+    </h1>
+    <p style="font-size:0.875rem; color:var(--color-text-muted); line-height:1.9; max-width:32rem;">
+      化粧品・サプリよりも即効性が高く、お金もかからない「見た目年齢の下げ方」があります。姿勢・表情・所作——立ち振る舞いは他者が年齢を推測するとき、肌の状態より先に影響します。
+    </p>
+  </section>
+
+  <!-- 考え方 -->
+  <section style="margin: 2rem 0; padding: 1.25rem 1.5rem; background:#f5f0fa; border-left:3px solid #b8a8c8; border-radius:0 8px 8px 0;">
+    <p style="font-size:0.75rem; color:#7a6a9a; font-weight:500; margin-bottom:0.4rem;">このカテゴリについて</p>
+    <p style="font-size:0.85rem; color:#3a3050; line-height:1.8;">
+      このカテゴリはエビデンスが少ない領域です。化粧品・サプリのようなRCTがあるわけではありません。しかし14年の接客経験のなかで「見た目が年齢より若く見える人」に共通する要素を観察してきました。科学的根拠より実体験・社会心理学の観点から発信します。
+    </p>
+  </section>
+
+  <!-- 即効性マップ -->
+  <section style="margin-bottom:2.5rem;">
+    <p style="font-size:0.7rem; letter-spacing:0.15em; color:var(--color-text-light); text-transform:uppercase; margin-bottom:1.25rem;">見た目年齢に影響する要素</p>
+    <div style="display:flex; flex-direction:column; gap:0;">
+      {topics.map(({ title, impact, note }) => (
+        <div style="padding:1.25rem 0; border-bottom:1px solid var(--color-border); display:flex; gap:1rem; align-items:flex-start;">
+          <div style="flex-shrink:0; width:5rem; text-align:center; margin-top:0.15rem;">
+            <p style="font-size:0.65rem; color:#7a6a9a; margin-bottom:0.2rem; letter-spacing:0.05em;">影響度</p>
+            <p style="font-size:0.7rem; color:#b8a8c8; letter-spacing:0.05em;">{impact}</p>
+          </div>
+          <div style="flex:1;">
+            <p style="font-size:0.95rem; font-weight:500; color:var(--color-text); margin-bottom:0.3rem;">{title}</p>
+            <p style="font-size:0.8rem; color:var(--color-text-muted); line-height:1.7;">{note}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 考え方 -->
+  <section style="margin-bottom:2.5rem; padding:1.5rem; background:var(--color-surface); border:1px solid var(--color-border); border-radius:10px;">
+    <p style="font-size:0.7rem; letter-spacing:0.15em; color:var(--color-text-light); text-transform:uppercase; margin-bottom:1rem;">スキンケアとマインドの関係</p>
+    <p style="font-size:0.85rem; color:var(--color-text-muted); line-height:1.8; margin-bottom:0.75rem;">
+      良い化粧品を使うことは「肌の状態を整える」手段です。しかし他者が「若く見える」と感じる瞬間は、肌の質感より立ち振る舞いの影響が先行することが多い。
+    </p>
+    <p style="font-size:0.85rem; color:var(--color-text-muted); line-height:1.8;">
+      姿勢・表情・清潔感を整えた上でスキンケアを重ねていく——この順番が、最もコスパの高いアンチエイジングだと考えています。
+    </p>
+  </section>
+
+  <!-- 記事一覧 -->
+  <section>
+    <p style="font-size:0.7rem; letter-spacing:0.15em; color:var(--color-text-light); text-transform:uppercase; margin-bottom:1.25rem;">関連記事</p>
+    {posts.length > 0 ? (
+      <div style="display:flex; flex-direction:column; gap:0.75rem;">
+        {posts.map(post => (
+          <a href={`/blog/${post.id}`} style="display:flex; align-items:flex-start; gap:1rem; padding:1rem 1.25rem; background:var(--color-surface); border:1px solid var(--color-border); border-radius:10px; text-decoration:none; transition:border-color 0.2s;"
+             onmouseover="this.style.borderColor='#b8a8c8'" onmouseout="this.style.borderColor='var(--color-border)'">
+            <div style="flex:1;">
+              <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.4rem;">
+                {post.data.grade && (
+                  <span style={`font-size:0.62rem; font-weight:500; padding:0.15rem 0.5rem; border-radius:4px; ${gradeStyle[post.data.grade]}`}>Grade {post.data.grade}</span>
+                )}
+                <span style="font-size:0.7rem; color:var(--color-text-light);">{post.data.pubDate.toLocaleDateString('ja-JP')}</span>
+              </div>
+              <p style="font-size:0.875rem; color:var(--color-text); margin-bottom:0.25rem;">{post.data.title}</p>
+              <p style="font-size:0.775rem; color:var(--color-text-muted);">{post.data.description}</p>
+            </div>
+            <span style="color:var(--color-text-light); font-size:0.8rem; flex-shrink:0; padding-top:0.1rem;">→</span>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <p style="font-size:0.85rem; color:var(--color-text-light);">記事を準備中です。もうしばらくお待ちください。</p>
+    )}
+  </section>
+
+</Layout>
