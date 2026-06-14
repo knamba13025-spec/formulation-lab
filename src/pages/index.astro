@@ -24,7 +24,7 @@ const gradeStyle: Record<string, string> = {
       若さを、<br>科学で選ぶ。
     </h1>
     <p style="font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.9; max-width: 30rem; margin-bottom: 2.5rem;">
-      化粧品メーカーで処方開発に5年携わった経験から、成分表示を読み解き、エビデンスを軸にアンチエイジングの選択肢を紹介します。
+      化粧品メーカーで処方開発に携わりながら、エビデンスを軸にアンチエイジングの選択肢を紹介します。成分表示の裏側と、最新科学の両方を届けます。
     </p>
 
     <!-- 年齢別 CTA -->
@@ -34,7 +34,7 @@ const gradeStyle: Record<string, string> = {
       </p>
       <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem;">
         {['20代', '30代', '40代', '50代以上'].map(age => (
-          <a href="#" style={`display:block; text-align:center; padding:0.5rem 0.25rem; font-size:0.8rem; border:1px solid var(--color-border); border-radius:8px; color:var(--color-text-muted); text-decoration:none; background:var(--color-bg); transition:all 0.2s;`}
+          <a href="#" style="display:block; text-align:center; padding:0.5rem 0.25rem; font-size:0.8rem; border:1px solid var(--color-border); border-radius:8px; color:var(--color-text-muted); text-decoration:none; background:var(--color-bg); transition:all 0.2s;"
              onmouseover="this.style.borderColor='var(--color-rose)'; this.style.color='var(--color-rose-mid)'; this.style.background='var(--color-rose-light)'"
              onmouseout="this.style.borderColor='var(--color-border)'; this.style.color='var(--color-text-muted)'; this.style.background='var(--color-bg)'">
             {age}
