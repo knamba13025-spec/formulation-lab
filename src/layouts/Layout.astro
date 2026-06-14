@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+const { title = 'Formulation Lab — 元メーカーが科学で選ぶアンチエイジング' } = Astro.props;
+---
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content="化粧品メーカー勤務5年の経験から、成分・処方・エビデンスを軸にアンチエイジングを科学的に解説するサイト。" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-stone-50 text-stone-900 font-sans">
+    <header class="border-b border-stone-200 bg-white">
+      <div class="max-w-3xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2">
+          <span class="text-lg font-bold tracking-tight">Formulation Lab</span>
+          <span class="text-xs text-stone-400 hidden sm:inline">元メーカーが科学で選ぶアンチエイジング</span>
+        </a>
+        <nav class="flex gap-5 text-sm text-stone-600">
+          <a href="/skincare" class="hover:text-stone-900">スキンケア</a>
+          <a href="/supplement" class="hover:text-stone-900">サプリ</a>
+          <a href="/clinic" class="hover:text-stone-900">美容医療</a>
+          <a href="/about" class="hover:text-stone-900">About</a>
+        </nav>
+      </div>
+    </header>
+    <main class="max-w-3xl mx-auto px-4 py-10">
+      <slot />
+    </main>
+    <footer class="border-t border-stone-200 mt-20">
+      <div class="max-w-3xl mx-auto px-4 py-8 text-xs text-stone-400">
+        <p>※ 本サイトはアフィリエイト広告を含みます。</p>
+        <p class="mt-1">© 2026 Formulation Lab</p>
+      </div>
+    </footer>
+  </body>
+</html>

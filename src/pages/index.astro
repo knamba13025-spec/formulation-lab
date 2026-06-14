@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout>
+  <!-- ヒーロー -->
+  <section class="py-12 border-b border-stone-200">
+    <p class="text-xs font-medium text-stone-400 tracking-widest uppercase mb-3">Formulation Lab</p>
+    <h1 class="text-3xl font-bold leading-tight mb-4">
+      若さを、科学で選ぶ。
+    </h1>
+    <p class="text-stone-600 leading-relaxed max-w-xl">
+      化粧品メーカーで処方開発に5年携わった経験から、成分表示を読み解き、エビデンスを軸にアンチエイジングの選択肢を紹介します。
+    </p>
+
+    <!-- 年齢別ロードマップ CTA -->
+    <div class="mt-8 p-6 bg-white border border-stone-200 rounded-xl max-w-md">
+      <p class="text-sm font-medium mb-3">あなたの年代を選ぶ →</p>
+      <div class="grid grid-cols-4 gap-2">
+        {['20代', '30代', '40代', '50代以上'].map(age => (
+          <a href="#"
+             class="text-center py-2 px-1 text-sm border border-stone-200 rounded-lg hover:bg-stone-100 transition-colors">
+            {age}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- カテゴリ -->
+  <section class="py-10 border-b border-stone-200">
+    <h2 class="text-sm font-medium text-stone-400 uppercase tracking-widest mb-6">カテゴリ</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <a href="/skincare" class="p-5 bg-white border border-stone-200 rounded-xl hover:border-stone-400 transition-colors">
+        <p class="text-xs text-stone-400 mb-1">スキンケア</p>
+        <p class="font-medium">化粧品・成分解説</p>
+        <p class="text-sm text-stone-500 mt-1">レチノール・NMN・スピキュール</p>
+      </a>
+      <a href="/supplement" class="p-5 bg-white border border-stone-200 rounded-xl hover:border-stone-400 transition-colors">
+        <p class="text-xs text-stone-400 mb-1">サプリメント</p>
+        <p class="font-medium">機能性食品</p>
+        <p class="text-sm text-stone-500 mt-1">NMN・セノリティクス・GLP-1</p>
+      </a>
+      <a href="/clinic" class="p-5 bg-white border border-stone-200 rounded-xl hover:border-stone-400 transition-colors">
+        <p class="text-xs text-stone-400 mb-1">美容医療</p>
+        <p class="font-medium">施術ガイド</p>
+        <p class="text-sm text-stone-500 mt-1">HIFU・ヒアルロン酸・幹細胞</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- エビデンスグレード -->
+  <section class="py-10">
+    <h2 class="text-sm font-medium text-stone-400 uppercase tracking-widest mb-6">このサイトの評価基準</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div class="p-4 border rounded-lg bg-emerald-50 border-emerald-200 text-emerald-700">
+        <p class="text-xl font-bold mb-1">Grade A</p>
+        <p class="text-xs leading-snug">複数の臨床試験で実証</p>
+      </div>
+      <div class="p-4 border rounded-lg bg-blue-50 border-blue-200 text-blue-700">
+        <p class="text-xl font-bold mb-1">Grade B</p>
+        <p class="text-xs leading-snug">臨床試験1件または強い観察研究</p>
+      </div>
+      <div class="p-4 border rounded-lg bg-amber-50 border-amber-200 text-amber-700">
+        <p class="text-xl font-bold mb-1">Grade C</p>
+        <p class="text-xs leading-snug">動物実験・in vitro のみ</p>
+      </div>
+      <div class="p-4 border rounded-lg bg-stone-50 border-stone-200 text-stone-500">
+        <p class="text-xl font-bold mb-1">Grade D</p>
+        <p class="text-xs leading-snug">エビデンス不十分</p>
+      </div>
+    </div>
+  </section>
+</Layout>
