@@ -1,0 +1,126 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="お問い合わせ | エイジングケアラボ">
+  <div style="max-width: 36rem;">
+
+    <div style="margin-bottom: 2.5rem;">
+      <p style="font-size: 0.7rem; letter-spacing: 0.2em; color: var(--color-text-light); text-transform: uppercase; margin-bottom: 0.75rem;">Contact</p>
+      <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; color: var(--color-text);">お問い合わせ</h1>
+    </div>
+
+    <p style="font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.9; margin-bottom: 0.75rem;">
+      記事の内容に関するご質問、企業・ブランドの方からのタイアップ・掲載に関するご相談、その他ご意見・ご感想などをお気軽にお送りください。
+    </p>
+    <p style="font-size: 0.8rem; color: var(--color-text-light); margin-bottom: 2.5rem;">
+      ※ 通常3〜5営業日以内にご返信いたします。
+    </p>
+
+    <!-- お問い合わせ種別 -->
+    <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:2.5rem;">
+      {[
+        { label: '記事・内容について', color: 'var(--color-rose-light)', border: 'var(--color-rose)' },
+        { label: 'タイアップ・企業案件', color: 'var(--color-sage-light)', border: 'var(--color-sage-mid)' },
+        { label: '掲載・取材依頼', color: 'var(--color-blue-light)', border: 'var(--color-blue)' },
+        { label: 'その他', color: '#f5f2ef', border: 'var(--color-border)' },
+      ].map(({ label, color, border }) => (
+        <span style={`font-size:0.75rem; padding:0.3rem 0.9rem; background:${color}; border:1px solid ${border}; border-radius:999px; color:var(--color-text-muted);`}>
+          {label}
+        </span>
+      ))}
+    </div>
+
+    <!-- フォーム -->
+    <form
+      action="https://formspree.io/f/YOUR_FORM_ID"
+      method="POST"
+      style="display:flex; flex-direction:column; gap:1.5rem;"
+    >
+
+      <div>
+        <label style="display:block; font-size:0.78rem; letter-spacing:0.08em; color:var(--color-text-muted); margin-bottom:0.5rem;">
+          お名前 <span style="color:var(--color-rose-mid);">*</span>
+        </label>
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="山田 花子"
+          style="width:100%; padding:0.7rem 1rem; border:1px solid var(--color-border); border-radius:8px; background:var(--color-surface); color:var(--color-text); font-size:0.875rem; outline:none; box-sizing:border-box;"
+          onfocus="this.style.borderColor='var(--color-rose)'"
+          onblur="this.style.borderColor='var(--color-border)'"
+        />
+      </div>
+
+      <div>
+        <label style="display:block; font-size:0.78rem; letter-spacing:0.08em; color:var(--color-text-muted); margin-bottom:0.5rem;">
+          メールアドレス <span style="color:var(--color-rose-mid);">*</span>
+        </label>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="example@email.com"
+          style="width:100%; padding:0.7rem 1rem; border:1px solid var(--color-border); border-radius:8px; background:var(--color-surface); color:var(--color-text); font-size:0.875rem; outline:none; box-sizing:border-box;"
+          onfocus="this.style.borderColor='var(--color-rose)'"
+          onblur="this.style.borderColor='var(--color-border)'"
+        />
+      </div>
+
+      <div>
+        <label style="display:block; font-size:0.78rem; letter-spacing:0.08em; color:var(--color-text-muted); margin-bottom:0.5rem;">
+          お問い合わせ種別
+        </label>
+        <select
+          name="category"
+          style="width:100%; padding:0.7rem 1rem; border:1px solid var(--color-border); border-radius:8px; background:var(--color-surface); color:var(--color-text); font-size:0.875rem; outline:none; box-sizing:border-box; appearance:none; cursor:pointer;"
+          onfocus="this.style.borderColor='var(--color-rose)'"
+          onblur="this.style.borderColor='var(--color-border)'"
+        >
+          <option value="">選択してください</option>
+          <option value="article">記事・内容について</option>
+          <option value="business">タイアップ・企業案件</option>
+          <option value="media">掲載・取材依頼</option>
+          <option value="other">その他</option>
+        </select>
+      </div>
+
+      <div>
+        <label style="display:block; font-size:0.78rem; letter-spacing:0.08em; color:var(--color-text-muted); margin-bottom:0.5rem;">
+          お問い合わせ内容 <span style="color:var(--color-rose-mid);">*</span>
+        </label>
+        <textarea
+          name="message"
+          required
+          rows="6"
+          placeholder="ご質問・ご相談内容をご記入ください。&#10;&#10;企業・ブランドの方は会社名・担当者名・ご要件をお書き添えください。"
+          style="width:100%; padding:0.7rem 1rem; border:1px solid var(--color-border); border-radius:8px; background:var(--color-surface); color:var(--color-text); font-size:0.875rem; outline:none; box-sizing:border-box; resize:vertical; line-height:1.8;"
+          onfocus="this.style.borderColor='var(--color-rose)'"
+          onblur="this.style.borderColor='var(--color-border)'"
+        ></textarea>
+      </div>
+
+      <!-- スパム対策ハニーポット -->
+      <input type="text" name="_gotcha" style="display:none;" />
+
+      <div>
+        <button
+          type="submit"
+          style="padding:0.8rem 2.5rem; background:var(--color-rose-mid); color:#fff; border:none; border-radius:8px; font-size:0.875rem; letter-spacing:0.06em; cursor:pointer; transition:opacity 0.2s;"
+          onmouseover="this.style.opacity='0.85'"
+          onmouseout="this.style.opacity='1'"
+        >
+          送信する
+        </button>
+      </div>
+
+    </form>
+
+    <!-- 補足 -->
+    <div style="margin-top:3rem; padding:1.25rem 1.5rem; background:#f9f7f5; border:1px solid var(--color-border); border-radius:10px; font-size:0.75rem; color:var(--color-text-muted); line-height:1.9;">
+      <p style="font-weight:500; color:var(--color-text-muted); margin-bottom:0.4rem;">企業・ブランドの方へ</p>
+      <p>地方・小ロット化粧品のご紹介・タイアップ記事・製品レビューのご依頼をお待ちしています。大手が取り上げない希少原料・地域コスメの発掘に特に関心があります。予算・条件はお気軽にご相談ください。</p>
+    </div>
+
+  </div>
+</Layout>
