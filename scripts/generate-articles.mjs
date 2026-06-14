@@ -13,7 +13,9 @@ const REPO = GITHUB_TOKEN
   ? `https://${GITHUB_TOKEN}@github.com/knamba13025-spec/formulation-lab.git`
   : null;
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const client = process.env.ANTHROPIC_API_KEY
+  ? new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
+  : null;
 
 function loadQueue() {
   return JSON.parse(fs.readFileSync(QUEUE_FILE, 'utf-8'));
@@ -113,6 +115,11 @@ function pushToGitHub(slugs) {
 async function main() {
   console.log('🤖 記事自動生成を開始します...');
   console.log(`📅 ${new Date().toLocaleString('ja-JP')}`);
+
+  if (!client) {
+    console.log('⚠️  ANTHROPIC_API_KEY未設定のため記事生成をスキップしました。');
+    process.exit(0);
+  }
 
   const queue = loadQueue();
   const articles = pickArticles(queue);

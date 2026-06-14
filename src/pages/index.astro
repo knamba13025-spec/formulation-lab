@@ -27,20 +27,42 @@ const gradeStyle: Record<string, string> = {
       化粧品メーカーで処方開発に携わりながら、エビデンスを軸にアンチエイジングの選択肢を紹介します。成分表示の裏側と、最新科学の両方を届けます。
     </p>
 
-    <!-- 年齢別 CTA -->
-    <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 1.5rem; max-width: 22rem;">
+    <!-- 目的別 CTA -->
+    <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px; padding: 1.5rem; max-width: 31rem;">
       <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-bottom: 0.8rem; letter-spacing: 0.05em;">
-        あなたの年代を選ぶ
+        まず確認するテーマを選ぶ
       </p>
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem;">
-        {['20代', '30代', '40代', '50代以上'].map(age => (
-          <a href="#" style="display:block; text-align:center; padding:0.5rem 0.25rem; font-size:0.8rem; border:1px solid var(--color-border); border-radius:8px; color:var(--color-text-muted); text-decoration:none; background:var(--color-bg); transition:all 0.2s;"
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem;">
+        {[
+          { label: '成分表示を読む', href: '/blog/how-to-read-ingredients' },
+          { label: 'NMNを比較する', href: '/blog/nmn-supplement-ranking-2026' },
+          { label: '美容医療を比べる', href: '/clinic' },
+          { label: 'サプリの根拠を見る', href: '/supplement' },
+        ].map(item => (
+          <a href={item.href} style="display:block; text-align:center; padding:0.55rem 0.35rem; font-size:0.8rem; border:1px solid var(--color-border); border-radius:6px; color:var(--color-text-muted); text-decoration:none; background:var(--color-bg); transition:all 0.2s;"
              onmouseover="this.style.borderColor='var(--color-rose)'; this.style.color='var(--color-rose-mid)'; this.style.background='var(--color-rose-light)'"
              onmouseout="this.style.borderColor='var(--color-border)'; this.style.color='var(--color-text-muted)'; this.style.background='var(--color-bg)'">
-            {age}
+            {item.label}
           </a>
         ))}
       </div>
+    </div>
+  </section>
+
+  <!-- 収益記事への導線 -->
+  <section style="padding: 2.2rem 0; border-bottom: 1px solid var(--color-border);">
+    <p style="font-size: 0.7rem; letter-spacing: 0.15em; color: var(--color-text-light); text-transform: uppercase; margin-bottom: 1rem;">Buying Guides</p>
+    <div style="display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:0.75rem;">
+      <a href="/blog/nmn-supplement-ranking-2026" style="display:block; padding:1.2rem; background:var(--color-sage-light); border:1px solid var(--color-sage); border-radius:8px; text-decoration:none;">
+        <p style="font-size:0.7rem; color:var(--color-sage-mid); letter-spacing:0.1em; margin-bottom:0.35rem;">SUPPLEMENT</p>
+        <p style="font-size:0.95rem; color:var(--color-text); font-weight:500; line-height:1.5; margin-bottom:0.35rem;">NMNサプリ比較</p>
+        <p style="font-size:0.76rem; color:var(--color-text-muted); line-height:1.6;">純度・用量・コスパで購入前に見るべき基準を整理。</p>
+      </a>
+      <a href="/skincare" style="display:block; padding:1.2rem; background:var(--color-rose-light); border:1px solid var(--color-rose); border-radius:8px; text-decoration:none;">
+        <p style="font-size:0.7rem; color:var(--color-rose-mid); letter-spacing:0.1em; margin-bottom:0.35rem;">SKINCARE</p>
+        <p style="font-size:0.95rem; color:var(--color-text); font-weight:500; line-height:1.5; margin-bottom:0.35rem;">成分から選ぶ化粧品</p>
+        <p style="font-size:0.76rem; color:var(--color-text-muted); line-height:1.6;">レチノール・ナイアシンアミドなど成分別に確認。</p>
+      </a>
     </div>
   </section>
 

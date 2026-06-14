@@ -23,6 +23,46 @@ const categoryLabel: Record<string, string> = {
   clinic: 'CLINIC',
   science: 'SCIENCE',
 };
+
+const categoryPath: Record<string, string> = {
+  skincare: '/skincare',
+  supplement: '/supplement',
+  clinic: '/clinic',
+  science: '/',
+};
+
+const conversionGuide: Record<string, { title: string; body: string; href: string; cta: string; accent: string }> = {
+  skincare: {
+    title: '成分で選ぶ前に、肌悩みと刺激許容度を確認',
+    body: 'レチノールやビタミンCは効果が期待できる一方、濃度と使い方で失敗しやすい成分です。購入前に濃度・順番・併用NGを確認してください。',
+    href: '/skincare',
+    cta: 'スキンケア成分ガイドを見る',
+    accent: 'var(--color-rose)',
+  },
+  supplement: {
+    title: 'サプリは純度・用量・第三者検査で絞る',
+    body: 'NMNやレスベラトロールは広告表現が先行しやすい領域です。買う前に、臨床試験で使われた用量と品質管理の有無を比較してください。',
+    href: '/blog/nmn-supplement-ranking-2026',
+    cta: 'NMN比較記事を見る',
+    accent: 'var(--color-sage)',
+  },
+  clinic: {
+    title: '美容医療は施術名より、悩みの分類と医師選び',
+    body: 'たるみ・シミ・ボリューム不足では選ぶ施術が変わります。価格だけで決めず、症例数・リスク説明・断れるカウンセリングを確認してください。',
+    href: '/clinic',
+    cta: '美容医療ガイドを見る',
+    accent: 'var(--color-blue)',
+  },
+  science: {
+    title: '研究ニュースは実用化フェーズまで確認',
+    body: '動物実験・初期臨床・承認済みでは、生活に取り入れる判断が変わります。エビデンスグレードと安全性を分けて読んでください。',
+    href: '/',
+    cta: '最新記事一覧を見る',
+    accent: 'var(--color-border)',
+  },
+};
+
+const guide = conversionGuide[post.data.category] ?? conversionGuide.science;
 ---
 <Layout title={post.data.title + ' | Formulation Lab'}>
   <article>
@@ -49,10 +89,31 @@ const categoryLabel: Record<string, string> = {
       </p>
     </div>
 
+    {post.data.affiliate && (
+      <aside style={`margin:-1rem 0 2rem; padding:1.1rem 1.25rem; background:var(--color-surface); border:1px solid var(--color-border); border-left:3px solid ${guide.accent}; border-radius:0 8px 8px 0;`}>
+        <p style="font-size:0.72rem; color:var(--color-text-light); margin-bottom:0.35rem;">購入・予約前の確認ポイント</p>
+        <p style="font-size:0.9rem; font-weight:500; color:var(--color-text); margin-bottom:0.35rem;">{guide.title}</p>
+        <p style="font-size:0.8rem; color:var(--color-text-muted); line-height:1.75; margin-bottom:0.75rem;">{guide.body}</p>
+        <a href={guide.href} style="display:inline-block; font-size:0.78rem; color:var(--color-text); text-decoration:none; border-bottom:1px solid var(--color-text-light); padding-bottom:0.1rem;">
+          {guide.cta}
+        </a>
+      </aside>
+    )}
+
     <!-- 本文 -->
     <div class="prose">
       <Content />
     </div>
+
+    <aside style="margin-top:2.5rem; padding:1.25rem; background:var(--color-bg); border:1px solid var(--color-border); border-radius:8px;">
+      <p style="font-size:0.75rem; color:var(--color-text-light); margin-bottom:0.45rem;">次に読む</p>
+      <p style="font-size:0.86rem; color:var(--color-text); line-height:1.7; margin-bottom:0.8rem;">
+        このテーマに近い記事や比較表はカテゴリページにまとめています。成分・用量・費用を横断して確認できます。
+      </p>
+      <a href={categoryPath[post.data.category] ?? '/'} style="font-size:0.8rem; color:var(--color-blue-mid); text-decoration:underline; text-underline-offset:2px;">
+        {categoryLabel[post.data.category] ?? '関連記事'} の記事一覧へ
+      </a>
+    </aside>
 
     <!-- フッター -->
     <div style="margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--color-border);">

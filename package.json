@@ -10,7 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "generate": "node scripts/generate-articles.mjs"
+    "generate": "node scripts/generate-articles.mjs",
+    "audit:affiliate": "node scripts/daily-affiliate-audit.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.104.1",
