@@ -63,9 +63,71 @@ const conversionGuide: Record<string, { title: string; body: string; href: strin
 };
 
 const guide = conversionGuide[post.data.category] ?? conversionGuide.science;
+
+const categoryColor: Record<string, { bg: string; accent: string; text: string }> = {
+  skincare:   { bg: '#f9f0f0', accent: '#d4a5a5', text: '#c48a8a' },
+  supplement: { bg: '#f0f5f0', accent: '#9ab59a', text: '#7a9f7a' },
+  clinic:     { bg: '#f0f4f8', accent: '#8fb3c8', text: '#6a9ab5' },
+  science:    { bg: '#f5f2ef', accent: '#b8a898', text: '#9a8878' },
+};
+const cc = categoryColor[post.data.category] ?? categoryColor.science;
+
+// タイトルを折り返し用に分割（全角18文字目安）
+const titleLines: string[] = [];
+const t = post.data.title;
+let i = 0;
+while (i < t.length && titleLines.length < 3) {
+  titleLines.push(t.slice(i, i + 18));
+  i += 18;
+}
 ---
 <Layout title={post.data.title + ' | Formulation Lab'}>
   <article>
+
+    <!-- アイキャッチSVG -->
+    <div style="margin-bottom:2rem; border-radius:12px; overflow:hidden; border:1px solid var(--color-border);">
+      <svg viewBox="0 0 680 280" xmlns="http://www.w3.org/2000/svg" style="display:block; width:100%; height:auto;">
+        <!-- 背景 -->
+        <rect width="680" height="280" fill={cc.bg}/>
+        <!-- 装飾ライン -->
+        <rect x="0" y="0" width="4" height="280" fill={cc.accent}/>
+        <!-- カテゴリラベル -->
+        <text x="28" y="52" font-family="'Cormorant Garamond', Georgia, serif" font-size="13" letter-spacing="4" fill={cc.text} opacity="0.8" text-anchor="start">
+          {(categoryLabel[post.data.category] ?? 'ARTICLE').toUpperCase()}
+        </text>
+        <!-- タイトル -->
+        {titleLines.map((line, idx) => (
+          <text
+            x="28"
+            y={94 + idx * 46}
+            font-family="'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif"
+            font-size="26"
+            font-weight="500"
+            fill="#3a342e"
+            text-anchor="start"
+          >
+            {line}
+          </text>
+        ))}
+        <!-- グレードバッジ -->
+        {post.data.grade && (
+          <>
+            <rect x="28" y="230" width="72" height="24" rx="4" fill={cc.accent} opacity="0.3"/>
+            <text x="64" y="246" font-family="Georgia, serif" font-size="11" fill={cc.text} text-anchor="middle" font-weight="500">
+              Grade {post.data.grade}
+            </text>
+          </>
+        )}
+        <!-- サイト名 -->
+        <text x="652" y="252" font-family="'Cormorant Garamond', Georgia, serif" font-size="12" letter-spacing="2" fill={cc.text} opacity="0.5" text-anchor="end">
+          Aging Care Lab
+        </text>
+        <!-- 装飾サークル -->
+        <circle cx="620" cy="60" r="80" fill={cc.accent} opacity="0.08"/>
+        <circle cx="620" cy="60" r="50" fill={cc.accent} opacity="0.08"/>
+      </svg>
+    </div>
+
     <!-- ヘッダー -->
     <div style="margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--color-border);">
       <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">

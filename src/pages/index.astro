@@ -12,6 +12,13 @@ const gradeStyle: Record<string, string> = {
   C: 'background:#fef9ec; color:#b08a2a; border:1px solid #e8d48a;',
   D: 'background:#f5f2ef; color:var(--color-text-light); border:1px solid var(--color-border);',
 };
+
+const categoryColor: Record<string, { bg: string; accent: string; text: string; label: string }> = {
+  skincare:   { bg: '#f9f0f0', accent: '#d4a5a5', text: '#c48a8a', label: 'SKINCARE' },
+  supplement: { bg: '#f0f5f0', accent: '#9ab59a', text: '#7a9f7a', label: 'SUPPLEMENT' },
+  clinic:     { bg: '#f0f4f8', accent: '#8fb3c8', text: '#6a9ab5', label: 'CLINIC' },
+  science:    { bg: '#f5f2ef', accent: '#b8a898', text: '#9a8878', label: 'SCIENCE' },
+};
 ---
 <Layout>
 
@@ -101,26 +108,42 @@ const gradeStyle: Record<string, string> = {
   <!-- 最新記事 -->
   <section style="padding: 2.5rem 0; border-bottom: 1px solid var(--color-border);">
     <p style="font-size: 0.7rem; letter-spacing: 0.15em; color: var(--color-text-light); text-transform: uppercase; margin-bottom: 1.5rem;">Latest Articles</p>
-    <div style="display:flex; flex-direction:column; gap:0.75rem;">
-      {latestPosts.map(post => (
-        <a href={`/blog/${post.id}`} style="display:flex; align-items:flex-start; gap:1rem; padding:1rem 1.25rem; background:var(--color-surface); border:1px solid var(--color-border); border-radius:10px; text-decoration:none; transition:border-color 0.2s;"
-           onmouseover="this.style.borderColor='var(--color-rose)'" onmouseout="this.style.borderColor='var(--color-border)'">
-          <div style="flex:1; min-width:0;">
-            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.4rem;">
-              {post.data.grade && (
-                <span style={`font-size:0.65rem; font-weight:500; padding:0.15rem 0.5rem; border-radius:4px; flex-shrink:0; ${gradeStyle[post.data.grade]}`}>
-                  Grade {post.data.grade}
+    <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:0.75rem;">
+      {latestPosts.map(post => {
+        const cc = categoryColor[post.data.category] ?? categoryColor.science;
+        const shortTitle = post.data.title.length > 22 ? post.data.title.slice(0, 22) + '…' : post.data.title;
+        return (
+          <a href={`/blog/${post.id}`} style="display:flex; flex-direction:column; background:var(--color-surface); border:1px solid var(--color-border); border-radius:10px; text-decoration:none; overflow:hidden; transition:border-color 0.2s;"
+             onmouseover="this.style.borderColor='var(--color-rose)'" onmouseout="this.style.borderColor='var(--color-border)'">
+            <!-- ミニアイキャッチ -->
+            <svg viewBox="0 0 320 120" xmlns="http://www.w3.org/2000/svg" style="display:block; width:100%; height:auto;">
+              <rect width="320" height="120" fill={cc.bg}/>
+              <rect x="0" y="0" width="3" height="120" fill={cc.accent}/>
+              <circle cx="280" cy="30" r="60" fill={cc.accent} opacity="0.1"/>
+              <text x="16" y="36" font-family="Georgia, serif" font-size="9" letter-spacing="3" fill={cc.text} opacity="0.8">{cc.label}</text>
+              <foreignObject x="16" y="48" width="288" height="60">
+                <div xmlns="http://www.w3.org/1999/xhtml" style={`font-family:'Noto Sans JP',sans-serif; font-size:13px; font-weight:500; color:#3a342e; line-height:1.6;`}>
+                  {shortTitle}
+                </div>
+              </foreignObject>
+            </svg>
+            <!-- テキスト部分 -->
+            <div style="padding:0.75rem 1rem;">
+              <div style="display:flex; align-items:center; gap:0.4rem; margin-bottom:0.3rem;">
+                {post.data.grade && (
+                  <span style={`font-size:0.6rem; font-weight:500; padding:0.1rem 0.45rem; border-radius:3px; ${gradeStyle[post.data.grade]}`}>
+                    Grade {post.data.grade}
+                  </span>
+                )}
+                <span style="font-size:0.65rem; color:var(--color-text-light);">
+                  {post.data.pubDate.toLocaleDateString('ja-JP')}
                 </span>
-              )}
-              <span style="font-size:0.7rem; color:var(--color-text-light);">
-                {post.data.pubDate.toLocaleDateString('ja-JP')}
-              </span>
+              </div>
+              <p style="font-size:0.8rem; color:var(--color-text); line-height:1.5;">{post.data.title}</p>
             </div>
-            <p style="font-size:0.875rem; color:var(--color-text); line-height:1.5;">{post.data.title}</p>
-          </div>
-          <span style="color:var(--color-text-light); font-size:0.8rem; flex-shrink:0; padding-top:0.1rem;">→</span>
-        </a>
-      ))}
+          </a>
+        );
+      })}
     </div>
   </section>
 
