@@ -7,44 +7,122 @@ const posts = await getCollection('blog', ({ data }) =>
 );
 posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 
-const gradeColor: Record<string, string> = {
-  A: 'bg-emerald-50 text-emerald-700 border-emerald-200',
-  B: 'bg-blue-50 text-blue-700 border-blue-200',
-  C: 'bg-amber-50 text-amber-700 border-amber-200',
-  D: 'bg-stone-50 text-stone-500 border-stone-200',
+const gradeStyle: Record<string, string> = {
+  A: 'background:var(--color-sage-light); color:var(--color-sage-mid); border:1px solid var(--color-sage);',
+  B: 'background:var(--color-blue-light); color:var(--color-blue-mid); border:1px solid var(--color-blue);',
+  C: 'background:#fef9ec; color:#b08a2a; border:1px solid #e8d48a;',
+  D: 'background:#f5f2ef; color:var(--color-text-light); border:1px solid var(--color-border);',
 };
----
-<Layout title="サプリメント・機能性食品 | Formulation Lab">
-  <div class="mb-10">
-    <p class="text-xs text-stone-400 uppercase tracking-widest mb-2">サプリメント</p>
-    <h1 class="text-2xl font-bold mb-3">機能性食品・サプリガイド</h1>
-    <p class="text-stone-600 leading-relaxed max-w-xl">
-      NMN・GLP-1・セノリティクスなど、最新のアンチエイジングサプリを臨床試験フェーズ・国内入手可否も含めて解説します。
-    </p>
-  </div>
 
-  <!-- 注目サプリ早見表 -->
-  <section class="mb-10 p-6 bg-white border border-stone-200 rounded-xl">
-    <h2 class="text-sm font-medium text-stone-400 uppercase tracking-widest mb-4">注目成分 現状まとめ（2026年）</h2>
-    <div class="flex flex-col gap-3">
-      {[
-        { name: 'NMN', status: '国内販売あり', phase: '臨床試験 Phase 2', grade: 'B', note: 'NAD+前駆体。ミトコンドリア機能維持' },
-        { name: 'ラパマイシン', status: '医師処方のみ', phase: '長寿研究で注目', grade: 'B', note: 'mTOR阻害薬。動物実験で寿命延長実証済み' },
-        { name: 'セノリティクス（D+Q）', status: '個人輸入', phase: '臨床試験 Phase 2-3', grade: 'B', note: 'ダサチニブ+ケルセチン。老化細胞除去' },
-        { name: 'レスベラトロール', status: '国内販売あり', phase: 'サプリ', grade: 'C', note: 'SIRT1活性化。ヒト試験では効果不明確' },
-        { name: 'スペルミジン', status: '国内販売あり', phase: '臨床試験 Phase 2', grade: 'C', note: 'オートファジー誘導。研究進行中' },
-      ].map(({ name, status, phase, grade, note }) => (
-        <div class="flex items-start gap-3 py-3 border-b border-stone-50 last:border-0">
-          <span class={`text-xs font-medium px-2 py-0.5 border rounded mt-0.5 flex-shrink-0 ${gradeColor[grade]}`}>
-            Grade {grade}
-          </span>
-          <div>
-            <div class="flex items-center gap-2">
-              <span class="font-medium text-sm">{name}</span>
-              <span class="text-xs text-stone-400">{status}</span>
-              <span class="text-xs text-stone-400">/ {phase}</span>
+const supplements = [
+  {
+    name: 'NMN',
+    fullName: 'ニコチンアミドモノヌクレオチド',
+    grade: 'B',
+    availability: '国内販売あり',
+    phase: 'Phase 2 臨床試験',
+    mechanism: 'NAD+前駆体 → ミトコンドリア機能維持・DNA修復',
+    note: 'ヒト試験でNAD+増加・筋力改善などが確認。「若返り」の直接証明はまだ不十分。',
+    caution: '純度99%以上・第三者検査品を選ぶ。1日250〜500mgが臨床試験の用量。',
+  },
+  {
+    name: 'セノリティクス（D+Q）',
+    fullName: 'ダサチニブ＋ケルセチン',
+    grade: 'B',
+    availability: '個人輸入のみ（医師管理推奨）',
+    phase: 'Phase 2-3 臨床試験',
+    mechanism: '老化細胞（ゾンビ細胞）を選択的に除去',
+    note: 'navitoclaxのPhase 3結果が2026年発表予定。最注目のアンチエイジング介入の一つ。',
+    caution: 'ダサチニブは抗がん剤の転用。医師の管理なしでの自己投与は推奨しない。',
+  },
+  {
+    name: 'ラパマイシン',
+    fullName: 'Rapamycin / シロリムス',
+    grade: 'B',
+    availability: '医師処方のみ',
+    phase: '長寿研究で注目。臨床応用は限定的',
+    mechanism: 'mTOR阻害 → オートファジー促進・老化抑制',
+    note: '動物実験で寿命延長が最も再現性高く確認されている化合物。ヒトへの応用研究進行中。',
+    caution: '免疫抑制作用あり。感染リスク・創傷治癒遅延に注意。自己判断での使用は危険。',
+  },
+  {
+    name: 'GLP-1受容体アゴニスト',
+    fullName: 'セマグルチド等（経口・注射）',
+    grade: 'B',
+    availability: '医師処方のみ（日本では肥満症・糖尿病適応）',
+    phase: 'FDA承認済み。抗炎症作用は研究段階',
+    mechanism: '血糖調節・体重管理に加え、抗炎症・心保護機構が注目',
+    note: '2026年1月より経口セマグルチドが量産開始。アンチエイジング応用への関心が急増。',
+    caution: '日本では保険適応外の目的での処方は自由診療。費用が高額になる場合あり。',
+  },
+  {
+    name: 'レスベラトロール',
+    fullName: 'Resveratrol',
+    grade: 'C',
+    availability: '国内販売あり',
+    phase: 'サプリ（ヒト試験エビデンス不十分）',
+    mechanism: 'SIRT1活性化 → ミトコンドリア機能・老化抑制（仮説）',
+    note: '動物実験では有望だが、ヒト試験での効果は不明確。吸収率が低いことも課題。',
+    caution: 'グレードCは「試す価値が低い」ではなく「まだ証明されていない」という意味。',
+  },
+  {
+    name: 'スペルミジン',
+    fullName: 'Spermidine',
+    grade: 'C',
+    availability: '国内販売あり（納豆・小麦胚芽に豊富）',
+    phase: 'Phase 2 臨床試験',
+    mechanism: 'オートファジー誘導 → 細胞の自己浄化促進',
+    note: '食品由来でも摂取可能。サプリは高濃度版。記憶力改善への初期データあり。',
+    caution: '長期安全性データはまだ限定的。食品からの摂取が最も安全なアプローチ。',
+  },
+];
+---
+<Layout title="サプリメント・機能性食品ガイド | エイジングケアラボ">
+
+  <!-- ページヘッダー -->
+  <section style="padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--color-border);">
+    <p style="font-size:0.7rem; letter-spacing:0.2em; color:var(--color-sage-mid); text-transform:uppercase; margin-bottom:0.75rem;">Supplement</p>
+    <h1 style="font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:300; color:var(--color-text); margin-bottom:0.75rem;">
+      サプリメント・機能性食品ガイド
+    </h1>
+    <p style="font-size:0.875rem; color:var(--color-text-muted); line-height:1.9; max-width:32rem;">
+      NMN・セノリティクス・GLP-1など最前線のアンチエイジングサプリを、臨床試験フェーズ・入手方法・注意点も含めて解説します。「飲めば若返る」という製品は存在しません。現状のエビデンスを正確に伝えます。
+    </p>
+  </section>
+
+  <!-- グレード説明バナー -->
+  <section style="margin: 2rem 0; padding: 1.25rem 1.5rem; background:var(--color-sage-light); border-left:3px solid var(--color-sage); border-radius:0 8px 8px 0;">
+    <p style="font-size:0.75rem; color:var(--color-sage-mid); font-weight:500; margin-bottom:0.4rem;">このページのエビデンスグレードについて</p>
+    <p style="font-size:0.85rem; color:#3a5c3a; line-height:1.8;">
+      Grade Bは「有望だが証明途上」、Grade Cは「動物実験では有望・ヒトでは未確認」を意味します。Bだからといって万人に効くわけではなく、Cだから無意味でもありません。個人差と目的に合わせて判断してください。
+    </p>
+  </section>
+
+  <!-- サプリ一覧 -->
+  <section style="margin-bottom:2.5rem;">
+    <p style="font-size:0.7rem; letter-spacing:0.15em; color:var(--color-text-light); text-transform:uppercase; margin-bottom:1.25rem;">注目成分 詳細（2026年現在）</p>
+    <div style="display:flex; flex-direction:column; gap:1rem;">
+      {supplements.map(({ name, fullName, grade, availability, phase, mechanism, note, caution }) => (
+        <div style="padding:1.25rem; background:var(--color-surface); border:1px solid var(--color-border); border-radius:10px;">
+          <div style="display:flex; align-items:flex-start; gap:0.75rem; margin-bottom:0.75rem;">
+            <span style={`font-size:0.62rem; font-weight:500; padding:0.2rem 0.5rem; border-radius:4px; flex-shrink:0; margin-top:0.15rem; ${gradeStyle[grade]}`}>
+              Grade {grade}
+            </span>
+            <div>
+              <div style="display:flex; align-items:baseline; gap:0.5rem; flex-wrap:wrap;">
+                <span style="font-size:0.95rem; font-weight:500; color:var(--color-text);">{name}</span>
+                <span style="font-size:0.72rem; color:var(--color-text-light);">{fullName}</span>
+              </div>
+              <div style="display:flex; gap:0.5rem; margin-top:0.3rem; flex-wrap:wrap;">
+                <span style="font-size:0.7rem; color:var(--color-blue-mid); background:var(--color-blue-light); padding:0.1rem 0.4rem; border-radius:3px;">{availability}</span>
+                <span style="font-size:0.7rem; color:var(--color-text-muted);">{phase}</span>
+              </div>
             </div>
-            <p class="text-xs text-stone-500 mt-0.5">{note}</p>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:0.4rem; padding-left:0.25rem; border-left:2px solid var(--color-border); padding:0.5rem 0 0.5rem 1rem;">
+            <p style="font-size:0.78rem; color:var(--color-text-muted);"><strong style="color:var(--color-text); font-weight:500;">作用：</strong>{mechanism}</p>
+            <p style="font-size:0.78rem; color:var(--color-text-muted);"><strong style="color:var(--color-text); font-weight:500;">現状：</strong>{note}</p>
+            <p style="font-size:0.75rem; color:var(--color-rose-mid);"><strong style="font-weight:500;">注意：</strong>{caution}</p>
           </div>
         </div>
       ))}
@@ -53,26 +131,29 @@ const gradeColor: Record<string, string> = {
 
   <!-- 記事一覧 -->
   <section>
-    <h2 class="text-sm font-medium text-stone-400 uppercase tracking-widest mb-4">記事一覧</h2>
+    <p style="font-size:0.7rem; letter-spacing:0.15em; color:var(--color-text-light); text-transform:uppercase; margin-bottom:1.25rem;">関連記事</p>
     {posts.length > 0 ? (
-      <div class="flex flex-col gap-4">
+      <div style="display:flex; flex-direction:column; gap:0.75rem;">
         {posts.map(post => (
-          <a href={`/blog/${post.id}`} class="p-5 bg-white border border-stone-200 rounded-xl hover:border-stone-400 transition-colors">
-            <div class="flex items-center gap-2 mb-2">
-              {post.data.grade && (
-                <span class={`text-xs font-medium px-2 py-0.5 border rounded ${gradeColor[post.data.grade]}`}>
-                  Grade {post.data.grade}
-                </span>
-              )}
-              <span class="text-xs text-stone-400">{post.data.pubDate.toLocaleDateString('ja-JP')}</span>
+          <a href={`/blog/${post.id}`} style="display:flex; align-items:flex-start; gap:1rem; padding:1rem 1.25rem; background:var(--color-surface); border:1px solid var(--color-border); border-radius:10px; text-decoration:none; transition:border-color 0.2s;"
+             onmouseover="this.style.borderColor='var(--color-sage)'" onmouseout="this.style.borderColor='var(--color-border)'">
+            <div style="flex:1;">
+              <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.4rem;">
+                {post.data.grade && (
+                  <span style={`font-size:0.62rem; font-weight:500; padding:0.15rem 0.5rem; border-radius:4px; ${gradeStyle[post.data.grade]}`}>Grade {post.data.grade}</span>
+                )}
+                <span style="font-size:0.7rem; color:var(--color-text-light);">{post.data.pubDate.toLocaleDateString('ja-JP')}</span>
+              </div>
+              <p style="font-size:0.875rem; color:var(--color-text); margin-bottom:0.25rem;">{post.data.title}</p>
+              <p style="font-size:0.775rem; color:var(--color-text-muted);">{post.data.description}</p>
             </div>
-            <p class="font-medium">{post.data.title}</p>
-            <p class="text-sm text-stone-500 mt-1">{post.data.description}</p>
+            <span style="color:var(--color-text-light); font-size:0.8rem; flex-shrink:0; padding-top:0.1rem;">→</span>
           </a>
         ))}
       </div>
     ) : (
-      <p class="text-stone-400 text-sm">記事を準備中です。</p>
+      <p style="font-size:0.85rem; color:var(--color-text-light);">記事を準備中です。</p>
     )}
   </section>
+
 </Layout>

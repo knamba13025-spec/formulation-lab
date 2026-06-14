@@ -7,80 +7,162 @@ const posts = await getCollection('blog', ({ data }) =>
 );
 posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 
-const gradeColor: Record<string, string> = {
-  A: 'bg-emerald-50 text-emerald-700 border-emerald-200',
-  B: 'bg-blue-50 text-blue-700 border-blue-200',
-  C: 'bg-amber-50 text-amber-700 border-amber-200',
-  D: 'bg-stone-50 text-stone-500 border-stone-200',
+const gradeStyle: Record<string, string> = {
+  A: 'background:var(--color-sage-light); color:var(--color-sage-mid); border:1px solid var(--color-sage);',
+  B: 'background:var(--color-blue-light); color:var(--color-blue-mid); border:1px solid var(--color-blue);',
+  C: 'background:#fef9ec; color:#b08a2a; border:1px solid #e8d48a;',
+  D: 'background:#f5f2ef; color:var(--color-text-light); border:1px solid var(--color-border);',
 };
+
+const ingredients = [
+  {
+    name: 'レチノール',
+    nameEn: 'Retinol',
+    grade: 'A',
+    effect: 'シワ改善・コラーゲン産生',
+    note: '最もエビデンスの豊富なアンチエイジング成分。濃度0.1%以上で効果が出やすいが刺激あり。',
+    tip: '濃度0.01〜1%まで段階がある。初心者は0.01〜0.03%から。',
+  },
+  {
+    name: 'ナイアシンアミド',
+    nameEn: 'Niacinamide',
+    grade: 'A',
+    effect: 'シミ・毛穴・バリア機能改善',
+    note: '5%以上の配合で明確な効果。刺激が少なくレチノールとの相性も良い。',
+    tip: 'コスパ最良の万能成分。成分表の上位5番以内なら十分な濃度。',
+  },
+  {
+    name: 'ビタミンC誘導体',
+    nameEn: 'Ascorbyl Derivatives',
+    grade: 'A',
+    effect: 'シミ予防・抗酸化・コラーゲン産生',
+    note: 'APPSが最も安定性・浸透性が高い。安価な製品は安定性が低い場合がある。',
+    tip: '「APPS」「テトラヘキシルデカン酸アスコルビル」表記を探す。',
+  },
+  {
+    name: 'ペプチド類',
+    nameEn: 'Peptides',
+    grade: 'B',
+    effect: 'コラーゲン産生促進・シワ改善',
+    note: 'パルミトイルトリペプチド-1など複数種類あり。高価な原料で配合量は少量になりがち。',
+    tip: '単体より複合使用が効果的。レチノールと組み合わせると相乗効果の可能性あり。',
+  },
+  {
+    name: 'セラミド',
+    nameEn: 'Ceramide',
+    grade: 'A',
+    effect: 'バリア機能修復・保湿',
+    note: 'ヒト型セラミド（1・2・3型）が最も効果的。植物性は吸収率が異なる。',
+    tip: '「セラミドNP」「セラミドEOP」などヒト型の表記を確認。',
+  },
+  {
+    name: 'スピキュール',
+    nameEn: 'Spicule',
+    grade: 'B',
+    effect: '有効成分の経皮浸透促進',
+    note: '海洋スポンジ由来の針状成分。物理的に角質を刺激して浸透を高める。2026年注目成分。',
+    tip: '敏感肌は要注意。刺激感が強い場合は使用頻度を下げる。',
+  },
+  {
+    name: 'AHA（グリコール酸等）',
+    nameEn: 'Alpha Hydroxy Acids',
+    grade: 'A',
+    effect: 'ターンオーバー促進・くすみ改善',
+    note: '角質を溶かす作用でくすみ・毛穴・シワを改善。濃度管理が重要。',
+    tip: '日焼けしやすくなるため必ずSPF併用。レチノールとは夜を分けて使用。',
+  },
+];
 ---
-<Layout title="スキンケア・成分解説 | Formulation Lab">
-  <div class="mb-10">
-    <p class="text-xs text-stone-400 uppercase tracking-widest mb-2">スキンケア</p>
-    <h1 class="text-2xl font-bold mb-3">化粧品・成分解説ガイド</h1>
-    <p class="text-stone-600 leading-relaxed max-w-xl">
-      化粧品メーカーで処方開発に5年携わった経験から、成分表示の読み方・有効成分のエビデンス・製品の選び方を科学的に解説します。
+<Layout title="スキンケア・成分解説ガイド | エイジングケアラボ">
+
+  <!-- ページヘッダー -->
+  <section style="padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--color-border);">
+    <p style="font-size:0.7rem; letter-spacing:0.2em; color:var(--color-rose-mid); text-transform:uppercase; margin-bottom:0.75rem;">Skincare</p>
+    <h1 style="font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:300; color:var(--color-text); margin-bottom:0.75rem;">
+      化粧品・成分解説ガイド
+    </h1>
+    <p style="font-size:0.875rem; color:var(--color-text-muted); line-height:1.9; max-width:32rem;">
+      化粧品の処方設計を経験した立場から、成分表示の読み方・有効成分のエビデンス・製品の選び方を解説します。「配合されている」ことと「効果が出る濃度で配合されている」ことは別の話です。
     </p>
-  </div>
+  </section>
+
+  <!-- メーカー視点のひとこと -->
+  <section style="margin: 2rem 0; padding: 1.25rem 1.5rem; background:var(--color-rose-light); border-left:3px solid var(--color-rose); border-radius:0 8px 8px 0;">
+    <p style="font-size:0.75rem; color:var(--color-rose-mid); font-weight:500; margin-bottom:0.4rem;">メーカー視点のひとこと</p>
+    <p style="font-size:0.85rem; color:#5a4040; line-height:1.8;">
+      化粧品の成分表示は「配合量が多い順」に記載されます。話題の成分が10番目以降にあれば配合量は1%未満がほとんど。広告の謳い文句より、成分表示の順番を読む習慣が、良い製品を選ぶ最短ルートです。
+    </p>
+  </section>
 
   <!-- 成分早見表 -->
-  <section class="mb-10 p-6 bg-white border border-stone-200 rounded-xl">
-    <h2 class="text-sm font-medium text-stone-400 uppercase tracking-widest mb-4">主要アンチエイジング成分 早見表</h2>
-    <div class="overflow-x-auto">
-      <table class="w-full text-sm">
-        <thead>
-          <tr class="border-b border-stone-100">
-            <th class="text-left py-2 pr-4 font-medium text-stone-600">成分</th>
-            <th class="text-left py-2 pr-4 font-medium text-stone-600">効果</th>
-            <th class="text-left py-2 font-medium text-stone-600">エビデンス</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-stone-50">
-          {[
-            { name: 'レチノール', effect: 'シワ改善・コラーゲン産生', grade: 'A' },
-            { name: 'ナイアシンアミド', effect: 'シミ・毛穴・バリア機能', grade: 'A' },
-            { name: 'ビタミンC誘導体', effect: 'シミ予防・抗酸化', grade: 'A' },
-            { name: 'ペプチド類', effect: 'コラーゲン産生促進', grade: 'B' },
-            { name: 'スピキュール', effect: '有効成分の浸透促進', grade: 'B' },
-            { name: 'セラミド', effect: 'バリア機能修復', grade: 'A' },
-          ].map(({ name, effect, grade }) => (
-            <tr>
-              <td class="py-2 pr-4 font-medium">{name}</td>
-              <td class="py-2 pr-4 text-stone-600">{effect}</td>
-              <td class="py-2">
-                <span class={`text-xs font-medium px-2 py-0.5 border rounded ${gradeColor[grade]}`}>
-                  Grade {grade}
-                </span>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+  <section style="margin-bottom:2.5rem;">
+    <p style="font-size:0.7rem; letter-spacing:0.15em; color:var(--color-text-light); text-transform:uppercase; margin-bottom:1.25rem;">主要アンチエイジング成分</p>
+    <div style="display:flex; flex-direction:column; gap:0;">
+      {ingredients.map(({ name, nameEn, grade, effect, note, tip }) => (
+        <div style="padding:1.25rem 0; border-bottom:1px solid var(--color-border); display:flex; gap:1rem; align-items:flex-start;">
+          <span style={`font-size:0.62rem; font-weight:500; padding:0.2rem 0.5rem; border-radius:4px; flex-shrink:0; margin-top:0.1rem; ${gradeStyle[grade]}`}>
+            {grade}
+          </span>
+          <div style="flex:1;">
+            <div style="display:flex; align-items:baseline; gap:0.5rem; margin-bottom:0.3rem;">
+              <span style="font-size:0.95rem; font-weight:500; color:var(--color-text);">{name}</span>
+              <span style="font-size:0.7rem; color:var(--color-text-light); letter-spacing:0.05em;">{nameEn}</span>
+              <span style="font-size:0.72rem; color:var(--color-rose-mid); background:var(--color-rose-light); padding:0.1rem 0.4rem; border-radius:3px;">{effect}</span>
+            </div>
+            <p style="font-size:0.8rem; color:var(--color-text-muted); line-height:1.7; margin-bottom:0.3rem;">{note}</p>
+            <p style="font-size:0.75rem; color:var(--color-sage-mid);">💡 {tip}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 成分の組み合わせ注意 -->
+  <section style="margin-bottom:2.5rem; padding:1.5rem; background:var(--color-surface); border:1px solid var(--color-border); border-radius:10px;">
+    <p style="font-size:0.7rem; letter-spacing:0.15em; color:var(--color-text-light); text-transform:uppercase; margin-bottom:1rem;">注意すべき組み合わせ</p>
+    <div style="display:flex; flex-direction:column; gap:0.75rem;">
+      {[
+        { combo: 'レチノール × 高濃度ビタミンC', risk: '酸化・安定性の問題。朝夜で使い分けを推奨' },
+        { combo: 'AHA（グリコール酸） × レチノール', risk: '刺激が重複。同じ夜に使わない' },
+        { combo: 'ナイアシンアミド × ビタミンC（高温）', risk: '黄変の可能性。問題ないとする研究も。温度管理を' },
+        { combo: 'レチノール × 日光', risk: '光分解・紫外線感受性上昇。必ず夜のみ使用' },
+      ].map(({ combo, risk }) => (
+        <div style="display:flex; gap:0.75rem; padding:0.75rem; background:var(--color-bg); border-radius:6px;">
+          <span style="color:var(--color-rose-mid); flex-shrink:0; font-size:0.8rem;">⚠</span>
+          <div>
+            <p style="font-size:0.8rem; font-weight:500; color:var(--color-text); margin-bottom:0.2rem;">{combo}</p>
+            <p style="font-size:0.75rem; color:var(--color-text-muted);">{risk}</p>
+          </div>
+        </div>
+      ))}
     </div>
   </section>
 
   <!-- 記事一覧 -->
   <section>
-    <h2 class="text-sm font-medium text-stone-400 uppercase tracking-widest mb-4">記事一覧</h2>
+    <p style="font-size:0.7rem; letter-spacing:0.15em; color:var(--color-text-light); text-transform:uppercase; margin-bottom:1.25rem;">関連記事</p>
     {posts.length > 0 ? (
-      <div class="flex flex-col gap-4">
+      <div style="display:flex; flex-direction:column; gap:0.75rem;">
         {posts.map(post => (
-          <a href={`/blog/${post.id}`} class="p-5 bg-white border border-stone-200 rounded-xl hover:border-stone-400 transition-colors">
-            <div class="flex items-center gap-2 mb-2">
-              {post.data.grade && (
-                <span class={`text-xs font-medium px-2 py-0.5 border rounded ${gradeColor[post.data.grade]}`}>
-                  Grade {post.data.grade}
-                </span>
-              )}
-              <span class="text-xs text-stone-400">{post.data.pubDate.toLocaleDateString('ja-JP')}</span>
+          <a href={`/blog/${post.id}`} style="display:flex; align-items:flex-start; gap:1rem; padding:1rem 1.25rem; background:var(--color-surface); border:1px solid var(--color-border); border-radius:10px; text-decoration:none; transition:border-color 0.2s;"
+             onmouseover="this.style.borderColor='var(--color-rose)'" onmouseout="this.style.borderColor='var(--color-border)'">
+            <div style="flex:1;">
+              <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.4rem;">
+                {post.data.grade && (
+                  <span style={`font-size:0.62rem; font-weight:500; padding:0.15rem 0.5rem; border-radius:4px; ${gradeStyle[post.data.grade]}`}>Grade {post.data.grade}</span>
+                )}
+                <span style="font-size:0.7rem; color:var(--color-text-light);">{post.data.pubDate.toLocaleDateString('ja-JP')}</span>
+              </div>
+              <p style="font-size:0.875rem; color:var(--color-text); margin-bottom:0.25rem;">{post.data.title}</p>
+              <p style="font-size:0.775rem; color:var(--color-text-muted);">{post.data.description}</p>
             </div>
-            <p class="font-medium text-stone-900">{post.data.title}</p>
-            <p class="text-sm text-stone-500 mt-1">{post.data.description}</p>
+            <span style="color:var(--color-text-light); font-size:0.8rem; flex-shrink:0; padding-top:0.1rem;">→</span>
           </a>
         ))}
       </div>
     ) : (
-      <p class="text-stone-400 text-sm">記事を準備中です。</p>
+      <p style="font-size:0.85rem; color:var(--color-text-light);">記事を準備中です。もうしばらくお待ちください。</p>
     )}
   </section>
+
 </Layout>
