@@ -1,0 +1,128 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog', ({ data }) => !data.draft);
+posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+const latestPosts = posts.slice(0, 4);
+
+const gradeStyle: Record<string, string> = {
+  A: 'background:var(--color-sage-light); color:var(--color-sage-mid); border:1px solid var(--color-sage);',
+  B: 'background:var(--color-blue-light); color:var(--color-blue-mid); border:1px solid var(--color-blue);',
+  C: 'background:#fef9ec; color:#b08a2a; border:1px solid #e8d48a;',
+  D: 'background:#f5f2ef; color:var(--color-text-light); border:1px solid var(--color-border);',
+};
+---
+<Layout>
+
+  <!-- ヒーロー -->
+  <section style="padding: 3.5rem 0 3rem; border-bottom: 1px solid var(--color-border);">
+    <p style="font-size: 0.7rem; letter-spacing: 0.2em; color: var(--color-text-light); text-transform: uppercase; margin-bottom: 1.2rem;">
+      Science × Beauty
+    </p>
+    <h1 style="font-family: 'Cormorant Garamond', serif; font-size: 2.6rem; font-weight: 300; line-height: 1.3; letter-spacing: 0.04em; color: var(--color-text); margin-bottom: 1.2rem;">
+      若さを、<br>科学で選ぶ。
+    </h1>
+    <p style="font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.9; max-width: 30rem; margin-bottom: 2.5rem;">
+      化粧品メーカーで処方開発に5年携わった経験から、成分表示を読み解き、エビデンスを軸にアンチエイジングの選択肢を紹介します。
+    </p>
+
+    <!-- 年齢別 CTA -->
+    <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 1.5rem; max-width: 22rem;">
+      <p style="font-size: 0.75rem; color: var(--color-text-muted); margin-bottom: 0.8rem; letter-spacing: 0.05em;">
+        あなたの年代を選ぶ
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem;">
+        {['20代', '30代', '40代', '50代以上'].map(age => (
+          <a href="#" style={`display:block; text-align:center; padding:0.5rem 0.25rem; font-size:0.8rem; border:1px solid var(--color-border); border-radius:8px; color:var(--color-text-muted); text-decoration:none; background:var(--color-bg); transition:all 0.2s;`}
+             onmouseover="this.style.borderColor='var(--color-rose)'; this.style.color='var(--color-rose-mid)'; this.style.background='var(--color-rose-light)'"
+             onmouseout="this.style.borderColor='var(--color-border)'; this.style.color='var(--color-text-muted)'; this.style.background='var(--color-bg)'">
+            {age}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- カテゴリ -->
+  <section style="padding: 2.5rem 0; border-bottom: 1px solid var(--color-border);">
+    <p style="font-size: 0.7rem; letter-spacing: 0.15em; color: var(--color-text-light); text-transform: uppercase; margin-bottom: 1.5rem;">Category</p>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem;">
+
+      <a href="/skincare" style="display:block; padding:1.25rem; background:var(--color-rose-light); border:1px solid var(--color-rose); border-radius:10px; text-decoration:none; transition:opacity 0.2s;"
+         onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+        <div style="width:28px; height:3px; background:var(--color-rose); border-radius:2px; margin-bottom:0.75rem;"></div>
+        <p style="font-size:0.7rem; color:var(--color-rose-mid); margin-bottom:0.25rem; letter-spacing:0.08em;">SKINCARE</p>
+        <p style="font-size:0.875rem; font-weight:500; color:var(--color-text); margin-bottom:0.25rem;">化粧品・成分</p>
+        <p style="font-size:0.75rem; color:var(--color-text-muted);">レチノール・ナイアシンアミド・ペプチド</p>
+      </a>
+
+      <a href="/supplement" style="display:block; padding:1.25rem; background:var(--color-sage-light); border:1px solid var(--color-sage); border-radius:10px; text-decoration:none; transition:opacity 0.2s;"
+         onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+        <div style="width:28px; height:3px; background:var(--color-sage); border-radius:2px; margin-bottom:0.75rem;"></div>
+        <p style="font-size:0.7rem; color:var(--color-sage-mid); margin-bottom:0.25rem; letter-spacing:0.08em;">SUPPLEMENT</p>
+        <p style="font-size:0.875rem; font-weight:500; color:var(--color-text); margin-bottom:0.25rem;">サプリメント</p>
+        <p style="font-size:0.75rem; color:var(--color-text-muted);">NMN・セノリティクス・GLP-1</p>
+      </a>
+
+      <a href="/clinic" style="display:block; padding:1.25rem; background:var(--color-blue-light); border:1px solid var(--color-blue); border-radius:10px; text-decoration:none; transition:opacity 0.2s;"
+         onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+        <div style="width:28px; height:3px; background:var(--color-blue); border-radius:2px; margin-bottom:0.75rem;"></div>
+        <p style="font-size:0.7rem; color:var(--color-blue-mid); margin-bottom:0.25rem; letter-spacing:0.08em;">CLINIC</p>
+        <p style="font-size:0.875rem; font-weight:500; color:var(--color-text); margin-bottom:0.25rem;">美容医療</p>
+        <p style="font-size:0.75rem; color:var(--color-text-muted);">HIFU・ヒアルロン酸・幹細胞</p>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- 最新記事 -->
+  <section style="padding: 2.5rem 0; border-bottom: 1px solid var(--color-border);">
+    <p style="font-size: 0.7rem; letter-spacing: 0.15em; color: var(--color-text-light); text-transform: uppercase; margin-bottom: 1.5rem;">Latest Articles</p>
+    <div style="display:flex; flex-direction:column; gap:0.75rem;">
+      {latestPosts.map(post => (
+        <a href={`/blog/${post.id}`} style="display:flex; align-items:flex-start; gap:1rem; padding:1rem 1.25rem; background:var(--color-surface); border:1px solid var(--color-border); border-radius:10px; text-decoration:none; transition:border-color 0.2s;"
+           onmouseover="this.style.borderColor='var(--color-rose)'" onmouseout="this.style.borderColor='var(--color-border)'">
+          <div style="flex:1; min-width:0;">
+            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.4rem;">
+              {post.data.grade && (
+                <span style={`font-size:0.65rem; font-weight:500; padding:0.15rem 0.5rem; border-radius:4px; flex-shrink:0; ${gradeStyle[post.data.grade]}`}>
+                  Grade {post.data.grade}
+                </span>
+              )}
+              <span style="font-size:0.7rem; color:var(--color-text-light);">
+                {post.data.pubDate.toLocaleDateString('ja-JP')}
+              </span>
+            </div>
+            <p style="font-size:0.875rem; color:var(--color-text); line-height:1.5;">{post.data.title}</p>
+          </div>
+          <span style="color:var(--color-text-light); font-size:0.8rem; flex-shrink:0; padding-top:0.1rem;">→</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- エビデンスグレード説明 -->
+  <section style="padding: 2.5rem 0;">
+    <p style="font-size: 0.7rem; letter-spacing: 0.15em; color: var(--color-text-light); text-transform: uppercase; margin-bottom: 1.5rem;">Evidence Grade</p>
+    <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:0.6rem;">
+      <div style="padding:1rem 1.25rem; background:var(--color-sage-light); border:1px solid var(--color-sage); border-radius:8px;">
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.2rem; color:var(--color-sage-mid); margin-bottom:0.3rem;">Grade A</p>
+        <p style="font-size:0.75rem; color:var(--color-text-muted);">複数の臨床試験で実証済み</p>
+      </div>
+      <div style="padding:1rem 1.25rem; background:var(--color-blue-light); border:1px solid var(--color-blue); border-radius:8px;">
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.2rem; color:var(--color-blue-mid); margin-bottom:0.3rem;">Grade B</p>
+        <p style="font-size:0.75rem; color:var(--color-text-muted);">臨床試験1件または強い観察研究</p>
+      </div>
+      <div style="padding:1rem 1.25rem; background:#fef9ec; border:1px solid #e8d48a; border-radius:8px;">
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.2rem; color:#b08a2a; margin-bottom:0.3rem;">Grade C</p>
+        <p style="font-size:0.75rem; color:var(--color-text-muted);">動物実験・in vitroのみ</p>
+      </div>
+      <div style="padding:1rem 1.25rem; background:#f5f2ef; border:1px solid var(--color-border); border-radius:8px;">
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.2rem; color:var(--color-text-light); margin-bottom:0.3rem;">Grade D</p>
+        <p style="font-size:0.75rem; color:var(--color-text-muted);">エビデンス不十分</p>
+      </div>
+    </div>
+  </section>
+
+</Layout>

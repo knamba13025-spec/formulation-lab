@@ -1,0 +1,62 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  return posts.map(post => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const gradeStyle: Record<string, string> = {
+  A: 'background:var(--color-sage-light); color:var(--color-sage-mid); border:1px solid var(--color-sage);',
+  B: 'background:var(--color-blue-light); color:var(--color-blue-mid); border:1px solid var(--color-blue);',
+  C: 'background:#fef9ec; color:#b08a2a; border:1px solid #e8d48a;',
+  D: 'background:#f5f2ef; color:var(--color-text-light); border:1px solid var(--color-border);',
+};
+
+const categoryLabel: Record<string, string> = {
+  skincare: 'SKINCARE',
+  supplement: 'SUPPLEMENT',
+  clinic: 'CLINIC',
+  science: 'SCIENCE',
+};
+---
+<Layout title={post.data.title + ' | Formulation Lab'}>
+  <article>
+    <!-- ヘッダー -->
+    <div style="margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--color-border);">
+      <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+        <span style="font-size:0.65rem; letter-spacing:0.15em; color:var(--color-rose-mid); text-transform:uppercase;">
+          {categoryLabel[post.data.category] ?? post.data.category}
+        </span>
+        {post.data.grade && (
+          <span style={`font-size:0.65rem; font-weight:500; padding:0.15rem 0.6rem; border-radius:4px; ${gradeStyle[post.data.grade]}`}>
+            Grade {post.data.grade}
+          </span>
+        )}
+        {post.data.affiliate && (
+          <span style="font-size:0.65rem; color:var(--color-text-light);">※広告含む</span>
+        )}
+      </div>
+      <h1 style="font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-weight:400; line-height:1.4; letter-spacing:0.02em; color:var(--color-text); margin-bottom:0.75rem;">
+        {post.data.title}
+      </h1>
+      <p style="font-size:0.75rem; color:var(--color-text-light);">
+        {post.data.pubDate.toLocaleDateString('ja-JP')}
+      </p>
+    </div>
+
+    <!-- 本文 -->
+    <div class="prose">
+      <Content />
+    </div>
+
+    <!-- フッター -->
+    <div style="margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--color-border);">
+      <a href="/" style="font-size:0.8rem; color:var(--color-text-muted); text-decoration:none;">← トップへ戻る</a>
+    </div>
+  </article>
+</Layout>

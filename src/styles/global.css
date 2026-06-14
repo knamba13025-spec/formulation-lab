@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap');
+
+:root {
+  --color-bg: #f9f7f5;
+  --color-surface: #ffffff;
+  --color-border: #e8e2dc;
+
+  --color-rose: #d4a5a5;
+  --color-rose-light: #f5eaea;
+  --color-rose-mid: #c49090;
+
+  --color-sage: #9ab59a;
+  --color-sage-light: #eaf2ea;
+  --color-sage-mid: #7a9e7a;
+
+  --color-blue: #8fb3c8;
+  --color-blue-light: #e8f2f8;
+  --color-blue-mid: #6a9ab5;
+
+  --color-text: #2e2a26;
+  --color-text-muted: #7a736c;
+  --color-text-light: #b0a89f;
+}
+
+html {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  background-color: var(--color-bg);
+}
+
+h1, h2, h3, .font-serif {
+  font-family: 'Cormorant Garamond', 'Noto Sans JP', serif;
+}
+
+/* Article body typography */
+.prose h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose h3 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.prose p {
+  margin-bottom: 1.2rem;
+  color: #3a342e;
+}
+
+.prose ul, .prose ol {
+  padding-left: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.prose li {
+  margin-bottom: 0.4rem;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin: 1.5rem 0;
+}
+
+.prose th {
+  background-color: var(--color-rose-light);
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+}
+
+.prose td {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.prose tr:nth-child(even) td {
+  background-color: #fdfbf9;
+}
+
+/* Blockquote = メーカー視点 */
+.prose blockquote {
+  border-left: 3px solid var(--color-rose);
+  background-color: var(--color-rose-light);
+  padding: 0.8rem 1.2rem;
+  margin: 1.5rem 0;
+  border-radius: 0 6px 6px 0;
+  color: #5a4040;
+  font-style: normal;
+  font-size: 0.9rem;
+}
+
+.prose blockquote p {
+  margin: 0;
+  color: #5a4040;
+}
+
+.prose strong {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2rem 0;
+}
+
+.prose a {
+  color: var(--color-blue-mid);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

@@ -1,0 +1,63 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog', ({ data }) =>
+  !data.draft && data.category === 'clinic'
+);
+posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+---
+<Layout title="美容医療・施術ガイド | Formulation Lab">
+  <div class="mb-10">
+    <p class="text-xs text-stone-400 uppercase tracking-widest mb-2">美容医療</p>
+    <h1 class="text-2xl font-bold mb-3">美容医療・施術ガイド</h1>
+    <p class="text-stone-600 leading-relaxed max-w-xl">
+      HIFU・ヒアルロン酸・幹細胞治療など、美容医療の効果・コスパ・リスクを科学的根拠に基づいて比較します。
+    </p>
+  </div>
+
+  <!-- 施術コスパ比較 -->
+  <section class="mb-10 p-6 bg-white border border-stone-200 rounded-xl">
+    <h2 class="text-sm font-medium text-stone-400 uppercase tracking-widest mb-4">主要施術 コスパ比較</h2>
+    <div class="flex flex-col gap-3">
+      {[
+        { name: 'HIFU（ウルセラ等）', cost: '3〜15万円/回', duration: '6〜12ヶ月', evidence: '高', note: 'たるみ改善。1回の効果持続が長くコスパ◎' },
+        { name: 'ヒアルロン酸注射', cost: '2〜10万円/箇所', duration: '6〜12ヶ月', evidence: '高', note: 'ボリューム補填。即効性あり。技術差が大きい' },
+        { name: 'ボトックス', cost: '1〜5万円/部位', duration: '3〜6ヶ月', evidence: '高', note: '表情ジワに有効。定期的な施術が必要' },
+        { name: 'レーザートーニング', cost: '1〜3万円/回', duration: '3〜6ヶ月', evidence: '中', note: 'シミ・くすみ改善。複数回必要' },
+        { name: '幹細胞治療', cost: '30〜100万円', duration: '不明', evidence: '低', note: '研究段階。効果の個人差が大きい' },
+      ].map(({ name, cost, duration, evidence, note }) => (
+        <div class="py-3 border-b border-stone-50 last:border-0">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p class="font-medium text-sm">{name}</p>
+              <p class="text-xs text-stone-500 mt-0.5">{note}</p>
+            </div>
+            <div class="text-right flex-shrink-0">
+              <p class="text-sm font-medium">{cost}</p>
+              <p class="text-xs text-stone-400">持続: {duration}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+    <p class="text-xs text-stone-400 mt-4">※ 価格はクリニックにより異なります。カウンセリングで確認してください。</p>
+  </section>
+
+  <!-- 記事一覧 -->
+  <section>
+    <h2 class="text-sm font-medium text-stone-400 uppercase tracking-widest mb-4">記事一覧</h2>
+    {posts.length > 0 ? (
+      <div class="flex flex-col gap-4">
+        {posts.map(post => (
+          <a href={`/blog/${post.id}`} class="p-5 bg-white border border-stone-200 rounded-xl hover:border-stone-400 transition-colors">
+            <p class="font-medium">{post.data.title}</p>
+            <p class="text-sm text-stone-500 mt-1">{post.data.description}</p>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <p class="text-stone-400 text-sm">記事を準備中です。</p>
+    )}
+  </section>
+</Layout>

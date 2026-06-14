@@ -1,0 +1,81 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="このサイトについて | Formulation Lab">
+  <div class="max-w-2xl">
+
+    <div class="mb-10">
+      <p class="text-xs text-stone-400 uppercase tracking-widest mb-2">About</p>
+      <h1 class="text-2xl font-bold mb-3">このサイトについて</h1>
+    </div>
+
+    <!-- 著者 -->
+    <section class="mb-10 p-6 bg-white border border-stone-200 rounded-xl">
+      <div class="flex items-start gap-4 mb-5">
+        <div class="w-14 h-14 rounded-full bg-stone-100 flex items-center justify-center text-stone-400 font-bold text-xl flex-shrink-0">
+          FL
+        </div>
+        <div>
+          <p class="font-medium text-lg">Formulation Lab 編集部</p>
+          <p class="text-sm text-stone-500 mt-0.5">元化粧品メーカー処方開発 / アンチエイジング研究家</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4 text-sm text-stone-700 leading-relaxed">
+        <p>
+          化粧品メーカーで処方開発・品質管理に5年以上携わりました。現場で処方を作っていた人間が、成分表示を読み解き、エビデンスに基づいてアンチエイジングの選択肢を紹介するサイトです。
+        </p>
+        <p>
+          「○○成分配合」という謳い文句の裏に何があるか、どの濃度で効果が出るのか、臨床試験で何が証明されているのか。メーカーの内側を知っているからこそ書けることを、できるだけ平易に伝えます。
+        </p>
+        <p>
+          接客業にも14年以上携わり、実際に多くの方の「見た目・若さへの悩み」を聞いてきました。科学的な知識と、現場で感じたリアルな悩みの両方を持ち合わせているのが、このサイトの強みです。
+        </p>
+      </div>
+    </section>
+
+    <!-- 経歴 -->
+    <section class="mb-10">
+      <h2 class="text-sm font-medium text-stone-400 uppercase tracking-widest mb-4">経歴・専門性</h2>
+      <div class="flex flex-col gap-3">
+        {[
+          { label: '化粧品メーカー勤務', detail: '処方開発・品質管理を5年以上担当。原料選定から全成分表示まで関わる' },
+          { label: '接客業', detail: '14年以上のキャリア。顧客の美容・若さへの悩みをリアルに理解している' },
+          { label: 'アンチエイジング科学', detail: '最新の臨床試験・論文を継続的に追跡。セノリティクス・NMN・GLP-1の研究動向を把握' },
+        ].map(({ label, detail }) => (
+          <div class="flex gap-4 py-3 border-b border-stone-100 last:border-0">
+            <span class="text-sm font-medium text-stone-700 min-w-32 flex-shrink-0">{label}</span>
+            <span class="text-sm text-stone-500">{detail}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- エビデンスグレードの説明 -->
+    <section class="mb-10">
+      <h2 class="text-sm font-medium text-stone-400 uppercase tracking-widest mb-4">エビデンスグレードについて</h2>
+      <p class="text-sm text-stone-600 mb-4">このサイトでは、すべての成分・施術に対してエビデンスグレードを付けています。</p>
+      <div class="flex flex-col gap-2">
+        {[
+          { grade: 'A', label: '複数のRCT（ランダム化比較試験）で実証済み', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+          { grade: 'B', label: 'RCT1件または強い観察研究あり', color: 'bg-blue-50 text-blue-700 border-blue-200' },
+          { grade: 'C', label: '動物実験・in vitroのみ、またはエビデンス限定的', color: 'bg-amber-50 text-amber-700 border-amber-200' },
+          { grade: 'D', label: 'エビデンス不十分・マーケティング主体', color: 'bg-stone-50 text-stone-500 border-stone-200' },
+        ].map(({ grade, label, color }) => (
+          <div class="flex items-center gap-3">
+            <span class={`text-xs font-medium px-2 py-0.5 border rounded flex-shrink-0 ${color}`}>Grade {grade}</span>
+            <span class="text-sm text-stone-600">{label}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- 免責・広告表記 -->
+    <section class="p-5 bg-stone-50 border border-stone-200 rounded-xl text-xs text-stone-500 leading-relaxed">
+      <p class="font-medium text-stone-600 mb-2">広告・免責事項</p>
+      <p>本サイトはAmazonアソシエイト・楽天アフィリエイトを含むアフィリエイトプログラムに参加しています。記事内のリンクから購入された場合、サイト運営者に報酬が発生する場合があります。</p>
+      <p class="mt-2">掲載情報は医療アドバイスではありません。施術や医薬品については必ず専門医に相談してください。商品の効果には個人差があります。</p>
+    </section>
+
+  </div>
+</Layout>

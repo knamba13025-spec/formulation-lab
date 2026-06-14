@@ -1,0 +1,175 @@
+{
+  "queue": [
+    {
+      "slug": "retinol-concentration-guide",
+      "title": "レチノール濃度の選び方【0.01%〜1%まで効果と刺激を元メーカーが解説】",
+      "type": "traffic",
+      "category": "skincare",
+      "grade": "A",
+      "keywords": [
+        "レチノール 濃度",
+        "レチノール 副作用",
+        "レチノール 初心者"
+      ],
+      "points": [
+        "濃度別の効果・刺激の違い",
+        "始め方のステップアップ方法",
+        "メーカー視点の処方の実態"
+      ]
+    },
+    {
+      "slug": "retinol-products-ranking-2026",
+      "title": "レチノール化粧品おすすめランキング2026【濃度・処方・コスパで比較】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "A",
+      "keywords": [
+        "レチノール 化粧品 おすすめ",
+        "レチノール クリーム 比較"
+      ],
+      "points": [
+        "濃度別おすすめ製品",
+        "処方設計の良し悪しの見方",
+        "価格帯別ベスト"
+      ]
+    },
+    {
+      "slug": "niacinamide-complete-guide",
+      "title": "ナイアシンアミドの効果・使い方完全ガイド【元メーカーが配合量の真実を解説】",
+      "type": "traffic",
+      "category": "skincare",
+      "grade": "A",
+      "keywords": [
+        "ナイアシンアミド 効果",
+        "ナイアシンアミド 濃度",
+        "ナイアシンアミド 使い方"
+      ],
+      "points": [
+        "5%以上でないと効果が薄い理由",
+        "シミ・毛穴・バリアへの作用機序",
+        "他成分との組み合わせ"
+      ]
+    },
+    {
+      "slug": "antiaging-roadmap-30s",
+      "title": "30代から始めるアンチエイジング完全ロードマップ【優先順位と予算配分】",
+      "type": "traffic",
+      "category": "skincare",
+      "grade": "A",
+      "keywords": [
+        "30代 アンチエイジング",
+        "30代 スキンケア おすすめ",
+        "30代 シワ 対策"
+      ],
+      "points": [
+        "30代で起きている肌の変化の科学",
+        "投資対効果が高い順の優先順位",
+        "スキンケア・サプリ・医療の予算配分"
+      ]
+    },
+    {
+      "slug": "hifu-vs-hyaluronic-acid",
+      "title": "HIFU vs ヒアルロン酸注射どちらがいい？コスパ・効果・リスクを比較",
+      "type": "monetization",
+      "category": "clinic",
+      "grade": "A",
+      "keywords": [
+        "HIFU ヒアルロン酸 違い",
+        "ウルセラ 費用",
+        "たるみ 美容医療"
+      ],
+      "points": [
+        "たるみのメカニズムと各施術の作用点",
+        "長期コスパの計算",
+        "どちらが向いているかの判断基準"
+      ]
+    },
+    {
+      "slug": "senolytic-science-explained",
+      "title": "セノリティクスとは何か【老化細胞除去の最新科学を平易に解説】",
+      "type": "traffic",
+      "category": "supplement",
+      "grade": "B",
+      "keywords": [
+        "セノリティクス",
+        "老化細胞 除去",
+        "ダサチニブ ケルセチン"
+      ],
+      "points": [
+        "老化細胞が体に与えるダメージの仕組み",
+        "2026年現在の臨床試験フェーズ",
+        "日本で入手できるか"
+      ]
+    },
+    {
+      "slug": "ceramide-types-comparison",
+      "title": "セラミドの種類と選び方【1〜9型の違いを元メーカーが解説】",
+      "type": "traffic",
+      "category": "skincare",
+      "grade": "A",
+      "keywords": [
+        "セラミド 種類",
+        "セラミド 1型 3型 違い",
+        "セラミド 化粧品"
+      ],
+      "points": [
+        "セラミドの種類と役割の違い",
+        "処方上どの型が重要か",
+        "「セラミド配合」の落とし穴"
+      ]
+    },
+    {
+      "slug": "antiaging-roadmap-40s",
+      "title": "40代から始めるアンチエイジング完全ロードマップ【医療も視野に入れた設計】",
+      "type": "traffic",
+      "category": "clinic",
+      "grade": "A",
+      "keywords": [
+        "40代 アンチエイジング",
+        "40代 シワ 対策",
+        "40代 美容医療"
+      ],
+      "points": [
+        "40代の肌変化と30代との違い",
+        "スキンケアだけでは限界のポイント",
+        "美容医療を取り入れる判断基準"
+      ]
+    },
+    {
+      "slug": "vitamin-c-derivative-comparison",
+      "title": "ビタミンC誘導体の種類と効果比較【APPSが最強な理由を処方目線で解説】",
+      "type": "traffic",
+      "category": "skincare",
+      "grade": "A",
+      "keywords": [
+        "ビタミンC誘導体 種類",
+        "APPS ビタミンC",
+        "アスコルビン酸 比較"
+      ],
+      "points": [
+        "各誘導体の安定性・浸透性・コストの違い",
+        "なぜAPPS（テトラヘキシルデカン酸アスコルビル）が優れているか",
+        "安価なビタミンC製品との処方の差"
+      ]
+    },
+    {
+      "slug": "nmn-dose-timing-guide",
+      "title": "NMNサプリの正しい飲み方【用量・タイミング・期間を臨床試験から逆算】",
+      "type": "traffic",
+      "category": "supplement",
+      "grade": "B",
+      "keywords": [
+        "NMN 飲み方",
+        "NMN 用量",
+        "NMN いつ飲む"
+      ],
+      "points": [
+        "臨床試験で使われている用量の根拠",
+        "朝vs夜・食前vs食後の考え方",
+        "何ヶ月続ければ効果がわかるか"
+      ]
+    }
+  ],
+  "completed": [],
+  "lastRun": "2026-06-14T08:11:43.207Z"
+}
