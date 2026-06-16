@@ -7,6 +7,7 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string(),
     pubDate: z.coerce.date(),
+    updated: z.coerce.date().optional(),
     category: z.enum(['skincare', 'supplement', 'clinic', 'science']),
     grade: z.enum(['A', 'B', 'C', 'D']).optional(),
     affiliate: z.boolean().default(true),

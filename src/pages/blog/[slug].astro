@@ -154,6 +154,9 @@ while (i < t.length && titleLines.length < 3) {
       </h1>
       <p style="font-size:0.75rem; color:var(--color-text-light);">
         {post.data.pubDate.toLocaleDateString('ja-JP')}
+        {post.data.updated && (
+          <span>（更新: {post.data.updated.toLocaleDateString('ja-JP')}）</span>
+        )}
       </p>
     </div>
 
