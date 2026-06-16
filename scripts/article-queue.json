@@ -1,39 +1,6 @@
 {
   "queue": [
     {
-      "slug": "retinol-concentration-guide",
-      "title": "レチノール濃度の選び方【0.01%〜1%まで効果と刺激を元メーカーが解説】",
-      "type": "traffic",
-      "category": "skincare",
-      "grade": "A",
-      "keywords": [
-        "レチノール 濃度",
-        "レチノール 副作用",
-        "レチノール 初心者"
-      ],
-      "points": [
-        "濃度別の効果・刺激の違い",
-        "始め方のステップアップ方法",
-        "メーカー視点の処方の実態"
-      ]
-    },
-    {
-      "slug": "retinol-products-ranking-2026",
-      "title": "レチノール化粧品おすすめランキング2026【濃度・処方・コスパで比較】",
-      "type": "monetization",
-      "category": "skincare",
-      "grade": "A",
-      "keywords": [
-        "レチノール 化粧品 おすすめ",
-        "レチノール クリーム 比較"
-      ],
-      "points": [
-        "濃度別おすすめ製品",
-        "処方設計の良し悪しの見方",
-        "価格帯別ベスト"
-      ]
-    },
-    {
       "slug": "niacinamide-complete-guide",
       "title": "ナイアシンアミドの効果・使い方完全ガイド【元メーカーが配合量の真実を解説】",
       "type": "traffic",
@@ -170,6 +137,42 @@
       ]
     }
   ],
-  "completed": [],
-  "lastRun": "2026-06-14T08:11:43.207Z"
+  "completed": [
+    {
+      "slug": "retinol-concentration-guide",
+      "title": "レチノール濃度の選び方【0.01%〜1%まで効果と刺激を元メーカーが解説】",
+      "type": "traffic",
+      "category": "skincare",
+      "grade": "A",
+      "keywords": [
+        "レチノール 濃度",
+        "レチノール 副作用",
+        "レチノール 初心者"
+      ],
+      "points": [
+        "濃度別の効果・刺激の違い",
+        "始め方のステップアップ方法",
+        "メーカー視点の処方の実態"
+      ],
+      "completedAt": "2026-06-16T03:40:38.000Z"
+    },
+    {
+      "slug": "retinol-products-ranking-2026",
+      "title": "レチノール化粧品おすすめランキング2026【濃度・処方・コスパで比較】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "A",
+      "keywords": [
+        "レチノール 化粧品 おすすめ",
+        "レチノール クリーム 比較"
+      ],
+      "points": [
+        "濃度別おすすめ製品",
+        "処方設計の良し悪しの見方",
+        "価格帯別ベスト"
+      ],
+      "completedAt": "2026-06-16T03:40:38.000Z"
+    }
+  ],
+  "lastRun": "2026-06-16T03:40:38.000Z"
 }
