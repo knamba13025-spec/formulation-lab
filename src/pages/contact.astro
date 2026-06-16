@@ -30,91 +30,18 @@ import Layout from '../layouts/Layout.astro';
       ))}
     </div>
 
-    <!-- フォーム -->
-    <form
-      action="https://formspree.io/f/mdavygjn"
-      method="POST"
-      style="display:flex; flex-direction:column; gap:1.5rem;"
+    <!-- フォームへのリンク -->
+    <a
+      href="https://forms.gle/vf3ZHY7WKdLEwVFGA"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="display:inline-block; padding:0.9rem 2.5rem; background:var(--color-rose-mid); color:#fff; border-radius:8px; font-size:0.875rem; letter-spacing:0.06em; text-decoration:none; transition:opacity 0.2s;"
+      onmouseover="this.style.opacity='0.85'"
+      onmouseout="this.style.opacity='1'"
     >
-
-      <div>
-        <label style="display:block; font-size:0.78rem; letter-spacing:0.08em; color:var(--color-text-muted); margin-bottom:0.5rem;">
-          お名前 <span style="color:var(--color-rose-mid);">*</span>
-        </label>
-        <input
-          type="text"
-          name="name"
-          required
-          placeholder="山田 花子"
-          style="width:100%; padding:0.7rem 1rem; border:1px solid var(--color-border); border-radius:8px; background:var(--color-surface); color:var(--color-text); font-size:0.875rem; outline:none; box-sizing:border-box;"
-          onfocus="this.style.borderColor='var(--color-rose)'"
-          onblur="this.style.borderColor='var(--color-border)'"
-        />
-      </div>
-
-      <div>
-        <label style="display:block; font-size:0.78rem; letter-spacing:0.08em; color:var(--color-text-muted); margin-bottom:0.5rem;">
-          メールアドレス <span style="color:var(--color-rose-mid);">*</span>
-        </label>
-        <input
-          type="email"
-          name="email"
-          required
-          placeholder="example@email.com"
-          style="width:100%; padding:0.7rem 1rem; border:1px solid var(--color-border); border-radius:8px; background:var(--color-surface); color:var(--color-text); font-size:0.875rem; outline:none; box-sizing:border-box;"
-          onfocus="this.style.borderColor='var(--color-rose)'"
-          onblur="this.style.borderColor='var(--color-border)'"
-        />
-      </div>
-
-      <div>
-        <label style="display:block; font-size:0.78rem; letter-spacing:0.08em; color:var(--color-text-muted); margin-bottom:0.5rem;">
-          お問い合わせ種別
-        </label>
-        <select
-          name="category"
-          style="width:100%; padding:0.7rem 1rem; border:1px solid var(--color-border); border-radius:8px; background:var(--color-surface); color:var(--color-text); font-size:0.875rem; outline:none; box-sizing:border-box; appearance:none; cursor:pointer;"
-          onfocus="this.style.borderColor='var(--color-rose)'"
-          onblur="this.style.borderColor='var(--color-border)'"
-        >
-          <option value="">選択してください</option>
-          <option value="article">記事・内容について</option>
-          <option value="business">タイアップ・企業案件</option>
-          <option value="media">掲載・取材依頼</option>
-          <option value="other">その他</option>
-        </select>
-      </div>
-
-      <div>
-        <label style="display:block; font-size:0.78rem; letter-spacing:0.08em; color:var(--color-text-muted); margin-bottom:0.5rem;">
-          お問い合わせ内容 <span style="color:var(--color-rose-mid);">*</span>
-        </label>
-        <textarea
-          name="message"
-          required
-          rows="6"
-          placeholder="ご質問・ご相談内容をご記入ください。&#10;&#10;企業・ブランドの方は会社名・担当者名・ご要件をお書き添えください。"
-          style="width:100%; padding:0.7rem 1rem; border:1px solid var(--color-border); border-radius:8px; background:var(--color-surface); color:var(--color-text); font-size:0.875rem; outline:none; box-sizing:border-box; resize:vertical; line-height:1.8;"
-          onfocus="this.style.borderColor='var(--color-rose)'"
-          onblur="this.style.borderColor='var(--color-border)'"
-        ></textarea>
-      </div>
-
-      <!-- スパム対策ハニーポット -->
-      <input type="text" name="_gotcha" style="display:none;" />
-
-      <div>
-        <button
-          type="submit"
-          style="padding:0.8rem 2.5rem; background:var(--color-rose-mid); color:#fff; border:none; border-radius:8px; font-size:0.875rem; letter-spacing:0.06em; cursor:pointer; transition:opacity 0.2s;"
-          onmouseover="this.style.opacity='0.85'"
-          onmouseout="this.style.opacity='1'"
-        >
-          送信する
-        </button>
-      </div>
-
-    </form>
+      お問い合わせフォームを開く
+    </a>
+    <p style="margin-top:0.75rem; font-size:0.75rem; color:var(--color-text-light);">※ Googleフォームが開きます</p>
 
     <!-- 補足 -->
     <div style="margin-top:3rem; padding:1.25rem 1.5rem; background:#f9f7f5; border:1px solid var(--color-border); border-radius:10px; font-size:0.75rem; color:var(--color-text-muted); line-height:1.9;">
