@@ -34,23 +34,6 @@
       ]
     },
     {
-      "slug": "niacinamide-complete-guide",
-      "title": "ナイアシンアミドの効果・使い方完全ガイド【元メーカーが配合量の真実を解説】",
-      "type": "traffic",
-      "category": "skincare",
-      "grade": "A",
-      "keywords": [
-        "ナイアシンアミド 効果",
-        "ナイアシンアミド 濃度",
-        "ナイアシンアミド 使い方"
-      ],
-      "points": [
-        "5%以上でないと効果が薄い理由",
-        "シミ・毛穴・バリアへの作用機序",
-        "他成分との組み合わせ"
-      ]
-    },
-    {
       "slug": "antiaging-roadmap-30s",
       "title": "30代から始めるアンチエイジング完全ロードマップ【優先順位と予算配分】",
       "type": "traffic",
@@ -65,23 +48,6 @@
         "30代で起きている肌の変化の科学",
         "投資対効果が高い順の優先順位",
         "スキンケア・サプリ・医療の予算配分"
-      ]
-    },
-    {
-      "slug": "hifu-vs-hyaluronic-acid",
-      "title": "HIFU vs ヒアルロン酸注射どちらがいい？コスパ・効果・リスクを比較",
-      "type": "monetization",
-      "category": "clinic",
-      "grade": "A",
-      "keywords": [
-        "HIFU ヒアルロン酸 違い",
-        "ウルセラ 費用",
-        "たるみ 美容医療"
-      ],
-      "points": [
-        "たるみのメカニズムと各施術の作用点",
-        "長期コスパの計算",
-        "どちらが向いているかの判断基準"
       ]
     },
     {
@@ -170,6 +136,23 @@
       ]
     }
   ],
-  "completed": [],
-  "lastRun": "2026-06-14T08:11:43.207Z"
+  "completed": [
+    {
+      "slug": "hifu-vs-hyaluronic-acid",
+      "title": "HIFU vs ヒアルロン酸注射どちらがいい？コスパ・効果・リスクを比較",
+      "type": "monetization",
+      "category": "clinic",
+      "grade": "A",
+      "completedAt": "2026-06-16T12:18:10.000Z"
+    },
+    {
+      "slug": "niacinamide-complete-guide",
+      "title": "ナイアシンアミドの効果・使い方完全ガイド【元メーカーが配合量の真実を解説】",
+      "type": "traffic",
+      "category": "skincare",
+      "grade": "A",
+      "completedAt": "2026-06-16T12:18:10.000Z"
+    }
+  ],
+  "lastRun": "2026-06-16T12:18:10.000Z"
 }
