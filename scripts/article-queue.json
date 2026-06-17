@@ -67,6 +67,108 @@
         "朝vs夜・食前vs食後の考え方",
         "何ヶ月続ければ効果がわかるか"
       ]
+    },
+    {
+      "slug": "pdrn-skin-regeneration-guide",
+      "title": "PDRNとは？2026年注目の再生医療系成分を元メーカーが解説",
+      "type": "traffic",
+      "category": "clinic",
+      "grade": "B",
+      "keywords": [
+        "PDRN 効果",
+        "PDRN スキンケア",
+        "ポリデオキシリボヌクレオチド 肌"
+      ],
+      "points": [
+        "PDRNとは何か・再生医療との接点",
+        "注入施術とスキンケア製品での使われ方の違い",
+        "エビデンス現状と処方上の注意点（薬機法表現に慎重に）"
+      ]
+    },
+    {
+      "slug": "aging-reversible-science-2026",
+      "title": "老化は可逆的か？FDA承認された世界初の若返り臨床試験を解説【2026年版】",
+      "type": "traffic",
+      "category": "science-news",
+      "grade": "B",
+      "keywords": [
+        "老化 可逆",
+        "Life Biosciences FDA",
+        "Sinclair アンチエイジング 最新"
+      ],
+      "points": [
+        "Life Biosciences社のFDA承認（2026年1月）の概要",
+        "「老化は間もなく可逆的」という主張の科学的根拠と課題",
+        "一般消費者が今できる実践との接続"
+      ]
+    },
+    {
+      "slug": "led-mask-wavelength-guide",
+      "title": "LEDマスクの効果は本当か？波長別の働きと選び方【元メーカーが検証】",
+      "type": "traffic",
+      "category": "skincare",
+      "grade": "B",
+      "keywords": [
+        "LEDマスク 効果",
+        "LEDマスク 波長",
+        "赤色光 近赤外線 肌"
+      ],
+      "points": [
+        "赤色光・近赤外線・青色光の波長別作用機序と科学的根拠",
+        "家庭用と医療用の出力差（照射強度の現実）",
+        "2026年市場急成長（前年比+96.7%）の背景と製品選び方"
+      ]
+    },
+    {
+      "slug": "ceramide-cosmetics-ranking-2026",
+      "title": "セラミド配合化粧品おすすめランキング2026【種類・含有量・コスパで比較】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "A",
+      "keywords": [
+        "セラミド 化粧品 おすすめ",
+        "セラミド クリーム ランキング",
+        "セラミド 保湿 比較"
+      ],
+      "points": [
+        "ceramide-types-comparisonと連携した選定基準を明示",
+        "含有セラミド型・濃度・処方の透明性でランク付け",
+        "Amazon/楽天アフィリリンクで物販収益を確保"
+      ]
+    },
+    {
+      "slug": "pdrn-clinic-ranking",
+      "title": "PDRNクリニックおすすめランキング【注入・導入施術で選ぶ東京・全国版】",
+      "type": "monetization",
+      "category": "clinic",
+      "grade": "B",
+      "keywords": [
+        "PDRN クリニック",
+        "PDRN 注射 東京",
+        "ポリデオキシリボヌクレオチド 美容医療"
+      ],
+      "points": [
+        "pdrn-skin-regeneration-guideと連携した高単価クリニック紹介ASP案件",
+        "施術方法（注入・導入・外用）別のクリニック選び方",
+        "薬機法注意：効能の断定を避け「〜とされています」表現を徹底"
+      ]
+    },
+    {
+      "slug": "led-mask-products-ranking-2026",
+      "title": "LEDマスクおすすめランキング2026【波長・出力・価格帯で比較】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "B",
+      "keywords": [
+        "LEDマスク おすすめ",
+        "LEDマスク 比較 ランキング",
+        "家庭用LEDマスク 効果"
+      ],
+      "points": [
+        "led-mask-wavelength-guideと連携した製品比較（解説→ランキングの流入設計）",
+        "波長・照射出力・使用時間・価格帯の4軸で比較",
+        "Amazon/楽天高単価家電アフィリ（3〜4%）で物販収益を確保"
+      ]
     }
   ],
   "completed": [
@@ -119,5 +221,5 @@
       "completedAt": "2026-06-16T12:21:50.000Z"
     }
   ],
-  "lastRun": "2026-06-16T16:08:25.000Z"
+  "lastRun": "2026-06-17T00:00:00.000Z"
 }
