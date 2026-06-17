@@ -1,23 +1,6 @@
 {
   "queue": [
     {
-      "slug": "ceramide-types-comparison",
-      "title": "セラミドの種類と選び方【1〜9型の違いを元メーカーが解説】",
-      "type": "traffic",
-      "category": "skincare",
-      "grade": "A",
-      "keywords": [
-        "セラミド 種類",
-        "セラミド 1型 3型 違い",
-        "セラミド 化粧品"
-      ],
-      "points": [
-        "セラミドの種類と役割の違い",
-        "処方上どの型が重要か",
-        "「セラミド配合」の落とし穴"
-      ]
-    },
-    {
       "slug": "antiaging-roadmap-40s",
       "title": "40代から始めるアンチエイジング完全ロードマップ【医療も視野に入れた設計】",
       "type": "traffic",
@@ -120,23 +103,6 @@
       ]
     },
     {
-      "slug": "ceramide-cosmetics-ranking-2026",
-      "title": "セラミド配合化粧品おすすめランキング2026【種類・含有量・コスパで比較】",
-      "type": "monetization",
-      "category": "skincare",
-      "grade": "A",
-      "keywords": [
-        "セラミド 化粧品 おすすめ",
-        "セラミド クリーム ランキング",
-        "セラミド 保湿 比較"
-      ],
-      "points": [
-        "ceramide-types-comparisonと連携した選定基準を明示",
-        "含有セラミド型・濃度・処方の透明性でランク付け",
-        "Amazon/楽天アフィリリンクで物販収益を確保"
-      ]
-    },
-    {
       "slug": "pdrn-clinic-ranking",
       "title": "PDRNクリニックおすすめランキング【注入・導入施術で選ぶ東京・全国版】",
       "type": "monetization",
@@ -172,6 +138,22 @@
     }
   ],
   "completed": [
+    {
+      "slug": "ceramide-types-comparison",
+      "title": "セラミドの種類と選び方【1〜9型の違いを元メーカーが解説】",
+      "type": "traffic",
+      "category": "skincare",
+      "grade": "A",
+      "completedAt": "2026-06-18T01:00:00.000Z"
+    },
+    {
+      "slug": "ceramide-cosmetics-ranking-2026",
+      "title": "セラミド配合化粧品おすすめランキング2026【種類・含有量・コスパで比較】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "A",
+      "completedAt": "2026-06-18T01:00:00.000Z"
+    },
     {
       "slug": "antiaging-roadmap-30s",
       "title": "30代から始めるアンチエイジング完全ロードマップ【優先順位と予算配分】",
@@ -221,5 +203,5 @@
       "completedAt": "2026-06-16T12:21:50.000Z"
     }
   ],
-  "lastRun": "2026-06-17T00:00:00.000Z"
+  "lastRun": "2026-06-18T01:00:00.000Z"
 }
