@@ -1,23 +1,6 @@
 {
   "queue": [
     {
-      "slug": "antiaging-roadmap-40s",
-      "title": "40代から始めるアンチエイジング完全ロードマップ【医療も視野に入れた設計】",
-      "type": "traffic",
-      "category": "clinic",
-      "grade": "A",
-      "keywords": [
-        "40代 アンチエイジング",
-        "40代 シワ 対策",
-        "40代 美容医療"
-      ],
-      "points": [
-        "40代の肌変化と30代との違い",
-        "スキンケアだけでは限界のポイント",
-        "美容医療を取り入れる判断基準"
-      ]
-    },
-    {
       "slug": "vitamin-c-derivative-comparison",
       "title": "ビタミンC誘導体の種類と効果比較【APPSが最強な理由を処方目線で解説】",
       "type": "traffic",
@@ -103,23 +86,6 @@
       ]
     },
     {
-      "slug": "pdrn-clinic-ranking",
-      "title": "PDRNクリニックおすすめランキング【注入・導入施術で選ぶ東京・全国版】",
-      "type": "monetization",
-      "category": "clinic",
-      "grade": "B",
-      "keywords": [
-        "PDRN クリニック",
-        "PDRN 注射 東京",
-        "ポリデオキシリボヌクレオチド 美容医療"
-      ],
-      "points": [
-        "pdrn-skin-regeneration-guideと連携した高単価クリニック紹介ASP案件",
-        "施術方法（注入・導入・外用）別のクリニック選び方",
-        "薬機法注意：効能の断定を避け「〜とされています」表現を徹底"
-      ]
-    },
-    {
       "slug": "led-mask-products-ranking-2026",
       "title": "LEDマスクおすすめランキング2026【波長・出力・価格帯で比較】",
       "type": "monetization",
@@ -172,6 +138,22 @@
     }
   ],
   "completed": [
+    {
+      "slug": "antiaging-roadmap-40s",
+      "title": "40代から始めるアンチエイジング完全ロードマップ【医療も視野に入れた設計】",
+      "type": "traffic",
+      "category": "clinic",
+      "grade": "A",
+      "completedAt": "2026-06-19T01:03:00.000Z"
+    },
+    {
+      "slug": "pdrn-clinic-ranking",
+      "title": "PDRNクリニックおすすめランキング【注入・導入施術で選ぶ東京・全国版】",
+      "type": "monetization",
+      "category": "clinic",
+      "grade": "B",
+      "completedAt": "2026-06-19T01:10:00.000Z"
+    },
     {
       "slug": "ceramide-types-comparison",
       "title": "セラミドの種類と選び方【1〜9型の違いを元メーカーが解説】",
@@ -237,5 +219,5 @@
       "completedAt": "2026-06-16T12:21:50.000Z"
     }
   ],
-  "lastRun": "2026-06-18T09:00:00.000Z"
+  "lastRun": "2026-06-19T01:10:00.000Z"
 }
