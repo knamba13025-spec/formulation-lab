@@ -1,23 +1,6 @@
 {
   "queue": [
     {
-      "slug": "vitamin-c-derivative-comparison",
-      "title": "ビタミンC誘導体の種類と効果比較【APPSが最強な理由を処方目線で解説】",
-      "type": "traffic",
-      "category": "skincare",
-      "grade": "A",
-      "keywords": [
-        "ビタミンC誘導体 種類",
-        "APPS ビタミンC",
-        "アスコルビン酸 比較"
-      ],
-      "points": [
-        "各誘導体の安定性・浸透性・コストの違い",
-        "なぜAPPS（テトラヘキシルデカン酸アスコルビル）が優れているか",
-        "安価なビタミンC製品との処方の差"
-      ]
-    },
-    {
       "slug": "nmn-dose-timing-guide",
       "title": "NMNサプリの正しい飲み方【用量・タイミング・期間を臨床試験から逆算】",
       "type": "traffic",
@@ -103,23 +86,6 @@
       ]
     },
     {
-      "slug": "vitamin-c-products-ranking-2026",
-      "title": "ビタミンC誘導体化粧品おすすめランキング2026【APPS配合・効果・コスパで比較】",
-      "type": "monetization",
-      "category": "skincare",
-      "grade": "A",
-      "keywords": [
-        "ビタミンC誘導体 化粧品 おすすめ",
-        "APPS 化粧品 ランキング",
-        "ビタミンC 美容液 比較"
-      ],
-      "points": [
-        "vitamin-c-derivative-comparisonと連携した製品比較（解説→ランキングの流入設計）",
-        "APPS・AA2G・L-アスコルビン酸など誘導体種類別にランク付け",
-        "楽天/Amazon物販アフィリ（美容液・高単価帯3,000〜15,000円）で収益確保"
-      ]
-    },
-    {
       "slug": "polyglutamic-acid-vs-hyaluronic-acid",
       "title": "ポリグルタミン酸vsヒアルロン酸、保湿力はどちらが高い？成分比較と製品ランキング",
       "type": "monetization",
@@ -172,6 +138,22 @@
     }
   ],
   "completed": [
+    {
+      "slug": "vitamin-c-derivative-comparison",
+      "title": "ビタミンC誘導体の種類と効果比較【APPSが最強な理由を処方目線で解説】",
+      "type": "traffic",
+      "category": "skincare",
+      "grade": "A",
+      "completedAt": "2026-06-20T01:08:00.000Z"
+    },
+    {
+      "slug": "vitamin-c-products-ranking-2026",
+      "title": "ビタミンC誘導体化粧品おすすめランキング2026【APPS配合・効果・コスパで比較】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "A",
+      "completedAt": "2026-06-20T01:08:00.000Z"
+    },
     {
       "slug": "antiaging-roadmap-40s",
       "title": "40代から始めるアンチエイジング完全ロードマップ【医療も視野に入れた設計】",
@@ -253,5 +235,5 @@
       "completedAt": "2026-06-16T12:21:50.000Z"
     }
   ],
-  "lastRun": "2026-06-19T01:10:00.000Z"
+  "lastRun": "2026-06-20T01:08:00.000Z"
 }
