@@ -1,23 +1,6 @@
 {
   "queue": [
     {
-      "slug": "nmn-dose-timing-guide",
-      "title": "NMNサプリの正しい飲み方【用量・タイミング・期間を臨床試験から逆算】",
-      "type": "traffic",
-      "category": "supplement",
-      "grade": "B",
-      "keywords": [
-        "NMN 飲み方",
-        "NMN 用量",
-        "NMN いつ飲む"
-      ],
-      "points": [
-        "臨床試験で使われている用量の根拠",
-        "朝vs夜・食前vs食後の考え方",
-        "何ヶ月続ければ効果がわかるか"
-      ]
-    },
-    {
       "slug": "pdrn-skin-regeneration-guide",
       "title": "PDRNとは？2026年注目の再生医療系成分を元メーカーが解説",
       "type": "traffic",
@@ -66,23 +49,6 @@
         "赤色光・近赤外線・青色光の波長別作用機序と科学的根拠",
         "家庭用と医療用の出力差（照射強度の現実）",
         "2026年市場急成長（前年比+96.7%）の背景と製品選び方"
-      ]
-    },
-    {
-      "slug": "led-mask-products-ranking-2026",
-      "title": "LEDマスクおすすめランキング2026【波長・出力・価格帯で比較】",
-      "type": "monetization",
-      "category": "skincare",
-      "grade": "B",
-      "keywords": [
-        "LEDマスク おすすめ",
-        "LEDマスク 比較 ランキング",
-        "家庭用LEDマスク 効果"
-      ],
-      "points": [
-        "led-mask-wavelength-guideと連携した製品比較（解説→ランキングの流入設計）",
-        "波長・照射出力・使用時間・価格帯の4軸で比較",
-        "Amazon/楽天高単価家電アフィリ（3〜4%）で物販収益を確保"
       ]
     },
     {
@@ -173,6 +139,22 @@
     }
   ],
   "completed": [
+    {
+      "slug": "nmn-dose-timing-guide",
+      "title": "NMNサプリの正しい飲み方【用量・タイミング・期間を臨床試験から逆算】",
+      "type": "traffic",
+      "category": "supplement",
+      "grade": "B",
+      "completedAt": "2026-06-21T00:00:00.000Z"
+    },
+    {
+      "slug": "led-mask-products-ranking-2026",
+      "title": "LEDマスクおすすめランキング2026【波長・出力・価格帯で比較】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "B",
+      "completedAt": "2026-06-21T00:00:00.000Z"
+    },
     {
       "slug": "vitamin-c-derivative-comparison",
       "title": "ビタミンC誘導体の種類と効果比較【APPSが最強な理由を処方目線で解説】",
@@ -270,5 +252,5 @@
       "completedAt": "2026-06-16T12:21:50.000Z"
     }
   ],
-  "lastRun": "2026-06-20T01:08:00.000Z"
+  "lastRun": "2026-06-21T00:00:00.000Z"
 }
