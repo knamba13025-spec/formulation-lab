@@ -1,33 +1,33 @@
 # Daily Affiliate Audit
 
-実行日: 2026/06/20(土)
+実行日: 2026/06/21(日)
 
 ## 今日やるべき改善
 
-1. [ナイアシンアミドの効果・使い方完全ガイド【元メーカーが配合量の真実を解説】](/blog/niacinamide-complete-guide)
+1. [NMNサプリの正しい飲み方【用量・タイミング・期間を臨床試験から逆算】](/blog/nmn-dose-timing-guide)
+   - 優先度スコア: 19
+   - カテゴリ: supplement / 集客記事
+   - 改善: SEO descriptionを55〜130字に調整、タイトルに購買意図語を追加、内部リンクまたは収益リンクを追加
+
+2. [ナイアシンアミドの効果・使い方完全ガイド【元メーカーが配合量の真実を解説】](/blog/niacinamide-complete-guide)
    - 優先度スコア: 18
    - カテゴリ: skincare / 収益記事
    - 改善: タイトルに購買意図語を追加、成約直前セクションを追加
 
-2. [セラミド配合化粧品おすすめランキング2026【種類・含有量・コスパで比較】](/blog/ceramide-cosmetics-ranking-2026)
+3. [セラミド配合化粧品おすすめランキング2026【種類・含有量・コスパで比較】](/blog/ceramide-cosmetics-ranking-2026)
    - 優先度スコア: 17
    - カテゴリ: skincare / 収益記事
    - 改善: SEO descriptionを55〜130字に調整、成約直前セクションを追加
 
-3. [HIFU vs ヒアルロン酸注射どちらがいい？コスパ・効果・リスクを比較](/blog/hifu-vs-hyaluronic-acid)
+4. [HIFU vs ヒアルロン酸注射どちらがいい？コスパ・効果・リスクを比較](/blog/hifu-vs-hyaluronic-acid)
    - 優先度スコア: 17
    - カテゴリ: clinic / 収益記事
    - 改善: 成約直前セクションを追加
 
-4. [PDRNクリニックおすすめランキング【注入・導入施術で選ぶ東京・全国版】](/blog/pdrn-clinic-ranking)
-   - 優先度スコア: 17
-   - カテゴリ: clinic / 収益記事
-   - 改善: 成約直前セクションを追加
-
-5. [ビタミンC誘導体化粧品おすすめランキング2026【APPS配合・効果・コスパで比較】](/blog/vitamin-c-products-ranking-2026)
+5. [LEDマスクおすすめランキング2026【波長・出力・価格帯で比較】](/blog/led-mask-products-ranking-2026)
    - 優先度スコア: 17
    - カテゴリ: skincare / 収益記事
-   - 改善: SEO descriptionを55〜130字に調整、成約直前セクションを追加
+   - 改善: SEO descriptionを55〜130字に調整、内部リンクまたは収益リンクを追加
 
 ## 収益化チェックリスト
 
