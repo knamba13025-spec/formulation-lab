@@ -1,23 +1,6 @@
 {
   "queue": [
     {
-      "slug": "pdrn-skin-regeneration-guide",
-      "title": "PDRNとは？2026年注目の再生医療系成分を元メーカーが解説",
-      "type": "traffic",
-      "category": "clinic",
-      "grade": "B",
-      "keywords": [
-        "PDRN 効果",
-        "PDRN スキンケア",
-        "ポリデオキシリボヌクレオチド 肌"
-      ],
-      "points": [
-        "PDRNとは何か・再生医療との接点",
-        "注入施術とスキンケア製品での使われ方の違い",
-        "エビデンス現状と処方上の注意点（薬機法表現に慎重に）"
-      ]
-    },
-    {
       "slug": "aging-reversible-science-2026",
       "title": "老化は可逆的か？FDA承認された世界初の若返り臨床試験を解説【2026年版】",
       "type": "traffic",
@@ -49,23 +32,6 @@
         "赤色光・近赤外線・青色光の波長別作用機序と科学的根拠",
         "家庭用と医療用の出力差（照射強度の現実）",
         "2026年市場急成長（前年比+96.7%）の背景と製品選び方"
-      ]
-    },
-    {
-      "slug": "polyglutamic-acid-vs-hyaluronic-acid",
-      "title": "ポリグルタミン酸vsヒアルロン酸、保湿力はどちらが高い？成分比較と製品ランキング",
-      "type": "monetization",
-      "category": "skincare",
-      "grade": "B",
-      "keywords": [
-        "ポリグルタミン酸 効果",
-        "ポリグルタミン酸 ヒアルロン酸 違い",
-        "ポリグルタミン酸 化粧品 おすすめ"
-      ],
-      "points": [
-        "ポリグルタミン酸（γ-PGA）の保湿メカニズムとヒアルロン酸との違いを処方目線で解説",
-        "「ヒアルロン酸を超える保湿力」という主張の真偽をエビデンスで判定（グレードB）",
-        "注目度上昇中の新世代保湿成分として、楽天/Amazon物販アフィリで先行優位を確保"
       ]
     },
     {
@@ -173,6 +139,22 @@
     }
   ],
   "completed": [
+    {
+      "slug": "pdrn-skin-regeneration-guide",
+      "title": "PDRNとは？2026年注目の再生医療系成分を元メーカーが解説",
+      "type": "traffic",
+      "category": "clinic",
+      "grade": "B",
+      "completedAt": "2026-06-22T00:00:00.000Z"
+    },
+    {
+      "slug": "polyglutamic-acid-vs-hyaluronic-acid",
+      "title": "ポリグルタミン酸vsヒアルロン酸、保湿力はどちらが高い？成分比較と製品ランキング",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "B",
+      "completedAt": "2026-06-22T00:00:00.000Z"
+    },
     {
       "slug": "nmn-dose-timing-guide",
       "title": "NMNサプリの正しい飲み方【用量・タイミング・期間を臨床試験から逆算】",
@@ -286,5 +268,5 @@
       "completedAt": "2026-06-16T12:21:50.000Z"
     }
   ],
-  "lastRun": "2026-06-21T00:00:00.000Z"
+  "lastRun": "2026-06-22T00:00:00.000Z"
 }
