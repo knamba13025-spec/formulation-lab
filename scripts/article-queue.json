@@ -1,23 +1,6 @@
 {
   "queue": [
     {
-      "slug": "aging-reversible-science-2026",
-      "title": "老化は可逆的か？FDA承認された世界初の若返り臨床試験を解説【2026年版】",
-      "type": "traffic",
-      "category": "science-news",
-      "grade": "B",
-      "keywords": [
-        "老化 可逆",
-        "Life Biosciences FDA",
-        "Sinclair アンチエイジング 最新"
-      ],
-      "points": [
-        "Life Biosciences社のFDA承認（2026年1月）の概要",
-        "「老化は間もなく可逆的」という主張の科学的根拠と課題",
-        "一般消費者が今できる実践との接続"
-      ]
-    },
-    {
       "slug": "led-mask-wavelength-guide",
       "title": "LEDマスクの効果は本当か？波長別の働きと選び方【元メーカーが検証】",
       "type": "traffic",
@@ -49,23 +32,6 @@
         "スピキュール（海綿骨格）の針状構造が角質層に微細な経路を開ける物理的メカニズムを処方目線で解説",
         "使用直後の赤み・かゆみは「浸透している証拠」か「ただの刺激」かを正確に判定",
         "日本市場で「スパイキュール配合」と表記される製品の含有量実態と購入時の見極め方"
-      ]
-    },
-    {
-      "slug": "glp1-support-supplement-ranking-2026",
-      "title": "GLP-1サポートサプリおすすめランキング2026【ベルベリン・エリオミン・天然成分で比較】",
-      "type": "monetization",
-      "category": "supplement",
-      "grade": "C",
-      "keywords": [
-        "GLP-1 サプリ おすすめ",
-        "ベルベリン アンチエイジング",
-        "GLP-1 天然成分 食欲"
-      ],
-      "points": [
-        "処方薬（オゼンピック）に頼らないGLP-1様効果が期待される天然成分（ベルベリン・エリオミン・レスベラトロール）をエビデンスグレードCの注記付きで比較",
-        "iHerb 2026トレンド1位のGLP-1関連サプリ検索急増を背景に先行記事として流入を狙う",
-        "NMN直販アフィリ（報酬率20〜40%）と同一サプリブランドの掛け合わせで収益最大化。glp1-antiaging-guideからの内部送客も設計"
       ]
     },
     {
@@ -173,6 +139,22 @@
     }
   ],
   "completed": [
+    {
+      "slug": "aging-reversible-science-2026",
+      "title": "老化は可逆的か？FDA承認された世界初の若返り臨床試験を解説【2026年版】",
+      "type": "traffic",
+      "category": "science-news",
+      "grade": "B",
+      "completedAt": "2026-06-23T00:00:00.000Z"
+    },
+    {
+      "slug": "glp1-support-supplement-ranking-2026",
+      "title": "GLP-1サポートサプリおすすめランキング2026【ベルベリン・エリオミン・天然成分で比較】",
+      "type": "monetization",
+      "category": "supplement",
+      "grade": "C",
+      "completedAt": "2026-06-23T00:00:00.000Z"
+    },
     {
       "slug": "pdrn-skin-regeneration-guide",
       "title": "PDRNとは？2026年注目の再生医療系成分を元メーカーが解説",
@@ -302,5 +284,5 @@
       "completedAt": "2026-06-16T12:21:50.000Z"
     }
   ],
-  "lastRun": "2026-06-22T00:00:00.000Z"
+  "lastRun": "2026-06-23T00:00:00.000Z"
 }
