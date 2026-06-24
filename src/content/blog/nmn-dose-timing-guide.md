@@ -1,6 +1,6 @@
 ---
 title: "NMNサプリの正しい飲み方【用量・タイミング・期間を臨床試験から逆算】"
-description: "NMNの飲み方を用量・タイミング・継続期間から解説。臨床試験のNMN用量から整理します。"
+description: "NMNの飲み方を用量・タイミング・継続期間から解説。臨床試験のNMN用量を基準に整理します。"
 pubDate: 2026-06-21
 category: supplement
 grade: B

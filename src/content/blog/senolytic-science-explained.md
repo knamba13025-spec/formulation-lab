@@ -1,6 +1,6 @@
 ---
 title: "セノリティクスとは何か【老化細胞除去の最新科学を平易に解説】"
-description: "セノリティクスの最新研究（PEARL試験・マラビロク・Life Biosciences臨床試験）を平易に解説。D+Q・フィセチンの現状と2026年の臨床動向。"
+description: "セノリティクスの最新研究を平易に解説。D+Q・フィセチンの現状と2026年の臨床動向を紹介します。"
 pubDate: 2026-06-17
 updated: 2026-06-22
 category: supplement
