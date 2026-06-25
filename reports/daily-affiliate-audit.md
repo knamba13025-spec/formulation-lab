@@ -1,33 +1,33 @@
 # Daily Affiliate Audit
 
-実行日: 2026/06/24(水)
+実行日: 2026/06/25(木)
 
 ## 今日やるべき改善
 
-1. [PDRNクリニックおすすめランキング【注入・導入施術で選ぶ東京・全国版】](/blog/pdrn-clinic-ranking)
+1. [エクソソーム美容液おすすめランキング2026【深部修復・コラーゲン産生で比較】](/blog/exosome-cosmetics-ranking-2026)
+   - 優先度スコア: 17
+   - カテゴリ: skincare / 収益記事
+   - 改善: SEO descriptionを55〜130字に調整、内部リンクまたは収益リンクを追加
+
+2. [PDRNクリニックおすすめランキング【注入・導入施術で選ぶ東京・全国版】](/blog/pdrn-clinic-ranking)
    - 優先度スコア: 17
    - カテゴリ: clinic / 収益記事
    - 改善: 成約直前セクションを追加
 
-2. [ビタミンC誘導体化粧品おすすめランキング2026【APPS配合・効果・コスパで比較】](/blog/vitamin-c-products-ranking-2026)
+3. [ビタミンC誘導体化粧品おすすめランキング2026【APPS配合・効果・コスパで比較】](/blog/vitamin-c-products-ranking-2026)
    - 優先度スコア: 17
    - カテゴリ: skincare / 収益記事
    - 改善: SEO descriptionを55〜130字に調整、成約直前セクションを追加
 
-3. [40代から始めるアンチエイジング完全ロードマップ【医療も視野に入れた設計】](/blog/antiaging-roadmap-40s)
+4. [40代から始めるアンチエイジング完全ロードマップ【医療も視野に入れた設計】](/blog/antiaging-roadmap-40s)
    - 優先度スコア: 16
    - カテゴリ: clinic / 集客記事
    - 改善: SEO descriptionを55〜130字に調整、タイトルに購買意図語を追加、広告表記を本文内にも追加
 
-4. [NMNサプリおすすめランキング2026【元メーカーが成分・純度・コスパで比較】](/blog/nmn-supplement-ranking-2026)
+5. [NMNサプリおすすめランキング2026【元メーカーが成分・純度・コスパで比較】](/blog/nmn-supplement-ranking-2026)
    - 優先度スコア: 16
    - カテゴリ: supplement / 収益記事
    - 改善: 成約直前セクションを追加
-
-5. [NMNサプリの正しい飲み方【用量・タイミング・期間を臨床試験から逆算】](/blog/nmn-dose-timing-guide)
-   - 優先度スコア: 15
-   - カテゴリ: supplement / 集客記事
-   - 改善: SEO descriptionを55〜130字に調整、タイトルに購買意図語を追加、広告表記を本文内にも追加
 
 ## 収益化チェックリスト
 
