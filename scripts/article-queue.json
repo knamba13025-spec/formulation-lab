@@ -1,41 +1,6 @@
 {
   "queue": [
     {
-      "slug": "glp1-antiaging-guide",
-      "title": "GLP-1（セマグルチド）とアンチエイジング【経口薬時代の活用法】",
-      "type": "traffic",
-      "category": "science-news",
-      "grade": "B",
-      "keywords": [
-        "GLP-1 アンチエイジング",
-        "セマグルチド 老化",
-        "オゼンピック 抗老化"
-      ],
-      "points": [
-        "glp1-support-supplement-ranking-2026から内部送客される予定だった記事が未着手だったため新規追加（既存記事の参照切れ解消）",
-        "UC San Diegoの無作為化対照試験：セマグルチドが生物学的老化（DunedinPACE）を9%減速させた知見を解説",
-        "SURMOUNT-MMO試験（チルゼパチド・総死亡率エンドポイント）など進行中の長寿試験の位置づけ",
-        "経口セマグルチド量産開始（2026年1月）による処方薬アクセスの変化と、天然サプリ系記事への送客導線"
-      ]
-    },
-    {
-      "slug": "azelaic-acid-cosmetics-comparison",
-      "title": "アゼライン酸配合化粧品おすすめ比較【毛穴・美白・酒さケアで選ぶ】",
-      "type": "monetization",
-      "category": "skincare",
-      "grade": "B",
-      "keywords": [
-        "アゼライン酸 化粧品 おすすめ",
-        "アゼライン酸 効果",
-        "アゼライン酸 毛穴 美白"
-      ],
-      "points": [
-        "ニキビ・酒さ治療成分としての応用が毛穴・ざらつき・美白ケアへ拡大中というトレンドを反映し、サイト内未着手のコンテンツギャップを解消",
-        "次亜塩素酸など他の抗炎症系成分との比較軸を用意し、敏感肌向け処方の選び方を元メーカー視点で解説",
-        "ナイアシンアミド・ビタミンC誘導体の既存記事との併用ルート設計でAmazon/楽天物販アフィリの面を拡大"
-      ]
-    },
-    {
       "slug": "rapamycin-pearl-trial-guide",
       "title": "ラパマイシンPEARL試験で実証された抗老化効果【NMNとの違いも解説】",
       "type": "traffic",
@@ -173,6 +138,22 @@
     }
   ],
   "completed": [
+    {
+      "slug": "glp1-antiaging-guide",
+      "title": "GLP-1（セマグルチド）とアンチエイジング【経口薬時代の活用法】",
+      "type": "traffic",
+      "category": "science-news",
+      "grade": "A",
+      "completedAt": "2026-06-26T01:06:00.000Z"
+    },
+    {
+      "slug": "azelaic-acid-cosmetics-comparison",
+      "title": "アゼライン酸配合化粧品おすすめ比較【毛穴・美白・酒さケアで選ぶ】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "B",
+      "completedAt": "2026-06-26T01:06:00.000Z"
+    },
     {
       "slug": "spicule-skincare-guide",
       "title": "スピキュールとは？2026年注目の浸透促進成分を元メーカーが解説【化粧品処方視点】",
@@ -370,6 +351,6 @@
       "completedAt": "2026-06-16T12:21:50.000Z"
     }
   ],
-  "lastRun": "2026-06-25T01:05:00.000Z",
+  "lastRun": "2026-06-26T01:06:00.000Z",
   "lastContentAnalysis": "2026-06-25T00:00:00.000Z"
 }
