@@ -1,40 +1,6 @@
 {
   "queue": [
     {
-      "slug": "rapamycin-pearl-trial-guide",
-      "title": "ラパマイシンPEARL試験で実証された抗老化効果【NMNとの違いも解説】",
-      "type": "traffic",
-      "category": "supplement",
-      "grade": "B",
-      "keywords": [
-        "ラパマイシン 抗老化",
-        "ラパマイシン PEARL試験",
-        "ラパマイシン NMN 違い"
-      ],
-      "points": [
-        "サイト内にラパマイシン単独の解説記事が皆無というコンテンツギャップを解消（48週RCTで免疫応答を約20%改善というPEARL試験最終結果は2026年最大級のニュース性）",
-        "mTOR阻害という作用機序をNMN（NAD+前駆体）と対比し、メカニズムの違いを処方目線で整理",
-        "ラパマイシン＋アカルボース併用がマウスで単剤超え（中央寿命36.6%延長）という併用療法トレンドにも言及し、nmn-dose-timing-guideへの内部送客を設計"
-      ]
-    },
-    {
-      "slug": "stem-cell-injection-clinic-ranking",
-      "title": "幹細胞注入クリニックおすすめランキング【顔のしわ・肌質改善で比較】",
-      "type": "monetization",
-      "category": "clinic",
-      "grade": "B",
-      "keywords": [
-        "幹細胞注入 クリニック おすすめ",
-        "幹細胞 美容 効果",
-        "幹細胞注入 しわ 肌質改善"
-      ],
-      "points": [
-        "美容医療カテゴリがPDRN・HIFUの2記事のみと薄いことを解消し、高単価クリニック紹介ASP（3,000〜20,000円/件）の収益面を拡大",
-        "顔面への幹細胞注入によるしわ・肌質改善の臨床応用拡大（慢性炎症抑制メカニズム）を元メーカー視点で整理し、PDRN注入との違いを比較",
-        "pdrn-clinic-ranking・hifu-vs-hyaluronic-acidとの内部リンクで美容医療カテゴリの面を拡大"
-      ]
-    },
-    {
       "slug": "looks-younger-posture-expression-science",
       "title": "見た目年齢を下げる姿勢・表情・所作の科学【スキンケアより即効性が高い理由】",
       "type": "traffic",
@@ -172,6 +138,22 @@
     }
   ],
   "completed": [
+    {
+      "slug": "rapamycin-pearl-trial-guide",
+      "title": "ラパマイシンPEARL試験で実証された抗老化効果【NMNとの違いも解説】",
+      "type": "traffic",
+      "category": "supplement",
+      "grade": "B",
+      "completedAt": "2026-06-27T00:55:00.000Z"
+    },
+    {
+      "slug": "stem-cell-injection-clinic-ranking",
+      "title": "幹細胞注入クリニックおすすめランキング【顔のしわ・肌質改善で比較】",
+      "type": "monetization",
+      "category": "clinic",
+      "grade": "B",
+      "completedAt": "2026-06-27T00:55:00.000Z"
+    },
     {
       "slug": "glp1-antiaging-guide",
       "title": "GLP-1（セマグルチド）とアンチエイジング【経口薬時代の活用法】",
@@ -385,6 +367,6 @@
       "completedAt": "2026-06-16T12:21:50.000Z"
     }
   ],
-  "lastRun": "2026-06-26T01:06:00.000Z",
+  "lastRun": "2026-06-27T00:55:00.000Z",
   "lastContentAnalysis": "2026-06-26T00:00:00.000Z"
 }
