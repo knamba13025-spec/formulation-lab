@@ -1,6 +1,6 @@
 ---
 title: "ラパマイシンPEARL試験で実証された抗老化効果【NMNとの違いも解説】"
-description: "ラパマイシン 抗老化とPEARL試験、NMNとの違いをmTOR阻害とNAD+前駆体の視点で解説します。"
+description: "ラパマイシンとPEARL試験、NMNとの違いをmTOR阻害の視点で解説します。"
 pubDate: 2026-06-27
 category: supplement
 grade: B

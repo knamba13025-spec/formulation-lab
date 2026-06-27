@@ -1,6 +1,6 @@
 ---
 title: "ビタミンC誘導体化粧品おすすめランキング2026【APPS配合・効果・コスパで比較】"
-description: "ビタミンC誘導体化粧品をAPPS・AA2G・ピュアビタミンC別に比較。美容液の選び方も解説します。"
+description: "ビタミンC誘導体化粧品をAPPS・AA2G別に比較。美容液の選び方も解説。"
 pubDate: 2026-06-20
 category: skincare
 grade: A

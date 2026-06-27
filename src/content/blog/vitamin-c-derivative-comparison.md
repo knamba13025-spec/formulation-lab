@@ -1,6 +1,6 @@
 ---
 title: "ビタミンC誘導体の種類と効果比較【APPSが最強な理由を処方目線で解説】"
-description: "ビタミンC誘導体の種類を安定性・浸透性・コストで比較。APPSとアスコルビン酸の違いも解説します。"
+description: "ビタミンC誘導体の種類を安定性・浸透性・コストで比較。APPSとの違いも解説。"
 pubDate: 2026-06-20
 category: skincare
 grade: A

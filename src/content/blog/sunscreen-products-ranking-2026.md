@@ -1,6 +1,6 @@
 ---
 title: "日焼け止めおすすめランキング2026【新規UV吸収剤・SPF/PA・使用感で比較】"
-description: "日焼け止めおすすめランキングを新成分、SPF/PA、使用感で比較。UV吸収剤と紫外線対策の選び方も解説。"
+description: "日焼け止めおすすめランキングを新成分、SPF/PA、使用感で比較・解説。"
 pubDate: 2026-06-28
 category: skincare
 grade: B

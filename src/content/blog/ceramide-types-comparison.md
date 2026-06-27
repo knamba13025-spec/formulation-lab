@@ -1,6 +1,6 @@
 ---
 title: "セラミドの種類と選び方【1〜9型の違いを元メーカーが解説】"
-description: "セラミド1〜9型の違いとNP/AP/EOPの見方、選び方の落とし穴を元メーカー視点で解説します。"
+description: "セラミド1〜9型の違いとNP/AP/EOPの見方、選び方の落とし穴を解説します。"
 pubDate: 2026-06-18
 updated: 2026-06-23
 category: skincare

@@ -1,6 +1,6 @@
 ---
 title: "LEDマスクおすすめランキング2026【波長・出力・価格帯で比較】"
-description: "LEDマスクを波長・出力・使用時間・価格で比較。家庭用LEDマスクの効果の見方も解説します。"
+description: "LEDマスクを波長・出力・使用時間・価格で比較。効果の見方も解説します。"
 pubDate: 2026-06-21
 category: skincare
 grade: B

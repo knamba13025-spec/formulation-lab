@@ -1,6 +1,6 @@
 ---
 title: "GLP-1（セマグルチド）とアンチエイジング【経口薬時代の活用法】"
-description: "GLP-1 アンチエイジングとセマグルチド 老化研究を、経口薬時代の活用法まで解説します。"
+description: "GLP-1とセマグルチドの老化研究を、経口薬時代の活用法まで解説します。"
 pubDate: 2026-06-26
 category: science-news
 grade: A
