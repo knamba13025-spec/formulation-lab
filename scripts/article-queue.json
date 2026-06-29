@@ -1,40 +1,6 @@
 {
   "queue": [
     {
-      "slug": "azelaic-acid-explainer",
-      "title": "アゼライン酸とは？毛穴・美白・酒さに効く理由を元メーカーが解説",
-      "type": "traffic",
-      "category": "skincare",
-      "grade": "B",
-      "keywords": [
-        "アゼライン酸とは",
-        "アゼライン酸 効果 仕組み",
-        "アゼライン酸 酒さ"
-      ],
-      "points": [
-        "キュー済みのazelaic-acid-cosmetics-comparison（ランキング記事）に内部送客するための『成分そのものの解説記事』が未着手だったため、vitamin-c-derivative-comparisonやbakuchiol-vs-retinol-guideと同じ『解説→比較ランキング』の二段構成で新規追加",
-        "ニキビ・酒さ治療成分として臨床応用されてきた抗炎症作用が、毛穴・美白ケアへ応用拡大している作用機序を元メーカー視点で整理",
-        "ナイアシンアミド・ビタミンC誘導体など低刺激系成分との使い分け・併用の目安を提示し、敏感肌読者の検索意図に対応"
-      ]
-    },
-    {
-      "slug": "stem-cell-cosmetics-ranking-2026",
-      "title": "幹細胞コスメ（幹細胞培養液配合化粧品）おすすめランキング2026【美容液・クリームで比較】",
-      "type": "monetization",
-      "category": "skincare",
-      "grade": "C",
-      "keywords": [
-        "幹細胞コスメ おすすめ",
-        "幹細胞培養液 化粧品",
-        "幹細胞美容液 ランキング"
-      ],
-      "points": [
-        "stem-cell-injection-clinic-ranking（注入施術＝クリニック領域）とは別に、化粧品として塗布する『幹細胞培養液配合コスメ』のジャンルがサイト内に皆無というギャップを解消。エクソソーム同様『ニッチからスキンケアの主流へ移行中』というトレンドに対応",
-        "幹細胞そのものではなく『培養液（コンディションドメディウム）』が主成分である点を元メーカー視点で正確に解説し、薬機法上の効能表現（『期待できます』等）を徹底",
-        "exosome-cosmetics-ranking-2026・peptide-cosmetics-ranking-2026との『再生スキンケア』文脈での内部リンクでAmazon/楽天物販アフィリの面を拡大"
-      ]
-    },
-    {
       "slug": "phosphatidylcholine-aging-science",
       "title": "細胞膜脂質ホスファチジルコリンと老化の関係【2026年最新研究を元メーカーが解説】",
       "type": "traffic",
@@ -172,6 +138,42 @@
     }
   ],
   "completed": [
+    {
+      "slug": "stem-cell-cosmetics-ranking-2026",
+      "title": "幹細胞コスメ（幹細胞培養液配合化粧品）おすすめランキング2026【美容液・クリームで比較】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "C",
+      "keywords": [
+        "幹細胞コスメ おすすめ",
+        "幹細胞培養液 化粧品",
+        "幹細胞美容液 ランキング"
+      ],
+      "points": [
+        "stem-cell-injection-clinic-ranking（注入施術＝クリニック領域）とは別に、化粧品として塗布する『幹細胞培養液配合コスメ』のジャンルがサイト内に皆無というギャップを解消。エクソソーム同様『ニッチからスキンケアの主流へ移行中』というトレンドに対応",
+        "幹細胞そのものではなく『培養液（コンディションドメディウム）』が主成分である点を元メーカー視点で正確に解説し、薬機法上の効能表現（『期待できます』等）を徹底",
+        "exosome-cosmetics-ranking-2026・peptide-cosmetics-ranking-2026との『再生スキンケア』文脈での内部リンクでAmazon/楽天物販アフィリの面を拡大"
+      ],
+      "completedAt": "2026-06-30T01:00:00.000Z"
+    },
+    {
+      "slug": "azelaic-acid-explainer",
+      "title": "アゼライン酸とは？毛穴・美白・酒さに効く理由を元メーカーが解説",
+      "type": "traffic",
+      "category": "skincare",
+      "grade": "B",
+      "keywords": [
+        "アゼライン酸とは",
+        "アゼライン酸 効果 仕組み",
+        "アゼライン酸 酒さ"
+      ],
+      "points": [
+        "キュー済みのazelaic-acid-cosmetics-comparison（ランキング記事）に内部送客するための『成分そのものの解説記事』が未着手だったため、vitamin-c-derivative-comparisonやbakuchiol-vs-retinol-guideと同じ『解説→比較ランキング』の二段構成で新規追加",
+        "ニキビ・酒さ治療成分として臨床応用されてきた抗炎症作用が、毛穴・美白ケアへ応用拡大している作用機序を元メーカー視点で整理",
+        "ナイアシンアミド・ビタミンC誘導体など低刺激系成分との使い分け・併用の目安を提示し、敏感肌読者の検索意図に対応"
+      ],
+      "completedAt": "2026-06-30T01:00:00.000Z"
+    },
     {
       "slug": "bakuchiol-vs-retinol-guide",
       "title": "バクチオールとは？レチノールとの違いを元メーカーが解説【低刺激な代替成分】",
@@ -453,6 +455,6 @@
       "completedAt": "2026-06-16T12:21:50.000Z"
     }
   ],
-  "lastRun": "2026-06-28T16:06:25.000Z",
+  "lastRun": "2026-06-30T01:00:00.000Z",
   "lastContentAnalysis": "2026-06-29T07:00:00.000Z"
 }
