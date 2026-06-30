@@ -1,6 +1,6 @@
 ---
 title: "NMNサプリおすすめランキング2026【元メーカーが成分・純度・コスパで比較】"
-description: "NMNサプリの選び方を製造視点で解説。純度・配合量の基準とNMNHなど次世代成分の動向も紹介。"
+description: "NMNサプリの選び方を製造視点で解説。純度・配合量の基準と次世代成分の動向も紹介。"
 pubDate: 2026-06-14
 updated: 2026-06-29
 category: supplement

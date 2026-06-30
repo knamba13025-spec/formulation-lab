@@ -1,6 +1,6 @@
 ---
 title: "ラパマイシンPEARL試験で実証された抗老化効果【NMNとの違いも解説】"
-description: "ラパマイシンPEARL試験とNMNの違いをmTOR阻害の視点で解説。セノリティクス併用研究の最新動向も整理します。"
+description: "ラパマイシンPEARL試験の結果とNMNとの違いをmTOR阻害の視点で解説します。"
 pubDate: 2026-06-27
 updated: 2026-06-30
 category: supplement

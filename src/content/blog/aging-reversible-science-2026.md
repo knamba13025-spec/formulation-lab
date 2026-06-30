@@ -1,6 +1,6 @@
 ---
 title: "老化は可逆的か？FDA承認された世界初の若返り臨床試験を解説【2026年版】"
-description: "老化は可逆か。Life BiosciencesのFDAクリアランスとSinclair氏の研究から若返り治療の現状を解説。"
+description: "老化は可逆か。FDAクリアランスとSinclair氏の研究から若返り治療の現状を解説。"
 pubDate: 2026-06-23
 category: science-news
 grade: B
