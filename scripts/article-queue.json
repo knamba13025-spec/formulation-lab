@@ -1,40 +1,6 @@
 {
   "queue": [
     {
-      "slug": "phosphatidylcholine-aging-science",
-      "title": "細胞膜脂質ホスファチジルコリンと老化の関係【2026年最新研究を元メーカーが解説】",
-      "type": "traffic",
-      "category": "science-news",
-      "grade": "C",
-      "keywords": [
-        "ホスファチジルコリン 老化",
-        "細胞膜脂質 アンチエイジング",
-        "老化 可逆 最新研究"
-      ],
-      "points": [
-        "独ライプニッツ加齢研究所（FLI）が2026年6月10日に発表した『細胞膜脂質ホスファチジルコリンの減少が老化の一因であり、可逆的に修復可能』という最新知見がサイト内未着手。aging-reversible-science-2026（エピジェネティック・リプログラミング）とは異なる『脂質代謝』という新しい老化メカニズム軸を追加できる",
-        "現状は基礎研究（細胞レベル）の段階であり、ヒトでの臨床応用や製品化はまだ先である旨を明示し、過度な期待を抑えるグレードC運用を徹底",
-        "senolytic-science-explained・aging-reversible-science-2026との内部リンクで『老化メカニズム解説』カテゴリの面を拡大し、科学ニュース系記事の読者獲得・SNS拡散を狙う"
-      ]
-    },
-    {
-      "slug": "camellia-fermented-extract-cosmetics-ranking-2026",
-      "title": "山茶花（カメリア）発酵抽出液配合化粧品おすすめランキング2026【老化細胞ケアの新成分】",
-      "type": "monetization",
-      "category": "skincare",
-      "grade": "C",
-      "keywords": [
-        "カメリア発酵 化粧品",
-        "山茶花 抽出液 美容液",
-        "老化細胞ケア スキンケア"
-      ],
-      "points": [
-        "資生堂が発表した『山茶花（カメリア）油渣発酵抽出液』が記憶T細胞の活性化を介して皮膚の老化細胞除去能力を高めるという新成分トレンドに対応。サイト内の柱①（地方・希少原料の発掘）に合致する数少ない国産原料テーマであり、kuromoji-essential-oil-skincare以外に柱①記事がほぼ皆無というギャップを解消",
-        "茶殻・油渣という製造副産物を発酵させる工程を元メーカー視点（充填・品質管理経験）で解説し、サステナブル原料という訴求軸を追加",
-        "senolytic-science-explained・exosome-cosmetics-ranking-2026との『老化細胞ケア』文脈での内部リンクでAmazon/楽天物販アフィリの面を拡大"
-      ]
-    },
-    {
       "slug": "glycylglycine-pore-care-guide",
       "title": "グリシルグリシンとは？毛穴・キメ悩みに効く新成分を元メーカーが解説",
       "type": "traffic",
@@ -172,6 +138,42 @@
     }
   ],
   "completed": [
+    {
+      "slug": "phosphatidylcholine-aging-science",
+      "title": "細胞膜脂質ホスファチジルコリンと老化の関係【2026年最新研究を元メーカーが解説】",
+      "type": "traffic",
+      "category": "science-news",
+      "grade": "C",
+      "keywords": [
+        "ホスファチジルコリン 老化",
+        "細胞膜脂質 アンチエイジング",
+        "老化 可逆 最新研究"
+      ],
+      "points": [
+        "独ライプニッツ加齢研究所（FLI）が2026年6月10日に発表した『細胞膜脂質ホスファチジルコリンの減少が老化の一因であり、可逆的に修復可能』という最新知見がサイト内未着手。aging-reversible-science-2026（エピジェネティック・リプログラミング）とは異なる『脂質代謝』という新しい老化メカニズム軸を追加できる",
+        "現状は基礎研究（細胞レベル）の段階であり、ヒトでの臨床応用や製品化はまだ先である旨を明示し、過度な期待を抑えるグレードC運用を徹底",
+        "senolytic-science-explained・aging-reversible-science-2026との内部リンクで『老化メカニズム解説』カテゴリの面を拡大し、科学ニュース系記事の読者獲得・SNS拡散を狙う"
+      ],
+      "completedAt": "2026-07-01T00:00:00.000Z"
+    },
+    {
+      "slug": "camellia-fermented-extract-cosmetics-ranking-2026",
+      "title": "山茶花（カメリア）発酵抽出液配合化粧品おすすめランキング2026【老化細胞ケアの新成分】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "C",
+      "keywords": [
+        "カメリア発酵 化粧品",
+        "山茶花 抽出液 美容液",
+        "老化細胞ケア スキンケア"
+      ],
+      "points": [
+        "資生堂が発表した『山茶花（カメリア）油渣発酵抽出液』が記憶T細胞の活性化を介して皮膚の老化細胞除去能力を高めるという新成分トレンドに対応。サイト内の柱①（地方・希少原料の発掘）に合致する数少ない国産原料テーマであり、kuromoji-essential-oil-skincare以外に柱①記事がほぼ皆無というギャップを解消",
+        "茶殻・油渣という製造副産物を発酵させる工程を元メーカー視点（充填・品質管理経験）で解説し、サステナブル原料という訴求軸を追加",
+        "senolytic-science-explained・exosome-cosmetics-ranking-2026との『老化細胞ケア』文脈での内部リンクでAmazon/楽天物販アフィリの面を拡大"
+      ],
+      "completedAt": "2026-07-01T00:00:00.000Z"
+    },
     {
       "slug": "stem-cell-cosmetics-ranking-2026",
       "title": "幹細胞コスメ（幹細胞培養液配合化粧品）おすすめランキング2026【美容液・クリームで比較】",
@@ -489,6 +491,6 @@
       "completedAt": "2026-06-16T12:21:50.000Z"
     }
   ],
-  "lastRun": "2026-06-30T07:00:00.000Z",
+  "lastRun": "2026-07-01T00:00:00.000Z",
   "lastContentAnalysis": "2026-06-30T07:00:00.000Z"
 }
