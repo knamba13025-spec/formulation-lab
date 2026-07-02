@@ -1,6 +1,6 @@
 ---
 title: "PDRNクリニックおすすめランキング【注入・導入施術で選ぶ東京・全国版】"
-description: "PDRNクリニックの選び方を元メーカー視点で解説。注射・導入・外用の違いと確認ポイントを整理。"
+description: "PDRNクリニックの選び方を元メーカー視点で解説。注射・導入・外用の違いを整理。"
 pubDate: 2026-06-19
 category: clinic
 grade: B

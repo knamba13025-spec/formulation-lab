@@ -1,6 +1,6 @@
 ---
 title: "GLP-1（セマグルチド）とアンチエイジング【経口薬時代の活用法】"
-description: "セマグルチド（オゼンピック）の老化研究を解説。DunedinPACE9%低下の意味・老化12ホールマークへの作用・Ozempic Face対策・経口薬時代の正しい活用法。"
+description: "GLP-1（セマグルチド）の老化研究を解説。老化12ホールマークへの作用と活用法。"
 pubDate: 2026-06-26
 updated: 2026-07-03
 category: science-news
