@@ -12,16 +12,24 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="theme-color" content="#f9f7f5" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:site_name" content="エイジングケアラボ" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href={Astro.url} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet" />
   </head>
   <body style="background-color: var(--color-bg);">
 
-    <header style="background: var(--color-surface); border-bottom: 1px solid var(--color-border);">
-      <div class="max-w-3xl mx-auto px-5 py-4 flex items-center justify-between">
-        <a href="/" class="flex items-center gap-3">
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="/" class="flex items-center gap-3" style="text-decoration:none; flex-shrink:0;">
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="14" cy="14" r="13" stroke="#d4a5a5" stroke-width="1.5"/>
             <path d="M9 10 Q14 7 19 10 Q14 13 9 10Z" fill="#d4a5a5" opacity="0.6"/>
@@ -29,17 +37,17 @@ const {
             <path d="M9 18 Q14 15 19 18 Q14 21 9 18Z" fill="#8fb3c8" opacity="0.6"/>
           </svg>
           <div>
-            <span style="font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 400; letter-spacing: 0.06em; color: var(--color-text);">エイジングケアラボ</span>
+            <span style="font-family: 'Cormorant Garamond', 'Noto Serif JP', serif; font-size: 1.1rem; font-weight: 400; letter-spacing: 0.06em; color: var(--color-text);">エイジングケアラボ</span>
             <span style="display:block; font-size: 0.6rem; letter-spacing: 0.08em; color: var(--color-text-light); margin-top: -2px;">Aging Care Lab</span>
           </div>
         </a>
-        <nav class="flex gap-6" style="font-size: 0.8rem; color: var(--color-text-muted); letter-spacing: 0.04em;">
-          <a href="/skincare" style="transition: color 0.2s;" onmouseover="this.style.color='var(--color-rose-mid)'" onmouseout="this.style.color='var(--color-text-muted)'">スキンケア</a>
-          <a href="/supplement" style="transition: color 0.2s;" onmouseover="this.style.color='var(--color-sage-mid)'" onmouseout="this.style.color='var(--color-text-muted)'">サプリ</a>
-          <a href="/clinic" style="transition: color 0.2s;" onmouseover="this.style.color='var(--color-blue-mid)'" onmouseout="this.style.color='var(--color-text-muted)'">美容医療</a>
-          <a href="/local" style="transition: color 0.2s;" onmouseover="this.style.color='#9a7a5a'" onmouseout="this.style.color='var(--color-text-muted)'">地方コスメ</a>
-          <a href="/mind" style="transition: color 0.2s;" onmouseover="this.style.color='#7a6a9a'" onmouseout="this.style.color='var(--color-text-muted)'">マインド</a>
-          <a href="/about" style="transition: color 0.2s;" onmouseover="this.style.color='var(--color-text)'" onmouseout="this.style.color='var(--color-text-muted)'">About</a>
+        <nav class="site-nav">
+          <a href="/skincare" data-accent="rose">スキンケア</a>
+          <a href="/supplement" data-accent="sage">サプリ</a>
+          <a href="/clinic" data-accent="blue">美容医療</a>
+          <a href="/local" data-accent="local">地方コスメ</a>
+          <a href="/mind" data-accent="mind">マインド</a>
+          <a href="/about" data-accent="plain">About</a>
         </nav>
       </div>
     </header>
@@ -50,19 +58,19 @@ const {
 
     <footer style="border-top: 1px solid var(--color-border); margin-top: 5rem;">
       <div class="max-w-3xl mx-auto px-5 py-10">
-        <div style="font-family: 'Cormorant Garamond', serif; font-size: 1rem; letter-spacing: 0.1em; color: var(--color-text-light); margin-bottom: 1rem;">
+        <div style="font-family: 'Cormorant Garamond','Noto Serif JP',serif; font-size: 1rem; letter-spacing: 0.1em; color: var(--color-text-light); margin-bottom: 1rem;">
           エイジングケアラボ
         </div>
-        <div class="flex gap-6" style="font-size: 0.75rem; color: var(--color-text-light); margin-bottom: 1.5rem;">
-          <a href="/skincare" style="text-decoration: none; color: var(--color-text-light);">スキンケア</a>
-          <a href="/supplement" style="text-decoration: none; color: var(--color-text-light);">サプリ</a>
-          <a href="/clinic" style="text-decoration: none; color: var(--color-text-light);">美容医療</a>
-          <a href="/local" style="text-decoration: none; color: var(--color-text-light);">地方コスメ</a>
-          <a href="/mind" style="text-decoration: none; color: var(--color-text-light);">マインド</a>
-          <a href="/about" style="text-decoration: none; color: var(--color-text-light);">About</a>
-          <a href="/privacy" style="text-decoration: none; color: var(--color-text-light);">プライバシーポリシー</a>
-          <a href="/contact" style="text-decoration: none; color: var(--color-text-light);">お問い合わせ</a>
-        </div>
+        <nav class="footer-nav">
+          <a href="/skincare">スキンケア</a>
+          <a href="/supplement">サプリ</a>
+          <a href="/clinic">美容医療</a>
+          <a href="/local">地方コスメ</a>
+          <a href="/mind">マインド</a>
+          <a href="/about">About</a>
+          <a href="/privacy">プライバシーポリシー</a>
+          <a href="/contact">お問い合わせ</a>
+        </nav>
         <p style="font-size: 0.7rem; color: var(--color-text-light); line-height: 1.8;">
           ※ 本サイトはアフィリエイト広告を含みます。<br>
           ※ 記事内の情報は執筆時点のものです。医療判断は必ず専門家にご相談ください。

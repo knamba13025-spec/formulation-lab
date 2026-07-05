@@ -1,6 +1,6 @@
 # Daily Affiliate Audit
 
-実行日: 2026/07/01(水)
+実行日: 2026/07/03(金)
 
 ## 今日やるべき改善
 
@@ -14,20 +14,20 @@
    - カテゴリ: skincare / 収益記事
    - 改善: SEO descriptionを55〜130字に調整、成約直前セクションを追加
 
-3. [ビタミンC誘導体化粧品おすすめランキング2026【APPS配合・効果・コスパで比較】](/blog/vitamin-c-products-ranking-2026)
+3. [機能性フレグランス（アンチエイジング香り）おすすめランキング2026【ストレス・睡眠ケアで比較】](/blog/functional-fragrance-products-ranking-2026)
    - 優先度スコア: 17
    - カテゴリ: skincare / 収益記事
    - 改善: SEO descriptionを55〜130字に調整、成約直前セクションを追加
 
-4. [化粧品の全成分表示を読む方法【元メーカーが解説】](/blog/how-to-read-ingredients)
-   - 優先度スコア: 16
+4. [グリシルグリシン配合化粧品おすすめランキング2026【毛穴・キメケアで比較】](/blog/glycylglycine-products-ranking-2026)
+   - 優先度スコア: 17
    - カテゴリ: skincare / 収益記事
-   - 改善: SEO descriptionを55〜130字に調整、タイトルに購買意図語を追加
+   - 改善: SEO descriptionを55〜130字に調整、成約直前セクションを追加
 
-5. [HIFU vs ヒアルロン酸注射どちらがいい？コスパ・効果・リスクを比較](/blog/hifu-vs-hyaluronic-acid)
-   - 優先度スコア: 15
-   - カテゴリ: clinic / 収益記事
-   - 改善: SEO descriptionを55〜130字に調整
+5. [ビタミンC誘導体化粧品おすすめランキング2026【APPS配合・効果・コスパで比較】](/blog/vitamin-c-products-ranking-2026)
+   - 優先度スコア: 17
+   - カテゴリ: skincare / 収益記事
+   - 改善: SEO descriptionを55〜130字に調整、成約直前セクションを追加
 
 ## 収益化チェックリスト
 

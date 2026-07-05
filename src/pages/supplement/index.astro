@@ -82,7 +82,7 @@ const supplements = [
   <!-- ページヘッダー -->
   <section style="padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--color-border);">
     <p style="font-size:0.7rem; letter-spacing:0.2em; color:var(--color-sage-mid); text-transform:uppercase; margin-bottom:0.75rem;">Supplement</p>
-    <h1 style="font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:300; color:var(--color-text); margin-bottom:0.75rem;">
+    <h1 style="font-family:'Cormorant Garamond','Noto Serif JP',serif; font-size:2rem; font-weight:300; color:var(--color-text); margin-bottom:0.75rem;">
       サプリメント・機能性食品ガイド
     </h1>
     <p style="font-size:0.875rem; color:var(--color-text-muted); line-height:1.9; max-width:32rem;">
@@ -135,8 +135,7 @@ const supplements = [
     {posts.length > 0 ? (
       <div style="display:flex; flex-direction:column; gap:0.75rem;">
         {posts.map(post => (
-          <a href={`/blog/${post.id}`} style="display:flex; align-items:flex-start; gap:1rem; padding:1rem 1.25rem; background:var(--color-surface); border:1px solid var(--color-border); border-radius:10px; text-decoration:none; transition:border-color 0.2s;"
-             onmouseover="this.style.borderColor='var(--color-sage)'" onmouseout="this.style.borderColor='var(--color-border)'">
+          <a href={`/blog/${post.id}`} class="card-link" data-accent="sage" style="display:flex; align-items:flex-start; gap:1rem; padding:1rem 1.25rem;">
             <div style="flex:1;">
               <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.4rem;">
                 {post.data.grade && (

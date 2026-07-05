@@ -35,12 +35,196 @@ body {
 }
 
 h1, h2, h3, .font-serif {
-  font-family: 'Cormorant Garamond', 'Noto Sans JP', serif;
+  font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+}
+
+/* ===== サイト共通レイアウト ===== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header-inner {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.4rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.site-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.site-nav a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 0.15rem 0;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.site-nav a[data-accent="rose"]:hover  { color: var(--color-rose-mid);  border-color: var(--color-rose); }
+.site-nav a[data-accent="sage"]:hover  { color: var(--color-sage-mid);  border-color: var(--color-sage); }
+.site-nav a[data-accent="blue"]:hover  { color: var(--color-blue-mid);  border-color: var(--color-blue); }
+.site-nav a[data-accent="local"]:hover { color: #9a7a5a; border-color: #c8a878; }
+.site-nav a[data-accent="mind"]:hover  { color: #7a6a9a; border-color: #b8a8c8; }
+.site-nav a[data-accent="plain"]:hover { color: var(--color-text); border-color: var(--color-text-light); }
+
+@media (max-width: 700px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding: 0.75rem 1.25rem 0.6rem;
+  }
+  .site-nav {
+    width: 100%;
+    gap: 1.1rem;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.5rem;
+  font-size: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-nav a {
+  color: var(--color-text-light);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+  color: var(--color-text-muted);
+}
+
+/* ===== グリッド（レスポンシブ） ===== */
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid-2 { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 420px) {
+  .grid-3 { grid-template-columns: 1fr; }
+}
+
+/* ===== カード ===== */
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-surface);
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+
+.card-link:hover {
+  border-color: var(--color-rose);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(46, 42, 38, 0.07);
+}
+
+.card-link[data-accent="sage"]:hover  { border-color: var(--color-sage); }
+.card-link[data-accent="blue"]:hover  { border-color: var(--color-blue); }
+.card-link[data-accent="local"]:hover { border-color: #c8a878; }
+.card-link[data-accent="mind"]:hover  { border-color: #b8a8c8; }
+
+/* 色付きカテゴリカード（背景色は各所でインライン指定） */
+.card-tint {
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: transform 0.25s, box-shadow 0.25s, filter 0.25s;
+}
+
+.card-tint:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(46, 42, 38, 0.07);
+}
+
+/* ===== ヒーロー装飾 ===== */
+
+.hero {
+  position: relative;
+  padding: 3.5rem 0 3rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -3rem;
+  right: -6rem;
+  width: 24rem;
+  height: 24rem;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(212, 165, 165, 0.14), transparent 55%),
+    radial-gradient(circle at 70% 60%, rgba(154, 181, 154, 0.12), transparent 55%),
+    radial-gradient(circle at 45% 80%, rgba(143, 179, 200, 0.10), transparent 55%);
+}
+
+.hero > * {
+  position: relative;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 2.5rem 0 2.25rem;
+  }
+  .hero h1 {
+    font-size: 2rem !important;
+  }
+}
+
+/* ===== アクセシビリティ ===== */
+
+a:focus-visible {
+  outline: 2px solid var(--color-blue-mid);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 /* Article body typography */
 .prose h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.02em;
