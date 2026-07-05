@@ -1,40 +1,6 @@
 {
   "queue": [
     {
-      "slug": "nmnh-vs-nmn-guide",
-      "title": "NMNHとは？NMNとの違いと次世代NAD+前駆体を元メーカーが解説",
-      "type": "traffic",
-      "category": "supplement",
-      "grade": "C",
-      "keywords": [
-        "NMNH とは",
-        "NMNH NMN 違い",
-        "次世代NAD+前駆体"
-      ],
-      "points": [
-        "アンチエイジング最新情報でNMNH（還元型NMN）・タウリン・低用量ラパマイシンが長寿サプリとして現時点で最も強いエビデンスを持つと指摘されている一方、サイト内にはNMN系記事（nmn-dose-timing-guide・nmn-supplement-ranking-2026）しか存在せず、次世代NAD+前駆体としてのNMNHが未着手というギャップを解消",
-        "NMNがNAD+に変換される経路とNMNHが還元型として直接NADHへ変換される経路の違いを処方目線で整理し、吸収率・安定性に関する現状のエビデンスレベル（動物実験中心）を明示してグレードC運用を徹底",
-        "nmn-dose-timing-guide・nmn-supplement-ranking-2026との『NAD+前駆体』文脈での内部リンクを設計し、サプリ直販アフィリへの送客ルートを拡大"
-      ]
-    },
-    {
-      "slug": "home-ipl-device-ranking-2026",
-      "title": "家庭用IPL美顔器おすすめランキング2026【資生堂新型機種データで比較】",
-      "type": "monetization",
-      "category": "skincare",
-      "grade": "B",
-      "keywords": [
-        "IPL美顔器 おすすめ",
-        "家庭用IPL ランキング",
-        "IPL美顔器 効果"
-      ],
-      "points": [
-        "資生堂が肌質感・色素沈着改善効果を85%向上させた次世代IPL機器を発表し化粧品業界動向で言及されているが、サイト内には光治療デバイス記事がLEDマスク系（led-mask-wavelength-guide・led-mask-products-ranking-2026）のみでIPL美顔器のランキング記事が皆無というギャップを解消",
-        "LEDマスクとの違い（広帯域光×単一波長光、シミ・色素沈着への効果差）を処方・現場目線で整理し、家庭用と医療用の出力差を明示して過度な期待を抑える",
-        "led-mask-wavelength-guide・led-mask-products-ranking-2026との『家庭用美容デバイス』文脈での内部リンクを設計し、Amazon/楽天物販アフィリの面を拡大"
-      ]
-    },
-    {
       "slug": "c15-fatty-acid-longevity-supplement-guide",
       "title": "C15:0（ペンタデカン酸）とは？2026年注目の新・必須脂肪酸サプリを元メーカーが解説",
       "type": "traffic",
@@ -138,6 +104,22 @@
     }
   ],
   "completed": [
+    {
+      "slug": "nmnh-vs-nmn-guide",
+      "title": "NMNHとは？NMNとの違いと次世代NAD+前駆体を元メーカーが解説",
+      "type": "traffic",
+      "category": "supplement",
+      "grade": "C",
+      "completedAt": "2026-07-05T03:00:00.000Z"
+    },
+    {
+      "slug": "home-ipl-device-ranking-2026",
+      "title": "家庭用IPL美顔器おすすめランキング2026【資生堂新型機種データで比較】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "B",
+      "completedAt": "2026-07-05T03:00:00.000Z"
+    },
     {
       "slug": "glycylglycine-pore-care-guide",
       "title": "グリシルグリシンとは？毛穴・キメ悩みに効く新成分を元メーカーが解説",
@@ -553,6 +535,6 @@
       "completedAt": "2026-07-03T03:00:00.000Z"
     }
   ],
-  "lastRun": "2026-07-03T03:00:00.000Z",
+  "lastRun": "2026-07-05T03:00:00.000Z",
   "lastContentAnalysis": "2026-07-02T07:00:00.000Z"
 }
