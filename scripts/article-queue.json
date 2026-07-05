@@ -1,40 +1,6 @@
 {
   "queue": [
     {
-      "slug": "c15-fatty-acid-longevity-supplement-guide",
-      "title": "C15:0（ペンタデカン酸）とは？2026年注目の新・必須脂肪酸サプリを元メーカーが解説",
-      "type": "traffic",
-      "category": "supplement",
-      "grade": "C",
-      "keywords": [
-        "C15:0 サプリ",
-        "ペンタデカン酸 効果",
-        "長寿 必須脂肪酸 2026"
-      ],
-      "points": [
-        "アンチエイジング最新情報（2026-06-30）で『新興「必須脂肪酸」C15:0が代謝・細胞健康への効果で注目を集め、2026年に長寿サプリの主流入りする可能性』と明記されているが、サイト内にC15:0を扱う記事が皆無というギャップを解消。NMN・NMNHと並ぶ新しい長寿サプリカテゴリを先行開拓",
-        "飽和脂肪酸の中で唯一ミトコンドリアを直接活性化し複数の老化ホールマーク（慢性炎症・細胞老化・代謝機能低下）に作用するとされる作用機序を平易に整理。エビデンスは動物実験・観察研究中心であることを明示し、グレードC運用を徹底",
-        "nmnh-vs-nmn-guide・senolytic-science-explainedとの『次世代長寿サプリ』文脈での内部リンクを設計し、将来的なサプリ直販アフィリの面を拡大"
-      ]
-    },
-    {
-      "slug": "d-amino-acid-cosmetics-ranking-2026",
-      "title": "D-アミノ酸配合化粧品おすすめランキング2026【グリシルグリシンとの相乗効果で比較】",
-      "type": "monetization",
-      "category": "skincare",
-      "grade": "C",
-      "keywords": [
-        "D-アミノ酸 化粧品 おすすめ",
-        "Dアミノ酸 美容液 ランキング",
-        "D-アミノ酸 グリシルグリシン 化粧品"
-      ],
-      "points": [
-        "化粧品業界動向（2026-06-30）でアクアレーベルのオールインワンが『グリシルグリシン＋D-アミノ酸』配合でリニューアルとの情報があり、キュー中のglycolglycine-pore-care-guide・glycylglycine-products-ranking-2026と自然にペアになる『D-アミノ酸』という独立した成分ランキング記事がサイト内に皆無というギャップを解消",
-        "L体（通常アミノ酸）とD体の違い（光学異性体・皮膚への吸収効率・保湿効果持続時間の差）を処方目線で解説し、まだエビデンスが限定的（企業マーケ寄り）な点を明示してグレードC運用を徹底。グリシルグリシンとの相乗効果が最近注目されている文脈を紹介",
-        "glycylglycine-products-ranking-2026・niacinamide-complete-guideとの『毛穴・キメ整えスキンケア』文脈での内部リンクを設計し、Amazon/楽天物販アフィリの面をグリシルグリシン記事と並行して拡大"
-      ]
-    },
-    {
       "slug": "beta-glucan-skincare-guide",
       "title": "βグルカンとは？キノコ由来多糖類が肌のバリア機能・免疫を整える理由を元メーカーが解説",
       "type": "traffic",
@@ -172,6 +138,22 @@
     }
   ],
   "completed": [
+    {
+      "slug": "c15-fatty-acid-longevity-supplement-guide",
+      "title": "C15:0（ペンタデカン酸）とは？2026年注目の新・必須脂肪酸サプリを元メーカーが解説",
+      "type": "traffic",
+      "category": "supplement",
+      "grade": "C",
+      "completedAt": "2026-07-06T01:00:00.000Z"
+    },
+    {
+      "slug": "d-amino-acid-cosmetics-ranking-2026",
+      "title": "D-アミノ酸配合化粧品おすすめランキング2026【グリシルグリシンとの相乗効果で比較】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "C",
+      "completedAt": "2026-07-06T01:00:00.000Z"
+    },
     {
       "slug": "nmnh-vs-nmn-guide",
       "title": "NMNHとは？NMNとの違いと次世代NAD+前駆体を元メーカーが解説",
@@ -603,6 +585,6 @@
       "completedAt": "2026-07-03T03:00:00.000Z"
     }
   ],
-  "lastRun": "2026-07-05T07:00:00.000Z",
+  "lastRun": "2026-07-06T01:00:00.000Z",
   "lastContentAnalysis": "2026-07-05T07:00:00.000Z"
 }
