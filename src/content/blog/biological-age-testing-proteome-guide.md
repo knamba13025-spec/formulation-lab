@@ -95,6 +95,6 @@ affiliate: false
 
 一方で、2026年時点では研究・サービス化の初期段階です。日常化は進む見込みですが、結果の読み方、標準対応、日本人での検証には課題が残ります。
 
-老化を「協調の崩壊」として捉えるなら、プロテオーム解析は体内ネットワークのずれを可視化する候補です。期待しすぎず、検査を生活改善や専門相談の補助として使う。この距離感が、今もっとも現実的です。特定の老化経路への介入に関心がある場合は、[ラパマイシンPEARL試験で実証された抗老化効果](/blog/rapamycin-pearl-trial-guide)も参考になります。
+老化を「協調の崩壊」として捉えるなら、プロテオーム解析は体内ネットワークのずれを可視化する候補です。期待しすぎず、検査を生活改善や専門相談の補助として使う。この距離感が、今もっとも現実的です。特定の老化経路への介入に関心がある場合は、[ラパマイシンPEARL試験で実証された抗老化効果](/blog/rapamycin-pearl-trial-guide)も参考になります。検査結果をふまえて医師に相談しながら介入を検討したい場合は、[NAD+点滴療法おすすめクリニックランキング](/blog/nad-plus-iv-clinic-ranking)で医師監督のあるクリニックの選び方も確認できます。
 
 *参考：Nature Medicine, plasma proteomics and organ aging studies / The Lancet Digital Health, organ age and disease risk study / Biomarkers of Aging Consortium reports*
