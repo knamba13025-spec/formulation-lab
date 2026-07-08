@@ -1,30 +1,30 @@
 # Daily Affiliate Audit
 
-実行日: 2026/07/08(水)
+実行日: 2026/07/09(木)
 
 ## 今日やるべき改善
 
-1. [NAD+点滴療法おすすめクリニックランキング【料金・効果・副作用を元メーカー視点で比較】](/blog/nad-plus-iv-clinic-ranking)
-   - 優先度スコア: 19
-   - カテゴリ: clinic / 収益記事
-   - 改善: SEO descriptionを55〜130字に調整、成約直前セクションを追加
-
-2. [アスタキサンチンサプリおすすめランキング2026【含有量・天然由来・コスパで比較】](/blog/astaxanthin-supplement-ranking-2026)
+1. [NMNサプリおすすめランキング2026【元メーカーが成分・純度・コスパで比較】](/blog/nmn-supplement-ranking-2026)
    - 優先度スコア: 18
    - カテゴリ: supplement / 収益記事
    - 改善: SEO descriptionを55〜130字に調整、成約直前セクションを追加
 
-3. [NMNサプリおすすめランキング2026【元メーカーが成分・純度・コスパで比較】](/blog/nmn-supplement-ranking-2026)
-   - 優先度スコア: 18
-   - カテゴリ: supplement / 収益記事
-   - 改善: SEO descriptionを55〜130字に調整、成約直前セクションを追加
-
-4. [アゼライン酸配合化粧品おすすめ比較【毛穴・美白・酒さケアで選ぶ】](/blog/azelaic-acid-cosmetics-comparison)
+2. [アゼライン酸配合化粧品おすすめ比較【毛穴・美白・酒さケアで選ぶ】](/blog/azelaic-acid-cosmetics-comparison)
    - 優先度スコア: 17
    - カテゴリ: skincare / 収益記事
    - 改善: SEO descriptionを55〜130字に調整、成約直前セクションを追加
 
-5. [D-アミノ酸配合化粧品おすすめランキング2026【グリシルグリシンとの相乗効果で比較】](/blog/d-amino-acid-cosmetics-ranking-2026)
+3. [D-アミノ酸配合化粧品おすすめランキング2026【グリシルグリシンとの相乗効果で比較】](/blog/d-amino-acid-cosmetics-ranking-2026)
+   - 優先度スコア: 17
+   - カテゴリ: skincare / 収益記事
+   - 改善: SEO descriptionを55〜130字に調整、成約直前セクションを追加
+
+4. [エルゴチオネインとは？「第3の長寿ビタミン」候補を元メーカーが解説【キノコ由来抗酸化成分】](/blog/ergothioneine-longevity-guide)
+   - 優先度スコア: 17
+   - カテゴリ: supplement / 集客記事
+   - 改善: SEO descriptionを55〜130字に調整、タイトルに購買意図語を追加、内部リンクまたは収益リンクを追加
+
+5. [機能性フレグランス（アンチエイジング香り）おすすめランキング2026【ストレス・睡眠ケアで比較】](/blog/functional-fragrance-products-ranking-2026)
    - 優先度スコア: 17
    - カテゴリ: skincare / 収益記事
    - 改善: SEO descriptionを55〜130字に調整、成約直前セクションを追加
