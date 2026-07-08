@@ -1,23 +1,6 @@
 {
   "queue": [
     {
-      "slug": "ergothioneine-longevity-guide",
-      "title": "エルゴチオネインとは？「第3の長寿ビタミン」候補を元メーカーが解説【キノコ由来抗酸化成分】",
-      "type": "traffic",
-      "category": "supplement",
-      "grade": "B",
-      "keywords": [
-        "エルゴチオネイン とは",
-        "エルゴチオネイン 効果 老化",
-        "エルゴチオネイン サプリ キノコ"
-      ],
-      "points": [
-        "2026年版アンチエイジング最新情報でC15:0・タウリンと並んで言及される「長寿ビタミン候補」の中で、エルゴチオネインだけがサイト内に解説記事・ランキング記事ともに皆無というギャップを解消。Linus Pauling InstituteのBruce Ames博士が提唱した「老化ビタミン」仮説の文脈で2025〜2026年に研究論文が急増",
-        "キノコ（主にエリンギ・椎茸・松茸）の菌糸体でのみ生合成され、ヒトは食事から取るしかない点を処方目線で解説。ミトコンドリア保護・神経保護・抗炎症の3作用を整理し、C15:0・タウリン記事との三部作として内部リンクを設計",
-        "日本産キノコ原料の供給元（柱①：地方・希少原料）とのタイアップ案件への発展を見越して、柱①的な視点（産地・栽培方法・乾燥工程）も盛り込む。将来的なergothioneine-supplement-ranking-2026への送客を前提に構成"
-      ]
-    },
-    {
       "slug": "collagen-supplement-types-guide",
       "title": "コラーゲンサプリの種類と選び方【低分子・ペプチド・マリン・豚由来を元メーカーが比較】",
       "type": "traffic",
@@ -32,23 +15,6 @@
         "コラーゲンサプリは日本で最も検索ボリュームが大きいサプリカテゴリの一つでありながら、サイト内に専用解説記事・比較記事がゼロというギャップを解消。polyglutamic-acid-vs-hyaluronic-acid・ceramide-types-comparisonと同じ『成分比較解説』フォーマットを踏襲",
         "「コラーゲンペプチド→腸管吸収→プロリン・ヒドロキシプロリン→コラーゲン産生促進シグナル」という吸収・利用機序を処方目線（工場での原料取り扱い経験）で整理。低分子コラーゲン（1〜5kDa）・高分子コラーゲン・非変性II型コラーゲン（関節軟骨用）・マリンコラーゲン・豚由来の各タイプの特徴を比較表で提示",
         "グレードA（骨・関節・皮膚での臨床試験結果が比較的豊富）として位置付け、peptide-cosmetics-ranking-2026・retinol-concentration-guideとの『コラーゲン産生促進アプローチ』文脈での内部リンクを設計。将来的なcollagen-supplement-ranking-2026への送客機能を持たせる"
-      ]
-    },
-    {
-      "slug": "home-hifu-device-ranking-2026",
-      "title": "家庭用HIFUおすすめランキング2026【たるみ・リフトアップ効果・安全性で比較】",
-      "type": "monetization",
-      "category": "skincare",
-      "grade": "B",
-      "keywords": [
-        "家庭用HIFU おすすめ",
-        "家庭用HIFU ランキング 2026",
-        "家庭用HIFU リフトアップ 比較"
-      ],
-      "points": [
-        "既存のhifu-vs-hyaluronic-acid（比較・概念解説）から送客する先のランキング記事がないというギャップを解消。home-ipl-device-ranking-2026（IPL）・led-mask-products-ranking-2026（LED）と並ぶ『家庭用美容デバイス三本柱』の最後の一角で、デバイス物販アフィリ（Amazon/楽天、3,000〜30,000円/件）に直結",
-        "クリニック用HIFUとの出力差（医療機器=最大6〜7W、家庭用=0.1〜0.5W未満の規制差）を処方目線で正直に提示し、効果の過大期待を抑えながらも家庭内継続使用によるメンテナンス価値を訴求。照射深度・周波数・カートリッジ寿命の3軸で製品比較",
-        "antiaging-roadmap-40s・antiaging-roadmap-50s（キュー中）への内部リンクで、購買力が高い40〜50代女性ユーザーへの送客を最大化"
       ]
     },
     {
@@ -172,6 +138,22 @@
     }
   ],
   "completed": [
+    {
+      "slug": "ergothioneine-longevity-guide",
+      "title": "エルゴチオネインとは？「第3の長寿ビタミン」候補を元メーカーが解説【キノコ由来抗酸化成分】",
+      "type": "traffic",
+      "category": "supplement",
+      "grade": "B",
+      "completedAt": "2026-07-09T01:06:00.000Z"
+    },
+    {
+      "slug": "home-hifu-device-ranking-2026",
+      "title": "家庭用HIFUおすすめランキング2026【たるみ・リフトアップ効果・安全性で比較】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "B",
+      "completedAt": "2026-07-09T01:08:00.000Z"
+    },
     {
       "slug": "c15-fatty-acid-longevity-supplement-guide",
       "title": "C15:0（ペンタデカン酸）とは？2026年注目の新・必須脂肪酸サプリを元メーカーが解説",
@@ -691,6 +673,6 @@
       "completedAt": "2026-07-08"
     }
   ],
-  "lastRun": "2026-07-08",
+  "lastRun": "2026-07-09",
   "lastContentAnalysis": "2026-07-08T04:00:00.000Z"
 }
