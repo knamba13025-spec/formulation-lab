@@ -78,6 +78,8 @@ affiliate: false
 - **補助成分**：[ビタミンC誘導体](/blog/vitamin-c-derivative-comparison)、[セラミド](/blog/ceramide-cosmetics-ranking-2026)、[ヒアルロン酸](/blog/polyglutamic-acid-vs-hyaluronic-acid)などを見る
 - **品質表示**：国内GMP、原料メーカー名、第三者検査を確認
 
+種類が分かったところで、実際の製品を比較したい方は[コラーゲンサプリおすすめランキング2026【低分子・ペプチド・マリン由来を元メーカーがコスパ比較】](/blog/collagen-supplement-ranking-2026)も参考にしてください。
+
 外側からのハリ感ケアも組み合わせたい場合は、塗るペプチドの設計をまとめた[ペプチド配合化粧品おすすめランキング2026](/blog/peptide-cosmetics-ranking-2026)も参考になります。飲むペプチドとは作用する場所と評価方法が別です。
 
 肌のハリやキメをより積極的に狙う外用成分としてはレチノールも候補です。刺激や濃度設計は、[レチノール濃度の選び方ガイド](/blog/retinol-concentration-guide)で整理してください。
