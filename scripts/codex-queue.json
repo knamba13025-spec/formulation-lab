@@ -1,68 +1,76 @@
 {
-  "generatedAt": "2026-07-16T16:42:00+09:00",
-  "note": "本日07:35分の前回バッチで、article-queue.json中のc15-fatty-acid-supplement-ranking-2026・spicule-products-ranking-2026・mens-skincare-products-ranking-2026の3件は既にブリーフ済み。さらに過去バッチ分のcollagen-supplement-ranking-2026・berberine-longevity-guide・omega3-supplement-ranking-2026・next-gen-retinoid-guide・mens-skincare-basics-guideの5件も未着手で滞留中（計8件がCodex未消化）。本バッチは重複を避け、article-queue.json中で唯一まだブリーフされていなかった2件（ai-skin-analysis-app-guide・recovery-cosmetics-phase-free-guide）と、今回のギャップ分析で新たに見つけたqueue未登録の高収益候補1件（exosome-iv-clinic-ranking-2026、次回queue補充サイクルでの追加を推奨）の計3件を新規ブリーフ。Codex側の消化が追いついていないため、新規ブリーフより先に滞留8件の処理を優先することを推奨する。",
+  "generatedAt": "2026-07-19T04:10:00+09:00",
+  "note": "【重要：Codex消化の遅延が拡大中】前回バッチ（2026-07-16）時点で未消化8件（c15-fatty-acid-supplement-ranking-2026・spicule-products-ranking-2026・mens-skincare-products-ranking-2026・collagen-supplement-ranking-2026・berberine-longevity-guide・omega3-supplement-ranking-2026・next-gen-retinoid-guide・mens-skincare-basics-guide）のうち、本日01:00のformulation-lab-daily-articlesでcollagen-supplement-ranking-2026とberberine-longevity-guideの2件が公開完了（2026-07-19T03:16着手ログ確認）。残り6件は今回も未消化のまま滞留継続。本バッチはqueue先頭（未着手の中で最優先）のomega3-supplement-ranking-2026（grade A）・次点のnext-gen-retinoid-guide（grade B）と、前回発見しqueue未登録のまま塩漬けだったexosome-iv-clinic-ranking-2026（今回正式にarticle-queue.jsonへ編入）の計3件をブリーフ。ただし処理速度（3日で2件ペース）が生成速度を下回っており、次回以降は新規ブリーフより滞留6件＋本バッチ3件＝計9件の消化を優先することを強く推奨する。",
   "briefs": [
     {
-      "slug": "ai-skin-analysis-app-guide",
-      "title": "AI肌分析アプリ・デバイスは本当に当たるのか？精度の仕組みを元メーカーが解説【2026年版】",
-      "type": "traffic",
-      "category": "skincare",
-      "grade": "C",
+      "slug": "omega3-supplement-ranking-2026",
+      "title": "オメガ3（EPA/DHA）サプリおすすめランキング2026【抗炎症・抗老化エビデンスで比較】",
+      "type": "monetization",
+      "category": "supplement",
+      "grade": "A",
       "keywords": [
-        "AI 肌分析 精度",
-        "AI肌分析アプリ 当たる",
-        "パーソナライズ スキンケア AI"
+        "オメガ3 サプリ おすすめ",
+        "EPA DHA サプリ ランキング 2026",
+        "魚油 サプリ 効果 老化"
       ],
       "frontmatter_template": {
-        "title": "AI肌分析アプリ・デバイスは本当に当たるのか？精度の仕組みを元メーカーが解説【2026年版】",
-        "description": "Amorepacific×MITの『Skinsight』やSamsung AIミラーなど相次ぐAI肌分析技術を、化粧品処方経験を持つ元メーカーが『何を測定しているか』『処方選びとは別問題である理由』の観点で解説します。",
-        "pubDate": "2026-08-07",
-        "category": "skincare",
-        "grade": "C"
+        "title": "オメガ3（EPA/DHA）サプリおすすめランキング2026【抗炎症・抗老化エビデンスで比較】",
+        "description": "複数の大規模RCTで心血管保護・抗炎症・認知機能維持が実証されているオメガ3（EPA/DHA）サプリを、化粧品処方経験を持つ元メーカーが原料グレード・TG型とEE型の違い・酸化リスク管理の観点でランキング比較します。",
+        "pubDate": "2026-08-04",
+        "category": "supplement",
+        "grade": "A"
       },
       "outline": [
-        "## このガイドの結論（先出し）：AI肌分析は『測定』は得意、『処方選び』は別問題",
-        "## 2026年のAI肌分析技術の動向",
-        "  - Amorepacific×MIT『Skinsight』、Samsung AIミラー（30秒でシワ・毛穴・色斑検出）、アラガン社のAI肌分析プラットフォーム（施術結果38%向上）を事実紹介として整理（過度な期待を煽らない）",
-        "## 何を測定しているか（処方目線での整理）",
-        "  - 水分量・弾力・毛穴・色素沈着など測定項目の意味を製剤設計者の視点で解説",
-        "## 測定精度と『処方選び』が別問題である理由",
-        "  - データの可視化と、そこから成分・濃度を選ぶロジックは別の専門知識であることを正直に説明（グレードC運用の徹底）",
-        "## AIが勧める成分をどう選ぶか",
-        "  - niacinamide-complete-guide・ceramide-types-comparison・retinol-concentration-guideへの内部リンクで『処方知識を持つ人間の解説』という差別化軸を提示",
+        "## このランキングの選び方（4つの評価軸）",
+        "  1. 1粒あたりのEPA+DHA含有量",
+        "  2. 原料（魚種・産地）",
+        "  3. 製造管理（酸化防止処理・第三者認証）",
+        "  4. コスパ（1日あたりの実質コスト）",
+        "## オメガ3が『抗老化サプリの中で最もエビデンスが豊富』な理由",
+        "  - 心血管保護・抗炎症・認知機能維持・老化速度低下を示す複数RCTを平易に紹介（グレードA運用）",
+        "## 『魚を食べれば十分か？』への回答",
+        "  - 現代日本人の実際の摂取量と研究推奨量（EPA+DHA合計1〜3g/日）の乖離を提示",
+        "## TG型 vs EE型：吸収率の違いを処方目線で解説",
+        "  - 原料グレード・酸化リスク管理を充填・品質管理経験から解説",
+        "## おすすめ製品TOP5〜7",
+        "  - TG型高吸収製品を1位推奨として構成",
+        "## astaxanthin-supplement-ranking-2026との『抗酸化×抗炎症』スタック提案",
         "## まとめ"
       ],
-      "maker_perspective": "測定データがどれだけ精密になっても、そこから『どの成分をどの濃度で使うか』を決めるのは別の専門知識です。AIは肌状態の可視化には強い一方、処方設計のロジックまでを代替しているわけではないという線引きを、過度な期待を煽らずに正直に伝えることが、この記事の差別化価値になります。"
+      "maker_perspective": "オメガ3は原料の魚種・産地・精製工程によって酸化のしやすさが大きく変わる成分です。パッケージの『EPA○mg配合』という数字だけでなく、酸化防止の管理体制まで見て選ぶべきだという視点を、充填・品質管理の現場経験から伝えられる点がこの記事の差別化価値です。"
     },
     {
-      "slug": "recovery-cosmetics-phase-free-guide",
-      "title": "リカバリーコスメ・フェーズフリーコスメとは？2026年日本市場注目キーワードを元メーカーが解説",
+      "slug": "next-gen-retinoid-guide",
+      "title": "次世代レチノイド（穏やかなレチノイド）とは？レチノール・バクチオールとの違いを元メーカーが解説",
       "type": "traffic",
       "category": "skincare",
-      "grade": "C",
+      "grade": "B",
       "keywords": [
-        "リカバリーコスメ とは",
-        "フェーズフリーコスメ とは",
-        "肌 リカバリー 化粧品 2026"
+        "次世代レチノイド とは",
+        "穏やかなレチノイド 効果",
+        "レチノイド 低刺激 新成分"
       ],
       "frontmatter_template": {
-        "title": "リカバリーコスメ・フェーズフリーコスメとは？2026年日本市場注目キーワードを元メーカーが解説",
-        "description": "富士経済『化粧品マーケティング要覧2026』が挙げる2026年日本市場キーワード『リカバリーコスメ』『フェーズフリーコスメ』を、化粧品処方経験を持つ元メーカーが処方思想の観点から解説します。",
-        "pubDate": "2026-08-08",
+        "title": "次世代レチノイド（穏やかなレチノイド）とは？レチノール・バクチオールとの違いを元メーカーが解説",
+        "description": "従来レチノールの刺激を抑えつつコラーゲン再生・ターンオーバーを促す次世代レチノイドを、化粧品処方経験を持つ元メーカーがカプセル化・徐放化技術の観点でレチノール・バクチオールとの違いを整理します。",
+        "pubDate": "2026-08-05",
         "category": "skincare",
-        "grade": "C"
+        "grade": "B"
       },
       "outline": [
-        "## 富士経済レポートに登場した2026年日本市場キーワードの整理",
-        "  - リカバリーコスメ・ロンジェビティコスメ・フェーズフリーコスメの3語を紹介",
-        "## 『リカバリーコスメ』とは：バリア機能の立て直しに主眼を置く処方思想",
-        "## 『フェーズフリーコスメ』とは：年代・季節・肌状態を問わず使い続けられる汎用設計思想",
-        "## 従来の『エイジングケア』との違い",
-        "## 該当する処方・成分の例",
-        "  - ceramide-types-comparison・functional-fragrance-products-ranking-2026・mens-skincare-basics-guideへの内部リンク",
-        "## まとめ（将来のrecovery-cosmetics-ranking-2026への布石）"
+        "## 次世代レチノイドとは：レチノイド受容体経路を維持しつつ刺激を抑える新製剤",
+        "## 従来レチノールとの違い：『濃度』ではなく『製剤技術』で刺激を抑える設計思想",
+        "  - retinol-concentration-guideとの『濃度 vs 製剤技術』という新しい選び方の軸を提示",
+        "## カプセル化・徐放化・プロレチノール（レチナールエステル等）技術の仕組み",
+        "  - 角層での急激な有効成分遊離を防ぎ、刺激閾値以下で受容体活性化を持続させる設計を処方目線で解説",
+        "## バクチオールとの違い：『同じレチノイド経路』か『別経路の代替』か",
+        "  - bakuchiol-vs-retinol-guideへの内部リンクで作用機序の違いを正確に整理",
+        "## どんな人に向いているか",
+        "  - レチノール未経験者・過去に刺激で挫折した人向けの選択肢として提示",
+        "## retinol-products-ranking-2026・bakuchiol-products-ranking-2026への内部リンク",
+        "## まとめ（将来の次世代レチノイド配合化粧品ランキングへの布石）"
       ],
-      "maker_perspective": "『リカバリー』も『フェーズフリー』も新成分の話ではなく処方思想の変化です。バリア機能データを軸に製品を評価する視点を持てば、流行語に惑わされず本質的な良し悪しを判断できる、という切り口を提示する価値があります。"
+      "maker_perspective": "次世代レチノイドの本質は『新成分』ではなく『届け方（製剤技術）』の進化です。同じ有効成分でもカプセル化・徐放化によって肌への当たり方が変わるという、量産処方の現場で扱ってきた技術的な視点を平易に伝えることが、この記事の独自価値になります。"
     },
     {
       "slug": "exosome-iv-clinic-ranking-2026",
@@ -70,7 +78,7 @@
       "type": "monetization",
       "category": "clinic",
       "grade": "C",
-      "note": "article-queue.json未登録の新規ギャップ候補。次回queue補充サイクル（10件未満になった時点）での追加を推奨。",
+      "note": "前回（2026-07-16）ブリーフ済み・今回article-queue.jsonへ正式編入。前回のoutline/maker_perspectiveを継続使用。",
       "keywords": [
         "エクソソーム 点滴 クリニック おすすめ",
         "エクソソーム点滴 効果",
@@ -103,5 +111,5 @@
       "maker_perspective": "エクソソームは精製方法や粒子径測定の有無で品質に差が出やすい原料です。クリニックが由来・精製方法をどこまで開示しているかが、価格以上に実質的な判断材料になるという視点を、収益性の高い自由診療ジャンルで正直に打ち出せる点が差別化になります。"
     }
   ],
-  "lastRun": "2026-07-16"
+  "lastRun": "2026-07-19"
 }
