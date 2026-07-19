@@ -1,40 +1,6 @@
 {
   "queue": [
     {
-      "slug": "collagen-supplement-ranking-2026",
-      "title": "コラーゲンサプリおすすめランキング2026【低分子・ペプチド・マリン由来を元メーカーがコスパ比較】",
-      "type": "monetization",
-      "category": "supplement",
-      "grade": "A",
-      "keywords": [
-        "コラーゲン サプリ おすすめ",
-        "コラーゲン サプリ ランキング 2026",
-        "低分子コラーゲン おすすめ 比較"
-      ],
-      "points": [
-        "collagen-supplement-types-guide（キュー中・traffic/解説）と対になるランキング記事。コラーゲンサプリは日本で最も検索ボリュームが大きいサプリカテゴリの一つでありながら、サイト内に対応ランキング記事が皆無というギャップを解消。Amazon/楽天物販アフィリ（収益③）の送客対象として収益ポテンシャルが最も高いカテゴリ",
-        "「コラーゲンを飲んでも吸収されない」という誤解を処方目線（ペプチド→アミノ酸→コラーゲン産生促進シグナル説）で解説したうえで、1日あたりコラーゲンペプチド量・原材料（マリン/豚/鶏）・含有ビタミンC量・添加物・コスパの5軸で実製品を比較するランキング構成。グレードAのカテゴリとして根拠が豊富な製品を優先評価",
-        "peptide-cosmetics-ranking-2026・retinol-products-ranking-2026（コラーゲン産生促進文脈）とcollagen-supplement-types-guide（解説ページ）からの内部送客で流入を最大化。「飲む・塗る・増やす」の三方向からコラーゲンを訴求する設計で読者の検討段階に合わせたCTAを最適化"
-      ]
-    },
-    {
-      "slug": "berberine-longevity-guide",
-      "title": "ベルベリンとは？「天然のメトフォルミン」と呼ばれる長寿成分を元メーカーが解説【2026年注目株】",
-      "type": "traffic",
-      "category": "supplement",
-      "grade": "B",
-      "keywords": [
-        "ベルベリン とは",
-        "ベルベリン 効果 老化",
-        "ベルベリン メトフォルミン 違い"
-      ],
-      "points": [
-        "欧米ロンジェビティ界でメトフォルミン代替として急注目されるベルベリンが、サイト内に解説記事・ランキング記事ともに皆無というギャップを解消。glp1-support-supplement-ranking-2026でGLP-1サポート成分として言及済みだが、ベルベリン単体の機序・エビデンス・注意点を処方目線で深掘りした独立記事は未着手",
-        "AMPK活性化・mTOR阻害・腸内細菌叢改善の3経路を整理し、NMN（NAD+経路）・ラパマイシン（mTOR阻害）・ウロリチンA（ミトファジー）との長寿サプリスタック比較軸を設計。urolithin-a-longevity-guide・nmn-dose-timing-guide・rapamycin-pearl-trial-guideへの内部リンクで『長寿サプリ解説』カテゴリの面を拡大",
-        "「メトフォルミンが処方薬である一方ベルベリンはサプリで入手可能」という読者の検討理由を正直に扱いつつ、肝毒性リスク・薬物相互作用（シクロスポリン・ワルファリン等）の注意点を処方目線で明記。将来的なberberine-supplement-ranking-2026への送客を前提に構成"
-      ]
-    },
-    {
       "slug": "omega3-supplement-ranking-2026",
       "title": "オメガ3（EPA/DHA）サプリおすすめランキング2026【抗炎症・抗老化エビデンスで比較】",
       "type": "monetization",
@@ -172,6 +138,22 @@
     }
   ],
   "completed": [
+    {
+      "slug": "collagen-supplement-ranking-2026",
+      "title": "コラーゲンサプリおすすめランキング2026【低分子・ペプチド・マリン由来を元メーカーがコスパ比較】",
+      "type": "monetization",
+      "category": "supplement",
+      "grade": "A",
+      "completedAt": "2026-07-19T03:16:21.000Z"
+    },
+    {
+      "slug": "berberine-longevity-guide",
+      "title": "ベルベリンとは？「天然のメトフォルミン」と呼ばれる長寿成分を元メーカーが解説【2026年注目株】",
+      "type": "traffic",
+      "category": "supplement",
+      "grade": "B",
+      "completedAt": "2026-07-19T03:16:21.000Z"
+    },
     {
       "slug": "ergothioneine-longevity-guide",
       "title": "エルゴチオネインとは？「第3の長寿ビタミン」候補を元メーカーが解説【キノコ由来抗酸化成分】",
@@ -779,6 +761,6 @@
       "completedAt": "2026-07-16"
     }
   ],
-  "lastRun": "2026-07-16",
+  "lastRun": "2026-07-19",
   "lastContentAnalysis": "2026-07-16T16:40:00.000Z"
 }
