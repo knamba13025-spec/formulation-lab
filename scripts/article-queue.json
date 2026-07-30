@@ -101,6 +101,74 @@
         "『クリーンビューティー』には法的・業界統一の定義が存在せず、ブランドごとに基準が異なる（無添加・オーガニック・サステナブル等を独自定義）という実態を元メーカー視点（原料調達・処方設計の現場経験）で正直に解説し、『クリーン=安全・優れている』という単純化を避けるグレードC運用を徹底",
         "how-to-read-ingredients（成分表示の読み方）・camellia-fermented-extract-cosmetics-ranking-2026（柱①：希少・国産原料）との内部リンクで『何を基準に選ぶか』という読者の意思決定を後押しする構成"
       ]
+    },
+    {
+      "slug": "sensitive-skin-barrier-care-guide",
+      "title": "敏感肌・肌バリア機能ケアの基本【元メーカーが解説する『低刺激設計』の見分け方】",
+      "type": "traffic",
+      "category": "skincare",
+      "grade": "B",
+      "keywords": [
+        "敏感肌 スキンケア 選び方",
+        "肌バリア機能 低下 原因",
+        "低刺激 化粧品 見分け方"
+      ],
+      "points": [
+        "cosmetics-latest（2026-07-05時点）・digital-affiliate-latestの双方で『レチノール＋ビタミンC路線が低刺激化』『敏感肌対応処方が差別化ポイント』という同一トレンドが繰り返し言及されているにもかかわらず、サイト内に敏感肌・肌バリア機能そのものを正面から扱う解説記事が存在しないという構造的ギャップ",
+        "『低刺激』を謳う製品の見分け方（配合成分の刺激性データ・パッチテストの有無・処方設計の考え方）を元メーカーの処方経験から解説し、消費者が『無添加』『低刺激』表示だけで判断しない視点を提供",
+        "niacinamide-complete-guide・ceramide-types-comparison・azelaic-acid-explainerなど既存の低刺激系成分記事への内部リンクのハブ記事として設計し、回遊性向上と将来的な『低刺激スキンケアランキング』記事への布石とする"
+      ]
+    },
+    {
+      "slug": "home-microcurrent-device-ranking-2026",
+      "title": "家庭用マイクロカレント（EMS）美顔器おすすめランキング2026【LED・HIFUとの違いを元メーカーが比較】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "B",
+      "keywords": [
+        "マイクロカレント 美顔器 おすすめ",
+        "EMS 美顔器 ランキング",
+        "マイクロカレント HIFU 違い"
+      ],
+      "points": [
+        "cosmetics-latestで『LEDマスク市場が前年比+96.7%』と家庭用美容デバイス市場全体の急拡大が示される一方、サイト内はled-mask-products-ranking-2026・home-hifu-device-ranking-2026・home-ipl-device-ranking-2026が公開済みでマイクロカレント（EMS）系のランキング記事のみが未着手というカテゴリ内の抜け",
+        "微弱電流による筋肉への直接アプローチというHIFU（熱による引き締め）・LED（光による細胞活性化）とは異なる作用機序を3軸（出力調整幅・電極形状・連続使用時の刺激感）で比較し、併用戦略として案内",
+        "led-mask-products-ranking-2026・home-hifu-device-ranking-2026との『家庭用美容デバイス』内部リンク網を完成させ、Amazon/楽天物販アフィリの面を拡大"
+      ]
+    },
+    {
+      "slug": "fisetin-senolytic-supplement-guide",
+      "title": "フィセチンサプリとは？市販で買える『セノリティクス』候補を元メーカーが解説【2026年版】",
+      "type": "traffic",
+      "category": "supplement",
+      "grade": "C",
+      "keywords": [
+        "フィセチン サプリ 効果",
+        "フィセチン セノリティクス",
+        "フィセチン ケルセチン 違い"
+      ],
+      "points": [
+        "anti-aging-latestで言及されるダサチニブ＋ケルセチン（D+Q）は医師処方が必要な組み合わせだが、同じセノリティクス候補として『2027年にフィセチン/フレイル研究の読み出しが予定』と明記されているフィセチンは市販サプリとして購入可能という違いがあり、既存のsenolytic-science-explained（セノリティクス全般の解説）に対して『市販で試せる選択肢』を掘り下げる記事が未着手というギャップ",
+        "D+Qとの作用機序の違い・エビデンスレベルの差（フィセチンはヒト試験が限定的）を正直に明記し、過度な期待を煽らないグレードC運用を徹底",
+        "senolytic-science-explainedからの内部送客を前提に設計し、urolithin-a-longevity-guide・taurine-longevity-supplement-ranking-2026等の『次世代長寿サプリ』文脈で将来のランキング記事化への布石とする"
+      ]
+    },
+    {
+      "slug": "prp-therapy-clinic-ranking-2026",
+      "title": "PRP療法（多血小板血漿）クリニックおすすめランキング2026【幹細胞・PDRNとの違いを元メーカーが比較】",
+      "type": "monetization",
+      "category": "clinic",
+      "grade": "C",
+      "keywords": [
+        "PRP療法 クリニック おすすめ",
+        "PRP 幹細胞 違い",
+        "多血小板血漿 美容 効果"
+      ],
+      "points": [
+        "サイト内はstem-cell-injection-clinic-ranking・pdrn-clinic-ranking・nad-plus-iv-clinic-ranking・exosome-iv-clinic-ranking-2026（キュー中）と再生医療系クリニック比較記事が充実する一方、美容医療で広く実施されているPRP療法（自己血由来）の比較記事のみが存在しないという抜け",
+        "自己血液を使うPRP（アレルギーリスクが低い）と、他家由来の幹細胞・PDRN・エクソソームとの違い（原料由来・エビデンスレベル・価格帯）を3軸で整理し、施術選びの判断材料を提供",
+        "stem-cell-injection-clinic-ranking・pdrn-clinic-ranking・exosome-iv-clinic-ranking-2026との『再生医療系クリニック』内部リンク網に組み込み、A8.net等の美容医療クリニックASP案件（収益設計上の最優先カテゴリ）の面を拡大"
+      ]
     }
   ],
   "completed": [
@@ -780,5 +848,5 @@
     }
   ],
   "lastRun": "2026-07-30T20:37:13+09:00",
-  "lastContentAnalysis": "2026-07-26T14:00:00.000Z"
+  "lastContentAnalysis": "2026-07-30T20:44:58+09:00"
 }
