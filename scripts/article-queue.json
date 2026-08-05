@@ -101,6 +101,74 @@
         "自己血液を使うPRP（アレルギーリスクが低い）と、他家由来の幹細胞・PDRN・エクソソームとの違い（原料由来・エビデンスレベル・価格帯）を3軸で整理し、施術選びの判断材料を提供",
         "stem-cell-injection-clinic-ranking・pdrn-clinic-ranking・exosome-iv-clinic-ranking-2026との『再生医療系クリニック』内部リンク網に組み込み、A8.net等の美容医療クリニックASP案件（収益設計上の最優先カテゴリ）の面を拡大"
       ]
+    },
+    {
+      "slug": "vitamin-d-longevity-guide",
+      "title": "ビタミンDとは？アンチエイジング・免疫・骨密度への効果を元メーカーが解説【日本人の8割が不足】",
+      "type": "traffic",
+      "category": "supplement",
+      "grade": "A",
+      "keywords": [
+        "ビタミンD とは",
+        "ビタミンD 効果 アンチエイジング",
+        "ビタミンD 不足 日本人"
+      ],
+      "points": [
+        "サイト内にビタミンDを扱う記事が皆無というギャップ。日本人の大多数が血中ビタミンD不足という調査結果があり、骨密度・免疫機能・老化バイオマーカーとの関連で臨床エビデンスが豊富なグレードA候補でありながら、supplementカテゴリ16本の中に一本も存在しない",
+        "日照時間の少ない現代の室内中心の生活・皮膚がん予防目的の日焼け止め常用による皮膚合成量低下という『日本特有の不足要因』を元メーカー視点（紫外線ケア製品の処方経験）で整理し、紫外線対策としっかりのビタミンD確保が一見矛盾するように見える点を橋渡しする切り口を提供",
+        "omega3-supplement-ranking-2026・astaxanthin-supplement-ranking-2026などグレードA評価のサプリ記事群と『エビデンスが強い基本サプリ』文脈で内部リンクし、同時キュー入りのvitamin-d-supplement-ranking-2026への送客を前提に構成"
+      ]
+    },
+    {
+      "slug": "vitamin-d-supplement-ranking-2026",
+      "title": "ビタミンDサプリおすすめランキング2026【D2/D3の違い・含有量・コスパを元メーカーが比較】",
+      "type": "monetization",
+      "category": "supplement",
+      "grade": "A",
+      "keywords": [
+        "ビタミンD サプリ おすすめ",
+        "ビタミンD3 ランキング",
+        "ビタミンD サプリ 選び方"
+      ],
+      "points": [
+        "同時キュー入りのvitamin-d-longevity-guide（解説記事）に対応する比較・ランキング記事がサイト内に皆無というギャップを解消。日本で不足者が多く検索需要が高いにもかかわらず未着手のカテゴリで、collagen-supplement-ranking-2026・omega3-supplement-ranking-2026と並ぶ基本サプリランキングの抜け",
+        "D2（エルゴカルシフェロール・植物由来）とD3（コレカルシフェロール・動物由来で変換効率が高い）の違い、1粒あたりのIU（国際単位）表示と日本人の目安摂取量との乖離、K2との併用設計（カルシウムの骨への沈着を助ける）を処方目線で整理",
+        "omega3-supplement-ranking-2026（オイル系サプリの吸収文脈）・collagen-supplement-ranking-2026との『基本サプリスタック』文脈で内部リンクを設計し、Amazon/楽天物販アフィリの面を拡大"
+      ]
+    },
+    {
+      "slug": "sunscreen-ingredient-guide",
+      "title": "紫外線吸収剤 vs 紫外線散乱剤とは？日焼け止めの選び方を元メーカーが解説",
+      "type": "traffic",
+      "category": "skincare",
+      "grade": "B",
+      "keywords": [
+        "紫外線吸収剤 紫外線散乱剤 違い",
+        "日焼け止め 選び方 成分",
+        "ノンケミカル 日焼け止め とは"
+      ],
+      "points": [
+        "既存のsunscreen-products-ranking-2026（ランキング記事）に送客する『成分そのものの解説記事』が未着手というギャップ。azelaic-acid-explainer→azelaic-acid-cosmetics-comparisonと同じ『解説→比較ランキング』の二段構成を踏襲",
+        "紫外線吸収剤（化学的にUVを熱に変換し白浮きしにくいが刺激懸念）と紫外線散乱剤（物理的に反射しノンケミカルで低刺激だが白浮きしやすい）の違いを処方目線（配合設計・使用感調整の経験）で整理し、『ノンケミカル=安全』という単純化を避けて敏感肌向けの実際の選び方を提示",
+        "sunscreen-products-ranking-2026・同時キュー入りのvitamin-d-longevity-guideとの『紫外線対策とビタミンD確保の両立』文脈で内部リンクを設計し、夏コスメシーズンのSEO流入を強化"
+      ]
+    },
+    {
+      "slug": "home-rf-device-ranking-2026",
+      "title": "家庭用RF(ラジオ波)美顔器おすすめランキング2026【HIFU・マイクロカレントとの違いを元メーカーが比較】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "B",
+      "keywords": [
+        "RF美顔器 おすすめ",
+        "ラジオ波 美顔器 ランキング",
+        "RF ラジオ波 HIFU 違い"
+      ],
+      "points": [
+        "home-hifu-device-ranking-2026・home-ipl-device-ranking-2026・led-mask-products-ranking-2026・home-microcurrent-device-ranking-2026（キュー中）と家庭用美容デバイス系ランキングが充実する一方、広く普及しているRF（ラジオ波）美顔器のランキング記事のみが未着手という『家庭用美容デバイス』カテゴリ内の抜け",
+        "高周波による深部加温・血行促進というHIFU（熱による凝固・引き締め）・マイクロカレント（微弱電流）とは異なる作用機序を3軸（出力調整幅・連続使用時の発熱管理・肌への刺激感）で比較し、価格帯別の選び方を提示",
+        "home-hifu-device-ranking-2026・home-microcurrent-device-ranking-2026（キュー中）との『家庭用美容デバイス』内部リンク網を完成させ、Amazon/楽天物販アフィリの面を拡大"
+      ]
     }
   ],
   "completed": [
@@ -832,5 +900,5 @@
     }
   ],
   "lastRun": "2026-08-05T00:00:00+09:00",
-  "lastContentAnalysis": "2026-07-30T20:44:58+09:00"
+  "lastContentAnalysis": "2026-08-05T16:40:00+09:00"
 }

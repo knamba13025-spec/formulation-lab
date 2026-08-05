@@ -1,101 +1,101 @@
 {
-  "generatedAt": "2026-07-30T20:44:58+09:00",
-  "note": "前回バッチ（2026-07-26）でブリーフしたmens-skincare-basics-guide・mens-skincare-products-ranking-2026は既にcompleted入り（公開済み）。c15-fatty-acid-supplement-ranking-2026は前回ブリーフ済みだがarticle-queue.json上まだ未完了（completedへ未移動）のため、本バッチでの再ブリーフは見送り、queue内で未ブリーフのまま残っている案件から優先度順に3件を選定した。1件目のspicule-products-ranking-2026は運営方針レビューで3週以上『最優先ギャップ』と繰り返し指摘されながら未着手が続いていた案件。2件目のexosome-iv-clinic-ranking-2026は収益設計上最優先の美容医療クリニックASPカテゴリ（サイト内clinicカテゴリは7本のみと最も手薄）を強化する高収益案件。3件目のai-skin-analysis-app-guideはAmorepacific Skinsight・Samsung AIミラー等2026年に相次ぐAI肌分析技術トレンドを扱う記事がサイト内に皆無というギャップに対応。また本日のコンテンツ分析で新規に4件（sensitive-skin-barrier-care-guide・home-microcurrent-device-ranking-2026・fisetin-senolytic-supplement-guide・prp-therapy-clinic-ranking-2026）をqueueへ追加済み（traffic:monetization=2:2）だが、これらは次回以降のバッチでブリーフ予定。",
+  "generatedAt": "2026-08-05T16:40:00+09:00",
+  "note": "前回バッチ（2026-07-30）でブリーフしたspicule-products-ranking-2026・exosome-iv-clinic-ranking-2026・ai-skin-analysis-app-guideのうち、spicule-products-ranking-2026とai-skin-analysis-app-guideは既にcompleted入り（公開済み）。exosome-iv-clinic-ranking-2026は今回のcontent-analysisでも改めてqueueに残存を確認したがまだ未完了のため再ブリーフは見送り。前回ノートで『次回以降のバッチでブリーフ予定』としていた4件（sensitive-skin-barrier-care-guide・home-microcurrent-device-ranking-2026・fisetin-senolytic-supplement-guide・prp-therapy-clinic-ranking-2026）のうち、運営方針レビュー（2026-07-30更新）で『grade Bかつ物販アフィリ相性良好』と高優先度指定されたsensitive-skin-barrier-care-guide・home-microcurrent-device-ranking-2026の2件と、clinicカテゴリ（サイト内7本のみと最も手薄・美容医療クリニックASPが収益設計上の最優先チャネル）を強化するprp-therapy-clinic-ranking-2026を選定した3件をブリーフ。fisetin-senolytic-supplement-guide（grade C）は次回バッチへ持ち越し。また本日のコンテンツ分析で新規に4件（vitamin-d-longevity-guide・vitamin-d-supplement-ranking-2026・sunscreen-ingredient-guide・home-rf-device-ranking-2026）をqueueへ追加済み（traffic:monetization=2:2、queue合計10件）だが、これらは次回以降のバッチでブリーフ予定。",
   "briefs": [
     {
-      "slug": "spicule-products-ranking-2026",
-      "title": "スピキュール配合化粧品おすすめランキング2026【物理的ニードリング効果を元メーカーが比較】",
+      "slug": "sensitive-skin-barrier-care-guide",
+      "title": "敏感肌・肌バリア機能ケアの基本【元メーカーが解説する『低刺激設計』の見分け方】",
+      "type": "traffic",
+      "category": "skincare",
+      "grade": "B",
+      "keywords": [
+        "敏感肌 スキンケア 選び方",
+        "肌バリア機能 低下 原因",
+        "低刺激 化粧品 見分け方"
+      ],
+      "frontmatter_template": {
+        "title": "敏感肌・肌バリア機能ケアの基本【元メーカーが解説する『低刺激設計』の見分け方】",
+        "description": "『低刺激』を謳う化粧品を、化粧品処方経験を持つ元メーカーが配合成分の刺激性データ・パッチテストの有無・処方設計の考え方から見分け方を解説します。",
+        "pubDate": "2026-08-12",
+        "category": "skincare",
+        "grade": "B"
+      },
+      "outline": [
+        "## 肌バリア機能とは何か（角層・皮脂膜・NMFの役割）",
+        "## 肌バリア機能が低下する原因（乾燥・摩擦・過剰な角質ケア・レチノール等の攻めの成分の使いすぎ）",
+        "## 『低刺激』『無添加』表示だけで判断してはいけない理由",
+        "  - 配合成分の刺激性データの見方",
+        "  - パッチテストの有無・実施条件",
+        "  - 処方設計における低刺激化の実際の手法（防腐剤・界面活性剤の選定等）",
+        "## niacinamide-complete-guide・ceramide-types-comparison・azelaic-acid-explainerへの内部リンク（低刺激系成分のハブ記事として設計）",
+        "## 敏感肌さんの製品選びチェックリスト",
+        "## まとめ"
+      ],
+      "maker_perspective": "『低刺激』は法的に定義された表示ではなく、メーカーごとに基準が異なります。処方設計の現場では防腐剤・界面活性剤・香料の刺激性データやパッチテスト条件を見て低刺激性を判断しており、消費者がパッケージの謳い文句だけで判断しない視点を提供することがこの記事の価値です。将来的な『低刺激スキンケアランキング』記事へのハブとしても機能させます。"
+    },
+    {
+      "slug": "home-microcurrent-device-ranking-2026",
+      "title": "家庭用マイクロカレント（EMS）美顔器おすすめランキング2026【LED・HIFUとの違いを元メーカーが比較】",
       "type": "monetization",
       "category": "skincare",
       "grade": "B",
       "keywords": [
-        "スピキュール 化粧品 おすすめ",
-        "スピキュール 美容液 ランキング",
-        "スピキュール 効果 比較"
+        "マイクロカレント 美顔器 おすすめ",
+        "EMS 美顔器 ランキング",
+        "マイクロカレント HIFU 違い"
       ],
       "frontmatter_template": {
-        "title": "スピキュール配合化粧品おすすめランキング2026【物理的ニードリング効果を元メーカーが比較】",
-        "description": "物理的ニードリング効果を持つ注目成分スピキュールの配合化粧品を、化粧品処方経験を持つ元メーカーが針状結晶の密度・配合濃度・併用成分の3軸で比較します。",
-        "pubDate": "2026-08-21",
+        "title": "家庭用マイクロカレント（EMS）美顔器おすすめランキング2026【LED・HIFUとの違いを元メーカーが比較】",
+        "description": "微弱電流で表情筋にアプローチするマイクロカレント（EMS）美顔器を、化粧品処方経験を持つ元メーカーが出力調整幅・電極形状・連続使用時の刺激感の3軸で比較します。",
+        "pubDate": "2026-08-13",
         "category": "skincare",
         "grade": "B"
       },
       "outline": [
         "## このランキングの選び方（3つの評価軸）",
-        "  1. 針状結晶の密度",
-        "  2. 配合濃度",
-        "  3. 併用される有効成分（ナイアシンアミド・レチノール等の浸透促進効果）",
-        "## スピキュールとは？物理的ニードリングという他成分にない訴求軸",
-        "  - spicule-skincare-guideへの内部リンク",
+        "  1. 出力調整幅",
+        "  2. 電極形状（点電極・ローラー型等）",
+        "  3. 連続使用時の刺激感",
+        "## マイクロカレントとは？HIFU（熱による引き締め）・LED（光による細胞活性化）との作用機序の違い",
+        "  - home-hifu-device-ranking-2026・led-mask-products-ranking-2026への内部リンク",
         "## おすすめ製品TOP5〜7",
-        "## niacinamide-complete-guide・retinol-products-ranking-2026との『浸透促進』文脈での内部リンク",
-        "## 使用上の注意（肌への物理的刺激という特性を正直に）",
+        "## 併用戦略（HIFU/LEDとの組み合わせ方）",
+        "## 使用上の注意（金属アレルギー・ペースメーカー等の禁忌）",
         "## まとめ"
       ],
-      "maker_perspective": "物理的に角層へアプローチする成分は、化学的浸透促進剤とは安全性プロファイルが異なります。針状結晶の密度や配合濃度の表示がない製品も多いため、処方設計者の視点で『何を確認すべきか』を具体的に示すことがこの記事の価値です。"
+      "maker_perspective": "マイクロカレントは筋肉への電気刺激という、HIFUの熱凝固やLEDの光生物学的作用とは全く異なるメカニズムです。出力表示の単位（μA）が製品によってバラバラで単純比較しづらい実態を処方設計者の視点で整理し、home-hifu-device-ranking-2026・led-mask-products-ranking-2026との『家庭用美容デバイス』内部リンク網を完成させることがこの記事の狙いです。"
     },
     {
-      "slug": "exosome-iv-clinic-ranking-2026",
-      "title": "エクソソーム点滴クリニックおすすめランキング【幹細胞培養上清液由来・料金相場を元メーカー視点で比較】",
+      "slug": "prp-therapy-clinic-ranking-2026",
+      "title": "PRP療法（多血小板血漿）クリニックおすすめランキング2026【幹細胞・PDRNとの違いを元メーカーが比較】",
       "type": "monetization",
       "category": "clinic",
       "grade": "C",
       "keywords": [
-        "エクソソーム 点滴 クリニック おすすめ",
-        "エクソソーム点滴 効果",
-        "幹細胞培養上清液 点滴 ランキング"
+        "PRP療法 クリニック おすすめ",
+        "PRP 幹細胞 違い",
+        "多血小板血漿 美容 効果"
       ],
       "frontmatter_template": {
-        "title": "エクソソーム点滴クリニックおすすめランキング【幹細胞培養上清液由来・料金相場を元メーカー視点で比較】",
-        "description": "エクソソーム点滴は幹細胞そのものではなく培養上清液由来である点を、化粧品処方経験を持つ元メーカーが正確に解説。自由診療のためエビデンスレベルに幅がある実態を隠さず、料金相場とあわせて比較します。",
-        "pubDate": "2026-08-22",
+        "title": "PRP療法（多血小板血漿）クリニックおすすめランキング2026【幹細胞・PDRNとの違いを元メーカーが比較】",
+        "description": "自己血液由来のPRP療法を、化粧品処方経験を持つ元メーカーが幹細胞・PDRN・エクソソームとの原料由来・エビデンスレベル・価格帯の違いから比較します。",
+        "pubDate": "2026-08-14",
         "category": "clinic",
         "grade": "C"
       },
       "outline": [
-        "## エクソソーム点滴とは？『幹細胞そのものではなく培養上清液由来』を正確に理解する",
-        "## exosome-cosmetics-ranking-2026（塗布タイプ・化粧品）との違い",
-        "## クリニック選びの3つの評価軸",
-        "  1. エクソソームの由来（ヒト幹細胞由来か動物由来か）",
-        "  2. 品質管理・成分表示の透明性",
-        "  3. 料金相場とカウンセリングの丁寧さ",
-        "## おすすめクリニック比較",
-        "## nad-plus-iv-clinic-ranking・pdrn-clinic-ranking・stem-cell-injection-clinic-rankingとの内部リンク（点滴・注入系クリニック比較シリーズ）",
+        "## PRP療法とは？自己血液を使うためアレルギーリスクが低い施術",
+        "## 他家由来の再生医療系施術との違い（3軸比較）",
+        "  1. 原料由来（自己血液 vs 他家幹細胞・培養上清液）",
+        "  2. エビデンスレベル",
+        "  3. 価格帯",
+        "## stem-cell-injection-clinic-ranking・pdrn-clinic-ranking・exosome-iv-clinic-ranking-2026との内部リンク（再生医療系クリニック比較シリーズ）",
+        "## クリニック選びのポイント",
         "## 自由診療ゆえの注意点（エビデンスレベルを正直に）",
         "## まとめ"
       ],
-      "maker_perspective": "エクソソームは『幹細胞そのもの』と誤解されやすい成分です。培養上清液由来であるという原料の実態を製剤設計者の視点で正確に伝え、自由診療特有のエビデンスの幅を隠さず開示することが、他の煽り気味な比較サイトとの差別化になります。"
-    },
-    {
-      "slug": "ai-skin-analysis-app-guide",
-      "title": "AI肌分析アプリ・デバイスは本当に当たるのか？精度の仕組みを元メーカーが解説【2026年版】",
-      "type": "traffic",
-      "category": "skincare",
-      "grade": "C",
-      "keywords": [
-        "AI 肌分析 精度",
-        "AI肌分析アプリ 当たる",
-        "パーソナライズ スキンケア AI"
-      ],
-      "frontmatter_template": {
-        "title": "AI肌分析アプリ・デバイスは本当に当たるのか？精度の仕組みを元メーカーが解説【2026年版】",
-        "description": "Amorepacific『Skinsight』やAIミラーなど相次ぐAI肌分析技術について、化粧品処方経験を持つ元メーカーが測定精度としくみ、そして『測定できること』と『その人に合う処方を導けること』は別問題である点を解説します。",
-        "pubDate": "2026-08-23",
-        "category": "skincare",
-        "grade": "C"
-      },
-      "outline": [
-        "## 2026年に相次ぐAI肌分析技術（Skinsight・AIミラー等）",
-        "## AI肌分析は何を測定しているのか（水分量・弾力・毛穴・色素沈着）",
-        "## 『測定精度が高いこと』と『処方が合うこと』は別問題である理由",
-        "## パーソナライズ提案の限界を製剤設計者の視点で解説",
-        "## AIが勧める成分をどう選ぶか",
-        "  - niacinamide-complete-guide・ceramide-types-comparison・retinol-concentration-guideへの内部リンク",
-        "## 処方知識を持つ人間の解説という差別化軸",
-        "## まとめ"
-      ],
-      "maker_perspective": "AI肌分析は測定技術としては年々精度が向上していますが、『測定結果からどの処方が合うか』を判断する部分は依然としてブラックボックスになりがちです。処方設計の現場を知る立場から、AIの提案を鵜呑みにせず成分表示を確認する視点を伝えることがこの記事の価値です。"
+      "maker_perspective": "PRPは『自分の血液を使う』という点で他家由来の幹細胞・PDRN・エクソソームとはリスクプロファイルが根本的に異なります。原料由来の違いを製剤設計者視点で整理し、stem-cell-injection-clinic-ranking・pdrn-clinic-ranking・exosome-iv-clinic-ranking-2026との『再生医療系クリニック』内部リンク網に組み込むことで、A8.net等の美容医療クリニックASP（収益設計上の最優先カテゴリ）の面を拡大することがこの記事の狙いです。"
     }
   ],
-  "lastRun": "2026-07-30"
+  "lastRun": "2026-08-05"
 }
