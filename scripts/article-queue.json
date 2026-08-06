@@ -1,40 +1,6 @@
 {
   "queue": [
     {
-      "slug": "sensitive-skin-barrier-care-guide",
-      "title": "敏感肌・肌バリア機能ケアの基本【元メーカーが解説する『低刺激設計』の見分け方】",
-      "type": "traffic",
-      "category": "skincare",
-      "grade": "B",
-      "keywords": [
-        "敏感肌 スキンケア 選び方",
-        "肌バリア機能 低下 原因",
-        "低刺激 化粧品 見分け方"
-      ],
-      "points": [
-        "cosmetics-latest（2026-07-05時点）・digital-affiliate-latestの双方で『レチノール＋ビタミンC路線が低刺激化』『敏感肌対応処方が差別化ポイント』という同一トレンドが繰り返し言及されているにもかかわらず、サイト内に敏感肌・肌バリア機能そのものを正面から扱う解説記事が存在しないという構造的ギャップ",
-        "『低刺激』を謳う製品の見分け方（配合成分の刺激性データ・パッチテストの有無・処方設計の考え方）を元メーカーの処方経験から解説し、消費者が『無添加』『低刺激』表示だけで判断しない視点を提供",
-        "niacinamide-complete-guide・ceramide-types-comparison・azelaic-acid-explainerなど既存の低刺激系成分記事への内部リンクのハブ記事として設計し、回遊性向上と将来的な『低刺激スキンケアランキング』記事への布石とする"
-      ]
-    },
-    {
-      "slug": "home-microcurrent-device-ranking-2026",
-      "title": "家庭用マイクロカレント（EMS）美顔器おすすめランキング2026【LED・HIFUとの違いを元メーカーが比較】",
-      "type": "monetization",
-      "category": "skincare",
-      "grade": "B",
-      "keywords": [
-        "マイクロカレント 美顔器 おすすめ",
-        "EMS 美顔器 ランキング",
-        "マイクロカレント HIFU 違い"
-      ],
-      "points": [
-        "cosmetics-latestで『LEDマスク市場が前年比+96.7%』と家庭用美容デバイス市場全体の急拡大が示される一方、サイト内はled-mask-products-ranking-2026・home-hifu-device-ranking-2026・home-ipl-device-ranking-2026が公開済みでマイクロカレント（EMS）系のランキング記事のみが未着手というカテゴリ内の抜け",
-        "微弱電流による筋肉への直接アプローチというHIFU（熱による引き締め）・LED（光による細胞活性化）とは異なる作用機序を3軸（出力調整幅・電極形状・連続使用時の刺激感）で比較し、併用戦略として案内",
-        "led-mask-products-ranking-2026・home-hifu-device-ranking-2026との『家庭用美容デバイス』内部リンク網を完成させ、Amazon/楽天物販アフィリの面を拡大"
-      ]
-    },
-    {
       "slug": "fisetin-senolytic-supplement-guide",
       "title": "フィセチンサプリとは？市販で買える『セノリティクス』候補を元メーカーが解説【2026年版】",
       "type": "traffic",
@@ -172,6 +138,22 @@
     }
   ],
   "completed": [
+    {
+      "slug": "sensitive-skin-barrier-care-guide",
+      "title": "敏感肌・肌バリア機能ケアの基本【元メーカーが解説する『低刺激設計』の見分け方】",
+      "type": "traffic",
+      "category": "skincare",
+      "grade": "B",
+      "completedAt": "2026-08-07"
+    },
+    {
+      "slug": "home-microcurrent-device-ranking-2026",
+      "title": "家庭用マイクロカレント（EMS）美顔器おすすめランキング2026【LED・HIFUとの違いを元メーカーが比較】",
+      "type": "monetization",
+      "category": "skincare",
+      "grade": "B",
+      "completedAt": "2026-08-07"
+    },
     {
       "slug": "exosome-iv-clinic-ranking-2026",
       "title": "エクソソーム点滴クリニックおすすめランキング【幹細胞培養上清液由来・料金相場を元メーカー視点で比較】",
@@ -925,6 +907,6 @@
       "completedAt": "2026-07-31T01:17:48+09:00"
     }
   ],
-  "lastRun": "2026-08-06T01:00:00+09:00",
+  "lastRun": "2026-08-07T01:00:00+09:00",
   "lastContentAnalysis": "2026-08-06T16:42:35+09:00"
 }
