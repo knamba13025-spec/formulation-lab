@@ -1,101 +1,97 @@
 {
-  "generatedAt": "2026-08-05T16:40:00+09:00",
-  "note": "前回バッチ（2026-07-30）でブリーフしたspicule-products-ranking-2026・exosome-iv-clinic-ranking-2026・ai-skin-analysis-app-guideのうち、spicule-products-ranking-2026とai-skin-analysis-app-guideは既にcompleted入り（公開済み）。exosome-iv-clinic-ranking-2026は今回のcontent-analysisでも改めてqueueに残存を確認したがまだ未完了のため再ブリーフは見送り。前回ノートで『次回以降のバッチでブリーフ予定』としていた4件（sensitive-skin-barrier-care-guide・home-microcurrent-device-ranking-2026・fisetin-senolytic-supplement-guide・prp-therapy-clinic-ranking-2026）のうち、運営方針レビュー（2026-07-30更新）で『grade Bかつ物販アフィリ相性良好』と高優先度指定されたsensitive-skin-barrier-care-guide・home-microcurrent-device-ranking-2026の2件と、clinicカテゴリ（サイト内7本のみと最も手薄・美容医療クリニックASPが収益設計上の最優先チャネル）を強化するprp-therapy-clinic-ranking-2026を選定した3件をブリーフ。fisetin-senolytic-supplement-guide（grade C）は次回バッチへ持ち越し。また本日のコンテンツ分析で新規に4件（vitamin-d-longevity-guide・vitamin-d-supplement-ranking-2026・sunscreen-ingredient-guide・home-rf-device-ranking-2026）をqueueへ追加済み（traffic:monetization=2:2、queue合計10件）だが、これらは次回以降のバッチでブリーフ予定。",
+  "generatedAt": "2026-08-06T16:42:35+09:00",
+  "note": "前回バッチ（2026-08-05）でブリーフしたsensitive-skin-barrier-care-guide・home-microcurrent-device-ranking-2026・prp-therapy-clinic-ranking-2026の3件は本日08-06時点でまだsrc/content/blogに未生成（Codex未着手または処理待ち）。queueからも未除去のため重複ブリーフは避け、今回は前回ノートで『次回以降のバッチでブリーフ予定』としていた4件（vitamin-d-longevity-guide・vitamin-d-supplement-ranking-2026・sunscreen-ingredient-guide・home-rf-device-ranking-2026）の中からグレードA×2本＋関連グレードB×1本を選定。vitamin-d-longevity-guide・vitamin-d-supplement-ranking-2026はサイト内69本中ビタミンD関連記事がゼロという最大級のギャップ（日本人の大多数が不足）でグレードA、同時ブリーフの解説→ランキング二段構成。sunscreen-ingredient-guideは『紫外線対策としっかりのビタミンD確保の両立』という文脈でこの2本と内部リンク設計上の相乗効果が高いため同時選定した。home-rf-device-ranking-2026（グレードB）とfisetin-senolytic-supplement-guide（グレードC）は次回バッチへ持ち越し。また本日のコンテンツ分析でcoenzyme-q10-longevity-guide（traffic/supplement/A）・glutathione-iv-clinic-ranking-2026（monetization/clinic/B）の2件を新規queueへ追加済み（queue合計10件、traffic:monetization=5:5）だが、これらも次回以降のバッチでブリーフ予定。",
   "briefs": [
     {
-      "slug": "sensitive-skin-barrier-care-guide",
-      "title": "敏感肌・肌バリア機能ケアの基本【元メーカーが解説する『低刺激設計』の見分け方】",
+      "slug": "vitamin-d-longevity-guide",
+      "title": "ビタミンDとは？アンチエイジング・免疫・骨密度への効果を元メーカーが解説【日本人の8割が不足】",
+      "type": "traffic",
+      "category": "supplement",
+      "grade": "A",
+      "keywords": [
+        "ビタミンD とは",
+        "ビタミンD 効果 アンチエイジング",
+        "ビタミンD 不足 日本人"
+      ],
+      "frontmatter_template": {
+        "title": "ビタミンDとは？アンチエイジング・免疫・骨密度への効果を元メーカーが解説【日本人の8割が不足】",
+        "description": "日本人の大多数が不足しているビタミンDを、化粧品処方経験を持つ元メーカーが骨密度・免疫機能・老化バイオマーカーとの関連、紫外線ケアとの両立という視点から解説します。",
+        "pubDate": "2026-08-13",
+        "category": "supplement",
+        "grade": "A"
+      },
+      "outline": [
+        "## ビタミンDとは（脂溶性ビタミン・ホルモン様物質としての役割）",
+        "## なぜ日本人の大多数が不足しているのか（日照時間の少ない室内中心の生活・日焼け止め常用による皮膚合成量低下）",
+        "## アンチエイジングとの関連（骨密度・免疫機能・老化バイオマーカーに関する臨床エビデンス）",
+        "## 『紫外線対策』と『ビタミンD確保』は本当に矛盾するのか（処方視点での橋渡し）",
+        "## 血中ビタミンD濃度の目安と検査方法",
+        "## sunscreen-ingredient-guideへの内部リンク（紫外線ケアとの両立）",
+        "## 同時公開のvitamin-d-supplement-ranking-2026への送客",
+        "## まとめ"
+      ],
+      "maker_perspective": "紫外線ケア製品の処方開発に携わってきた立場から見ると、『日焼け止めを塗る=ビタミンD不足を招く』という単純化は正確ではありません。日焼け止めの実使用量（推奨量より少ないケースが大半）や日常生活での紫外線曝露の実態を踏まえ、紫外線対策としっかりのビタミンD確保が両立できる考え方を提示することがこの記事の独自価値です。omega3-supplement-ranking-2026・astaxanthin-supplement-ranking-2026と並ぶ『エビデンスが強い基本サプリ』文脈で内部リンクします。"
+    },
+    {
+      "slug": "vitamin-d-supplement-ranking-2026",
+      "title": "ビタミンDサプリおすすめランキング2026【D2/D3の違い・含有量・コスパを元メーカーが比較】",
+      "type": "monetization",
+      "category": "supplement",
+      "grade": "A",
+      "keywords": [
+        "ビタミンD サプリ おすすめ",
+        "ビタミンD3 ランキング",
+        "ビタミンD サプリ 選び方"
+      ],
+      "frontmatter_template": {
+        "title": "ビタミンDサプリおすすめランキング2026【D2/D3の違い・含有量・コスパを元メーカーが比較】",
+        "description": "D2とD3の違い・IU表示と摂取目安量の乖離・K2との併用設計を、化粧品処方経験を持つ元メーカーが処方目線で比較したビタミンDサプリランキングです。",
+        "pubDate": "2026-08-14",
+        "category": "supplement",
+        "grade": "A"
+      },
+      "outline": [
+        "## このランキングの選び方（3つの評価軸）",
+        "  1. D2（植物由来）とD3（動物由来・変換効率が高い）の違い",
+        "  2. 1粒あたりのIU（国際単位）表示と日本人の目安摂取量との乖離",
+        "  3. K2との併用設計（カルシウムの骨への沈着を助ける）",
+        "## vitamin-d-longevity-guideへの内部リンク（そもそもなぜビタミンDが必要か）",
+        "## おすすめ製品TOP5〜7",
+        "## omega3-supplement-ranking-2026・collagen-supplement-ranking-2026との『基本サプリスタック』提案",
+        "## 過剰摂取のリスクと上限目安",
+        "## まとめ"
+      ],
+      "maker_perspective": "ビタミンDサプリはIU表示の桁数が製品によって大きく異なり、国内製品は海外製品に比べて含有量が低めに設定されている傾向があります。原料の安定性・打錠工程での品質管理経験を踏まえ、表示だけでは分かりにくい『実際に体内で使われる量』という視点で製品を比較することがこの記事の独自価値です。"
+    },
+    {
+      "slug": "sunscreen-ingredient-guide",
+      "title": "紫外線吸収剤 vs 紫外線散乱剤とは？日焼け止めの選び方を元メーカーが解説",
       "type": "traffic",
       "category": "skincare",
       "grade": "B",
       "keywords": [
-        "敏感肌 スキンケア 選び方",
-        "肌バリア機能 低下 原因",
-        "低刺激 化粧品 見分け方"
+        "紫外線吸収剤 紫外線散乱剤 違い",
+        "日焼け止め 選び方 成分",
+        "ノンケミカル 日焼け止め とは"
       ],
       "frontmatter_template": {
-        "title": "敏感肌・肌バリア機能ケアの基本【元メーカーが解説する『低刺激設計』の見分け方】",
-        "description": "『低刺激』を謳う化粧品を、化粧品処方経験を持つ元メーカーが配合成分の刺激性データ・パッチテストの有無・処方設計の考え方から見分け方を解説します。",
-        "pubDate": "2026-08-12",
+        "title": "紫外線吸収剤 vs 紫外線散乱剤とは？日焼け止めの選び方を元メーカーが解説",
+        "description": "紫外線吸収剤と紫外線散乱剤の違いを、化粧品処方経験を持つ元メーカーが配合設計・使用感調整の視点から解説。『ノンケミカル=安全』という単純化を避けた敏感肌向けの選び方を提示します。",
+        "pubDate": "2026-08-15",
         "category": "skincare",
         "grade": "B"
       },
       "outline": [
-        "## 肌バリア機能とは何か（角層・皮脂膜・NMFの役割）",
-        "## 肌バリア機能が低下する原因（乾燥・摩擦・過剰な角質ケア・レチノール等の攻めの成分の使いすぎ）",
-        "## 『低刺激』『無添加』表示だけで判断してはいけない理由",
-        "  - 配合成分の刺激性データの見方",
-        "  - パッチテストの有無・実施条件",
-        "  - 処方設計における低刺激化の実際の手法（防腐剤・界面活性剤の選定等）",
-        "## niacinamide-complete-guide・ceramide-types-comparison・azelaic-acid-explainerへの内部リンク（低刺激系成分のハブ記事として設計）",
-        "## 敏感肌さんの製品選びチェックリスト",
+        "## 紫外線吸収剤とは（化学的にUVを熱に変換・白浮きしにくいが刺激懸念）",
+        "## 紫外線散乱剤とは（物理的に反射・ノンケミカルで低刺激だが白浮きしやすい）",
+        "## 『ノンケミカル=安全』という単純化がなぜ正確ではないのか（処方目線）",
+        "## 敏感肌向けの実際の選び方",
+        "## sunscreen-products-ranking-2026への内部リンク（具体的な製品比較）",
+        "## vitamin-d-longevity-guideへの内部リンク（紫外線対策とビタミンD確保の両立）",
         "## まとめ"
       ],
-      "maker_perspective": "『低刺激』は法的に定義された表示ではなく、メーカーごとに基準が異なります。処方設計の現場では防腐剤・界面活性剤・香料の刺激性データやパッチテスト条件を見て低刺激性を判断しており、消費者がパッケージの謳い文句だけで判断しない視点を提供することがこの記事の価値です。将来的な『低刺激スキンケアランキング』記事へのハブとしても機能させます。"
-    },
-    {
-      "slug": "home-microcurrent-device-ranking-2026",
-      "title": "家庭用マイクロカレント（EMS）美顔器おすすめランキング2026【LED・HIFUとの違いを元メーカーが比較】",
-      "type": "monetization",
-      "category": "skincare",
-      "grade": "B",
-      "keywords": [
-        "マイクロカレント 美顔器 おすすめ",
-        "EMS 美顔器 ランキング",
-        "マイクロカレント HIFU 違い"
-      ],
-      "frontmatter_template": {
-        "title": "家庭用マイクロカレント（EMS）美顔器おすすめランキング2026【LED・HIFUとの違いを元メーカーが比較】",
-        "description": "微弱電流で表情筋にアプローチするマイクロカレント（EMS）美顔器を、化粧品処方経験を持つ元メーカーが出力調整幅・電極形状・連続使用時の刺激感の3軸で比較します。",
-        "pubDate": "2026-08-13",
-        "category": "skincare",
-        "grade": "B"
-      },
-      "outline": [
-        "## このランキングの選び方（3つの評価軸）",
-        "  1. 出力調整幅",
-        "  2. 電極形状（点電極・ローラー型等）",
-        "  3. 連続使用時の刺激感",
-        "## マイクロカレントとは？HIFU（熱による引き締め）・LED（光による細胞活性化）との作用機序の違い",
-        "  - home-hifu-device-ranking-2026・led-mask-products-ranking-2026への内部リンク",
-        "## おすすめ製品TOP5〜7",
-        "## 併用戦略（HIFU/LEDとの組み合わせ方）",
-        "## 使用上の注意（金属アレルギー・ペースメーカー等の禁忌）",
-        "## まとめ"
-      ],
-      "maker_perspective": "マイクロカレントは筋肉への電気刺激という、HIFUの熱凝固やLEDの光生物学的作用とは全く異なるメカニズムです。出力表示の単位（μA）が製品によってバラバラで単純比較しづらい実態を処方設計者の視点で整理し、home-hifu-device-ranking-2026・led-mask-products-ranking-2026との『家庭用美容デバイス』内部リンク網を完成させることがこの記事の狙いです。"
-    },
-    {
-      "slug": "prp-therapy-clinic-ranking-2026",
-      "title": "PRP療法（多血小板血漿）クリニックおすすめランキング2026【幹細胞・PDRNとの違いを元メーカーが比較】",
-      "type": "monetization",
-      "category": "clinic",
-      "grade": "C",
-      "keywords": [
-        "PRP療法 クリニック おすすめ",
-        "PRP 幹細胞 違い",
-        "多血小板血漿 美容 効果"
-      ],
-      "frontmatter_template": {
-        "title": "PRP療法（多血小板血漿）クリニックおすすめランキング2026【幹細胞・PDRNとの違いを元メーカーが比較】",
-        "description": "自己血液由来のPRP療法を、化粧品処方経験を持つ元メーカーが幹細胞・PDRN・エクソソームとの原料由来・エビデンスレベル・価格帯の違いから比較します。",
-        "pubDate": "2026-08-14",
-        "category": "clinic",
-        "grade": "C"
-      },
-      "outline": [
-        "## PRP療法とは？自己血液を使うためアレルギーリスクが低い施術",
-        "## 他家由来の再生医療系施術との違い（3軸比較）",
-        "  1. 原料由来（自己血液 vs 他家幹細胞・培養上清液）",
-        "  2. エビデンスレベル",
-        "  3. 価格帯",
-        "## stem-cell-injection-clinic-ranking・pdrn-clinic-ranking・exosome-iv-clinic-ranking-2026との内部リンク（再生医療系クリニック比較シリーズ）",
-        "## クリニック選びのポイント",
-        "## 自由診療ゆえの注意点（エビデンスレベルを正直に）",
-        "## まとめ"
-      ],
-      "maker_perspective": "PRPは『自分の血液を使う』という点で他家由来の幹細胞・PDRN・エクソソームとはリスクプロファイルが根本的に異なります。原料由来の違いを製剤設計者視点で整理し、stem-cell-injection-clinic-ranking・pdrn-clinic-ranking・exosome-iv-clinic-ranking-2026との『再生医療系クリニック』内部リンク網に組み込むことで、A8.net等の美容医療クリニックASP（収益設計上の最優先カテゴリ）の面を拡大することがこの記事の狙いです。"
+      "maker_perspective": "紫外線吸収剤・散乱剤どちらも配合設計・使用感調整の経験から見ると一長一短であり、『ノンケミカル=無条件に安全』という消費者の思い込みは正確ではありません。実際には散乱剤特有の摩擦・厚みによる刺激も存在し、敏感肌だからといって散乱剤一択とは限らない実態を元メーカー視点で正直に伝えることがこの記事の独自価値です。azelaic-acid-explainer→azelaic-acid-cosmetics-comparisonと同じ『解説→比較ランキング』の二段構成を踏襲し、既存のsunscreen-products-ranking-2026へ送客します。"
     }
   ],
-  "lastRun": "2026-08-05"
+  "lastRun": "2026-08-06"
 }
