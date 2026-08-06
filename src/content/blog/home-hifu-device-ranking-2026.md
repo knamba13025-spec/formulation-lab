@@ -113,6 +113,6 @@ HIFUではありませんが、低予算で続けやすいのが一般的な超�
 
 家庭用HIFU おすすめで重視すべきなのは、広告表現ではなく、照射深度、周波数、カートリッジ寿命、安全機能です。総合力ならカートリッジ交換式、手軽さならペン型、多機能性ならRF・EMS複合型が候補になります。
 
-色素悩みは[家庭用IPL美顔器ランキング](/blog/home-ipl-device-ranking-2026)、ハリ感・キメの光ケアは[LEDマスクランキング](/blog/led-mask-products-ranking-2026)、美容医療との比較は[HIFU vs ヒアルロン酸注射](/blog/hifu-vs-hyaluronic-acid)もあわせて確認してください。
+色素悩みは[家庭用IPL美顔器ランキング](/blog/home-ipl-device-ranking-2026)、ハリ感・キメの光ケアは[LEDマスクランキング](/blog/led-mask-products-ranking-2026)、表情筋への電流アプローチは[マイクロカレント・EMS美顔器ランキング](/blog/home-microcurrent-device-ranking-2026)、美容医療との比較は[HIFU vs ヒアルロン酸注射](/blog/hifu-vs-hyaluronic-acid)もあわせて確認してください。
 
 ※アフィリエイトリンクを含みます

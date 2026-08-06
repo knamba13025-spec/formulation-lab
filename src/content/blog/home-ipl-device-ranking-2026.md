@@ -154,5 +154,6 @@ IPL美顔器は、1〜2回の使用で劇的変化を期待するより、8〜12
 - LEDマスクの具体的な製品比較は、[LEDマスクおすすめランキング2026【波長・出力・価格帯で比較】](/blog/led-mask-products-ranking-2026)へ
 - IPL使用後の必須ケアとなる日焼け止め選びは、[日焼け止めおすすめランキング2026【新規UV吸収剤・SPF/PA・使用感で比較】](/blog/sunscreen-products-ranking-2026)へ
 - 美容医療（HIFUなど）との比較・選択基準を知りたい方は、[HIFU vs ヒアルロン酸注射どちらがいい？](/blog/hifu-vs-hyaluronic-acid)へ
+- フェイスラインのもたつきには、[マイクロカレント・EMS美顔器ランキング](/blog/home-microcurrent-device-ranking-2026)へ
 
 ※アフィリエイトリンクを含みます
