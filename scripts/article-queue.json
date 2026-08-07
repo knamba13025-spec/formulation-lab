@@ -135,6 +135,40 @@
         "肝臓の解毒代謝で使われる抗酸化物質という基本機序を、メラニン生成抑制（チロシナーゼ阻害）による美白効果とセットで処方目線で整理し、NAD+点滴（エネルギー代謝）・PRP（組織再生）との作用機序の違いを3軸（原料由来・効果の方向性・価格帯）で比較",
         "nad-plus-iv-clinic-ranking・pdrn-clinic-ranking・prp-therapy-clinic-ranking-2026（キュー中）との『点滴療法系クリニック』内部リンク網に組み込み、美容医療クリニックASP案件の面をさらに拡大"
       ]
+    },
+    {
+      "slug": "astaxanthin-antioxidant-guide",
+      "title": "アスタキサンチンとは？『ビタミンEの6000倍』抗酸化成分の科学的根拠を元メーカーが解説【2026年版】",
+      "type": "traffic",
+      "category": "supplement",
+      "grade": "A",
+      "keywords": [
+        "アスタキサンチン とは",
+        "アスタキサンチン 効果 仕組み",
+        "アスタキサンチン ビタミンE 抗酸化力"
+      ],
+      "points": [
+        "既存のastaxanthin-supplement-ranking-2026（ランキング記事・公開済み）は『アスタキサンチン サプリ おすすめ』向けだが、『アスタキサンチンとは』という一次検索・成分理解ニーズに応える解説記事が未着手というギャップ。ceramide-types-comparison→ceramide-cosmetics-ranking、azelaic-acid-explainer→azelaic-acid-cosmetics-comparison等の既存『解説記事→ランキング記事』の内部送客パターンをアスタキサンチンにも適用し、supplementカテゴリ内の記事ペア構成を完成させる",
+        "『ビタミンEの6000倍』とされる抗酸化力の科学的根拠と、ヘマトコッカス藻由来の天然アスタキサンチンと合成品の違いを元メーカー視点で整理。『眼精疲労=アスタキサンチン』という消費者の既存イメージから、皮膚科学（コラーゲン分解抑制・光老化対策）・ミトコンドリア保護への作用へと理解を拡張する構成とし、過度な誇大表現を避けたグレードA運用を徹底",
+        "既存のastaxanthin-supplement-ranking-2026への内部リンクで送客を強化し、記事単体の検索流入とランキング記事のCVR双方を底上げする"
+      ]
+    },
+    {
+      "slug": "urolithin-a-supplement-ranking-2026",
+      "title": "ウロリチンAサプリおすすめランキング2026【ミトコンドリア再生・マイトファジー成分を元メーカーがコスパ比較】",
+      "type": "monetization",
+      "category": "supplement",
+      "grade": "B",
+      "keywords": [
+        "ウロリチンA サプリ おすすめ",
+        "ウロリチンA ランキング 2026",
+        "ウロリチンA 効果的な摂取量"
+      ],
+      "points": [
+        "既存のurolithin-a-longevity-guide（解説記事・公開済み）はザクロ由来のミトコンドリア再生成分としての基礎解説にとどまり、実際の製品選び・購入導線となるランキング記事が未着手というギャップ。同記事の完了メモにも『将来的なurolithin-a-supplement-ranking-2026への送客を前提に構成』と明記されており、NMN・コラーゲン・C15:0等と同様の『解説記事→ランキング記事』パターンを完成させる",
+        "腸内細菌によるウロリチンA産生能力に個人差が大きく『ザクロを食べれば同じ効果』とはならない実態を踏まえ、生成不要で直接摂取できるサプリメントの価値を訴求。Amazentis社（Holisticell社）のTimeline Urolithin A等のヒト試験データを引きつつ、エビデンスレベルはNMNやオメガ3ほど確立していない旨を正直に明記したグレードB運用",
+        "urolithin-a-longevity-guideからの内部送客導線を前提に設計し、nmn-supplement-ranking-2026・taurine-longevity-supplement-ranking-2026・c15-fatty-acid-supplement-ranking-2026等の既存ロンジェビティ系ランキング記事群との相互リンクでカテゴリ全体の回遊性と物販アフィリの面を拡大"
+      ]
     }
   ],
   "completed": [
@@ -908,5 +942,5 @@
     }
   ],
   "lastRun": "2026-08-07T01:00:00+09:00",
-  "lastContentAnalysis": "2026-08-06T16:42:35+09:00"
+  "lastContentAnalysis": "2026-08-07T16:43:00+09:00"
 }

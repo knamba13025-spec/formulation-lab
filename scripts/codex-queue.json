@@ -1,97 +1,93 @@
 {
-  "generatedAt": "2026-08-06T16:42:35+09:00",
-  "note": "前回バッチ（2026-08-05）でブリーフしたsensitive-skin-barrier-care-guide・home-microcurrent-device-ranking-2026・prp-therapy-clinic-ranking-2026の3件は本日08-06時点でまだsrc/content/blogに未生成（Codex未着手または処理待ち）。queueからも未除去のため重複ブリーフは避け、今回は前回ノートで『次回以降のバッチでブリーフ予定』としていた4件（vitamin-d-longevity-guide・vitamin-d-supplement-ranking-2026・sunscreen-ingredient-guide・home-rf-device-ranking-2026）の中からグレードA×2本＋関連グレードB×1本を選定。vitamin-d-longevity-guide・vitamin-d-supplement-ranking-2026はサイト内69本中ビタミンD関連記事がゼロという最大級のギャップ（日本人の大多数が不足）でグレードA、同時ブリーフの解説→ランキング二段構成。sunscreen-ingredient-guideは『紫外線対策としっかりのビタミンD確保の両立』という文脈でこの2本と内部リンク設計上の相乗効果が高いため同時選定した。home-rf-device-ranking-2026（グレードB）とfisetin-senolytic-supplement-guide（グレードC）は次回バッチへ持ち越し。また本日のコンテンツ分析でcoenzyme-q10-longevity-guide（traffic/supplement/A）・glutathione-iv-clinic-ranking-2026（monetization/clinic/B）の2件を新規queueへ追加済み（queue合計10件、traffic:monetization=5:5）だが、これらも次回以降のバッチでブリーフ予定。",
+  "generatedAt": "2026-08-07T16:43:00+09:00",
+  "note": "前回バッチ（2026-08-06）でブリーフしたvitamin-d-longevity-guide・vitamin-d-supplement-ranking-2026・sunscreen-ingredient-guideの3件は本日08-07時点でまだsrc/content/blogに未生成（Codex未着手または処理待ち）のため、本バッチでの再ブリーフは見送り、滞留状況として下記に記録する。前回バッチで『次回バッチへ持ち越し』としていたhome-rf-device-ranking-2026（grade B）・fisetin-senolytic-supplement-guide（grade C）の2件と、queue内で最高グレードのcoenzyme-q10-longevity-guide（grade A・08-06新規追加分）の計3件を今回選定した。また本日のコンテンツ分析でastaxanthin-antioxidant-guide（traffic/supplement/A）・urolithin-a-supplement-ranking-2026（monetization/supplement/B）の2件を新規queueへ追加済み（queue合計10件、traffic:monetization=5:5）だが、これらは次回以降のバッチでブリーフ予定。",
   "briefs": [
     {
-      "slug": "vitamin-d-longevity-guide",
-      "title": "ビタミンDとは？アンチエイジング・免疫・骨密度への効果を元メーカーが解説【日本人の8割が不足】",
-      "type": "traffic",
-      "category": "supplement",
-      "grade": "A",
-      "keywords": [
-        "ビタミンD とは",
-        "ビタミンD 効果 アンチエイジング",
-        "ビタミンD 不足 日本人"
-      ],
-      "frontmatter_template": {
-        "title": "ビタミンDとは？アンチエイジング・免疫・骨密度への効果を元メーカーが解説【日本人の8割が不足】",
-        "description": "日本人の大多数が不足しているビタミンDを、化粧品処方経験を持つ元メーカーが骨密度・免疫機能・老化バイオマーカーとの関連、紫外線ケアとの両立という視点から解説します。",
-        "pubDate": "2026-08-13",
-        "category": "supplement",
-        "grade": "A"
-      },
-      "outline": [
-        "## ビタミンDとは（脂溶性ビタミン・ホルモン様物質としての役割）",
-        "## なぜ日本人の大多数が不足しているのか（日照時間の少ない室内中心の生活・日焼け止め常用による皮膚合成量低下）",
-        "## アンチエイジングとの関連（骨密度・免疫機能・老化バイオマーカーに関する臨床エビデンス）",
-        "## 『紫外線対策』と『ビタミンD確保』は本当に矛盾するのか（処方視点での橋渡し）",
-        "## 血中ビタミンD濃度の目安と検査方法",
-        "## sunscreen-ingredient-guideへの内部リンク（紫外線ケアとの両立）",
-        "## 同時公開のvitamin-d-supplement-ranking-2026への送客",
-        "## まとめ"
-      ],
-      "maker_perspective": "紫外線ケア製品の処方開発に携わってきた立場から見ると、『日焼け止めを塗る=ビタミンD不足を招く』という単純化は正確ではありません。日焼け止めの実使用量（推奨量より少ないケースが大半）や日常生活での紫外線曝露の実態を踏まえ、紫外線対策としっかりのビタミンD確保が両立できる考え方を提示することがこの記事の独自価値です。omega3-supplement-ranking-2026・astaxanthin-supplement-ranking-2026と並ぶ『エビデンスが強い基本サプリ』文脈で内部リンクします。"
-    },
-    {
-      "slug": "vitamin-d-supplement-ranking-2026",
-      "title": "ビタミンDサプリおすすめランキング2026【D2/D3の違い・含有量・コスパを元メーカーが比較】",
+      "slug": "home-rf-device-ranking-2026",
+      "title": "家庭用RF(ラジオ波)美顔器おすすめランキング2026【HIFU・マイクロカレントとの違いを元メーカーが比較】",
       "type": "monetization",
-      "category": "supplement",
-      "grade": "A",
-      "keywords": [
-        "ビタミンD サプリ おすすめ",
-        "ビタミンD3 ランキング",
-        "ビタミンD サプリ 選び方"
-      ],
-      "frontmatter_template": {
-        "title": "ビタミンDサプリおすすめランキング2026【D2/D3の違い・含有量・コスパを元メーカーが比較】",
-        "description": "D2とD3の違い・IU表示と摂取目安量の乖離・K2との併用設計を、化粧品処方経験を持つ元メーカーが処方目線で比較したビタミンDサプリランキングです。",
-        "pubDate": "2026-08-14",
-        "category": "supplement",
-        "grade": "A"
-      },
-      "outline": [
-        "## このランキングの選び方（3つの評価軸）",
-        "  1. D2（植物由来）とD3（動物由来・変換効率が高い）の違い",
-        "  2. 1粒あたりのIU（国際単位）表示と日本人の目安摂取量との乖離",
-        "  3. K2との併用設計（カルシウムの骨への沈着を助ける）",
-        "## vitamin-d-longevity-guideへの内部リンク（そもそもなぜビタミンDが必要か）",
-        "## おすすめ製品TOP5〜7",
-        "## omega3-supplement-ranking-2026・collagen-supplement-ranking-2026との『基本サプリスタック』提案",
-        "## 過剰摂取のリスクと上限目安",
-        "## まとめ"
-      ],
-      "maker_perspective": "ビタミンDサプリはIU表示の桁数が製品によって大きく異なり、国内製品は海外製品に比べて含有量が低めに設定されている傾向があります。原料の安定性・打錠工程での品質管理経験を踏まえ、表示だけでは分かりにくい『実際に体内で使われる量』という視点で製品を比較することがこの記事の独自価値です。"
-    },
-    {
-      "slug": "sunscreen-ingredient-guide",
-      "title": "紫外線吸収剤 vs 紫外線散乱剤とは？日焼け止めの選び方を元メーカーが解説",
-      "type": "traffic",
       "category": "skincare",
       "grade": "B",
       "keywords": [
-        "紫外線吸収剤 紫外線散乱剤 違い",
-        "日焼け止め 選び方 成分",
-        "ノンケミカル 日焼け止め とは"
+        "RF美顔器 おすすめ",
+        "ラジオ波 美顔器 ランキング",
+        "RF ラジオ波 HIFU 違い"
       ],
       "frontmatter_template": {
-        "title": "紫外線吸収剤 vs 紫外線散乱剤とは？日焼け止めの選び方を元メーカーが解説",
-        "description": "紫外線吸収剤と紫外線散乱剤の違いを、化粧品処方経験を持つ元メーカーが配合設計・使用感調整の視点から解説。『ノンケミカル=安全』という単純化を避けた敏感肌向けの選び方を提示します。",
-        "pubDate": "2026-08-15",
+        "title": "家庭用RF(ラジオ波)美顔器おすすめランキング2026【HIFU・マイクロカレントとの違いを元メーカーが比較】",
+        "description": "高周波による深部加温・血行促進というRF美顔器の作用機序を、HIFU・マイクロカレントとの違いを踏まえて元メーカーが比較。出力調整幅・発熱管理・価格帯別のおすすめランキングです。",
+        "pubDate": "2026-08-16",
         "category": "skincare",
         "grade": "B"
       },
       "outline": [
-        "## 紫外線吸収剤とは（化学的にUVを熱に変換・白浮きしにくいが刺激懸念）",
-        "## 紫外線散乱剤とは（物理的に反射・ノンケミカルで低刺激だが白浮きしやすい）",
-        "## 『ノンケミカル=安全』という単純化がなぜ正確ではないのか（処方目線）",
-        "## 敏感肌向けの実際の選び方",
-        "## sunscreen-products-ranking-2026への内部リンク（具体的な製品比較）",
-        "## vitamin-d-longevity-guideへの内部リンク（紫外線対策とビタミンD確保の両立）",
+        "## RF（ラジオ波）美顔器とは（高周波による深部加温・血行促進の仕組み）",
+        "## HIFU（熱による凝固・引き締め）・マイクロカレント（微弱電流）との作用機序の違い",
+        "## 選び方の3軸（出力調整幅・連続使用時の発熱管理・肌への刺激感）",
+        "## `/home-hifu-device-ranking-2026/`・`/home-microcurrent-device-ranking-2026/` への内部リンク（『家庭用美容デバイス』カテゴリの回遊導線）",
+        "## おすすめ製品TOP5〜7（価格帯別）",
+        "## 使用頻度・やけど等のリスクと安全な使い方",
         "## まとめ"
       ],
-      "maker_perspective": "紫外線吸収剤・散乱剤どちらも配合設計・使用感調整の経験から見ると一長一短であり、『ノンケミカル=無条件に安全』という消費者の思い込みは正確ではありません。実際には散乱剤特有の摩擦・厚みによる刺激も存在し、敏感肌だからといって散乱剤一択とは限らない実態を元メーカー視点で正直に伝えることがこの記事の独自価値です。azelaic-acid-explainer→azelaic-acid-cosmetics-comparisonと同じ『解説→比較ランキング』の二段構成を踏襲し、既存のsunscreen-products-ranking-2026へ送客します。"
+      "maker_perspective": "家庭用美容デバイスは『出力を上げれば効果が出る』という単純な話ではなく、連続使用時の発熱をどう安全域に収めるかという設計上のトレードオフがあります。HIFU・マイクロカレントとRFで加温の深さ・持続時間が異なる点を、製品の温度センサー・自動オフ機能の有無という具体的な安全設計の視点から比較することがこの記事の独自価値です。"
+    },
+    {
+      "slug": "fisetin-senolytic-supplement-guide",
+      "title": "フィセチンサプリとは？市販で買える『セノリティクス』候補を元メーカーが解説【2026年版】",
+      "type": "traffic",
+      "category": "supplement",
+      "grade": "C",
+      "keywords": [
+        "フィセチン サプリ 効果",
+        "フィセチン セノリティクス",
+        "フィセチン ケルセチン 違い"
+      ],
+      "frontmatter_template": {
+        "title": "フィセチンサプリとは？市販で買える『セノリティクス』候補を元メーカーが解説【2026年版】",
+        "description": "老化細胞を除去する『セノリティクス』候補として注目されるフィセチンを元メーカーが解説。医師処方が必要なD+Qとの違い・エビデンスレベルを正直に整理します。",
+        "pubDate": "2026-08-17",
+        "category": "supplement",
+        "grade": "C"
+      },
+      "outline": [
+        "## フィセチンとは（フラボノイドの一種・果物由来のセノリティクス候補）",
+        "## ダサチニブ＋ケルセチン（D+Q、医師処方が必要）との違い（市販サプリとして購入可能）",
+        "## ヒト試験のエビデンスレベル（限定的である点を正直に明記）",
+        "## `/senolytic-science-explained/` への内部リンク（セノリティクス全般の解説）",
+        "## 摂取量・タイミングの目安と併用時の注意点",
+        "## 過度な期待を煽らないための注意点（2027年のフレイル研究読み出し待ちであること）",
+        "## まとめ"
+      ],
+      "maker_perspective": "フィセチンはケルセチンと化学構造が近いフラボノイドですが、含有量表示が製品によってバラつきが大きく、天然由来原料の含有量安定性は打錠・カプセル充填の工程管理次第という側面があります。D+Qほどの臨床データがまだ揃っていない段階であることを踏まえ、過度な期待を煽らず『市販で試せる選択肢の一つ』として正直に位置づけることがこの記事の独自価値です。"
+    },
+    {
+      "slug": "coenzyme-q10-longevity-guide",
+      "title": "コエンザイムQ10とは？ミトコンドリア機能とアンチエイジングへの効果を元メーカーが解説【2026年版】",
+      "type": "traffic",
+      "category": "supplement",
+      "grade": "A",
+      "keywords": [
+        "コエンザイムQ10 とは",
+        "コエンザイムQ10 効果 アンチエイジング",
+        "CoQ10 ユビキノール 違い"
+      ],
+      "frontmatter_template": {
+        "title": "コエンザイムQ10とは？ミトコンドリア機能とアンチエイジングへの効果を元メーカーが解説【2026年版】",
+        "description": "日本で定着した抗酸化サプリの代表格コエンザイムQ10を元メーカーが解説。酸化型（ユビキノン）と還元型（ユビキノール）の違い、加齢に伴う体内合成量低下との関係を整理します。",
+        "pubDate": "2026-08-18",
+        "category": "supplement",
+        "grade": "A"
+      },
+      "outline": [
+        "## コエンザイムQ10とは（ミトコンドリア電子伝達系での役割）",
+        "## 酸化型（ユビキノン）と還元型（ユビキノール）の違い",
+        "## 加齢に伴う体内合成量の低下・スタチン系薬剤併用時の枯渇リスク",
+        "## `/urolithin-a-longevity-guide/`・`/taurine-longevity-supplement-ranking-2026/` への内部リンク（『ミトコンドリア機能』文脈）",
+        "## 年齢別のユビキノン/ユビキノール比率と選び方の目安",
+        "## まとめ（将来のcoenzyme-q10-supplement-ranking-2026への布石）"
+      ],
+      "maker_perspective": "コエンザイムQ10は還元型（ユビキノール）の方が体内利用効率で優位とされる一方、酸化しやすく製剤としての安定性確保が難しいという原料特性があります。加齢とともに体内でユビキノンをユビキノールへ変換する能力が落ちるため、年齢が上がるほど還元型を選ぶ合理性が増すという、製剤設計の裏側を知る立場からの切り口を提供することがこの記事の独自価値です。"
     }
   ],
-  "lastRun": "2026-08-06"
+  "lastRun": "2026-08-07"
 }
