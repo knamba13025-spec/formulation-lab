@@ -51,7 +51,8 @@ EMSは肌が乾くとピリつきやすくなります。専用ジェルや導�
 - 強み：左右調整しやすいマスク型
 - 向いている人：ながらケアを続けたい人
 
-<!-- AFFILIATE: YA-MAN メディリフト プラス -->
+<!-- AFFILIATE: Amazon / YA-MAN メディリフト プラス / 1位・マスク型EMS購入リンク -->
+<!-- AFFILIATE: 楽天 / YA-MAN メディリフト プラス / 1位・楽天市場購入リンク -->
 
 ### 2位：Panasonic バイタリフト RF
 
@@ -60,7 +61,8 @@ RF、EMS、LED、イオンを組み合わせた多機能型です。温感とEMS
 - 強み：ハンディ型で口元・フェイスラインに当てやすい
 - 向いている人：温感ケアも使いたい人
 
-<!-- AFFILIATE: Panasonic バイタリフト RF -->
+<!-- AFFILIATE: Amazon / Panasonic バイタリフト RF / 2位・多機能ハンディ型購入リンク -->
+<!-- AFFILIATE: 楽天 / Panasonic バイタリフト RF / 2位・楽天市場購入リンク -->
 
 ### 3位：ZIIP HALO
 
@@ -69,7 +71,8 @@ RF、EMS、LED、イオンを組み合わせた多機能型です。温感とEMS
 - 強み：広めの2電極とプログラム選択
 - 向いている人：電流系ケアを本格的に続けたい人
 
-<!-- AFFILIATE: ZIIP HALO -->
+<!-- AFFILIATE: Amazon / ZIIP HALO / 3位・海外系マイクロカレント購入リンク -->
+<!-- AFFILIATE: 楽天 / ZIIP HALO / 3位・楽天市場購入リンク -->
 
 ### 4位：NuFACE MINI+ / Trinity+
 
@@ -78,7 +81,8 @@ RF、EMS、LED、イオンを組み合わせた多機能型です。温感とEMS
 - 強み：球状2電極で短時間ケアしやすい
 - 向いている人：シンプルな機種を選びたい人
 
-<!-- AFFILIATE: NuFACE MINI Trinity -->
+<!-- AFFILIATE: Amazon / NuFACE MINI+ / 4位・シンプル球状電極購入リンク -->
+<!-- AFFILIATE: 楽天 / NuFACE Trinity+ / 4位・楽天市場購入リンク -->
 
 ### 5位：MEDICUBE AGE-R ブースタープロ
 
@@ -87,7 +91,8 @@ MCモード、EMS系モード、LED、振動などを1台にまとめた韓国�
 - 強み：導入ケアやツヤ感の演出まで使える
 - 向いている人：多機能型をルーティン化したい人
 
-<!-- AFFILIATE: MEDICUBE AGE-R ブースタープロ -->
+<!-- AFFILIATE: Amazon / MEDICUBE AGE-R ブースタープロ / 5位・多機能型購入リンク -->
+<!-- AFFILIATE: 楽天 / MEDICUBE AGE-R ブースタープロ / 5位・楽天市場購入リンク -->
 
 ## 併用戦略：LED・HIFUとどう分けるか
 
@@ -106,6 +111,8 @@ MCモード、EMS系モード、LED、振動などを1台にまとめた韓国�
 3. 専用ジェルの価格と入手性を確認したか
 4. ペースメーカー、妊娠中、皮膚疾患などの使用制限を確認したか
 5. 正規販売店、保証、返品条件を確認したか
+
+<!-- AFFILIATE: Amazon / EMS美顔器（検索キーワード）/ 購入前チェック直後のCTA -->
 
 ## まとめ
 

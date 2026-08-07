@@ -75,9 +75,9 @@ affiliate: false
 
 | 成分 | 役割の目安 | 関連記事 |
 |---|---|---|
-| セラミドNP/AP/EOP | 角質層の脂質構造を支える | [セラミドの種類と選び方](/blog/ceramide-types-comparison) |
+| セラミドNP/AP/EOP | 角質層の脂質構造を支える | [セラミドの種類と選び方](/blog/ceramide-types-comparison)／[おすすめランキング](/blog/ceramide-cosmetics-ranking-2026) |
 | ナイアシンアミド | うるおい、皮脂、キメを幅広く支える | [ナイアシンアミド完全ガイド](/blog/niacinamide-complete-guide) |
-| アゼライン酸 | 皮脂・毛穴印象・肌荒れ予防を穏やかに支える | [アゼライン酸とは？](/blog/azelaic-acid-explainer) |
+| アゼライン酸 | 皮脂・毛穴印象・肌荒れ予防を穏やかに支える | [アゼライン酸とは？](/blog/azelaic-acid-explainer)／[おすすめランキング](/blog/azelaic-acid-cosmetics-comparison) |
 | パンテノール・アラントイン | 肌荒れを防ぎ、すこやかに保つ | 保湿補助成分として確認 |
 | βグルカン | ゆらぎやすい肌の保湿補助 | [βグルカンのスキンケア解説](/blog/beta-glucan-skincare-guide) |
 
@@ -103,6 +103,6 @@ affiliate: false
 
 敏感肌ケアの基本は、肌バリア機能を乱しにくい洗浄、保湿、紫外線対策です。レチノールやビタミンCの低刺激化が進んでも、土台が乾燥している状態では刺激感につながりやすくなります。
 
-低刺激化粧品を見分けるときは、「低刺激」「無添加」の文字だけで決めず、成分表示、パッチテストの有無、香料・エタノール・pH・保湿膜の設計まで見ましょう。バリアケアは[セラミド](/blog/ceramide-types-comparison)、毎日使いやすい整肌成分は[ナイアシンアミド](/blog/niacinamide-complete-guide)、毛穴や皮脂も気になる場合は[アゼライン酸](/blog/azelaic-acid-explainer)を軸に考えると組み立てやすくなります。
+低刺激化粧品を見分けるときは、「低刺激」「無添加」の文字だけで決めず、成分表示、パッチテストの有無、香料・エタノール・pH・保湿膜の設計まで見ましょう。バリアケアは[セラミド配合化粧品おすすめランキング](/blog/ceramide-cosmetics-ranking-2026)、毎日使いやすい整肌成分は[ナイアシンアミド完全ガイド](/blog/niacinamide-complete-guide)、毛穴や皮脂も気になる場合は[アゼライン酸配合化粧品比較](/blog/azelaic-acid-cosmetics-comparison)を軸に考えると組み立てやすくなります。
 
 *本記事の情報は2026年8月時点のものです。使用感には個人差があります。肌に異常を感じた場合は使用を中止し、必要に応じて専門家へ相談してください。*
